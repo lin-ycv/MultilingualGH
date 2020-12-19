@@ -16,7 +16,7 @@ If you're interesting in doing translations:
 - An equal sign '=' directly follows the English full name, without any spaces in between
 - The translation directly follows the equal sign '=', without any spaces in between
 - '[Optional]' The English full name is placed in brackets '( )' after the translation
-- The last line in the file follows the format ' \*Translator\*="Translator's Name" '
+- The last line in the file follows the format \*Translator\*="Translator's Name"
 - Do a pull request if you've done some translations; alternatively, send the translations to [me](https://github.com/v-xup6) thru email
 
 As this is a side project I'm doing on my own, any contribution is and will be highly appreciated.
