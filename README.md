@@ -15,7 +15,7 @@ If you're interesting in doing translations:
 - Each line starts with the **EXACT** English full name of the component
 - An equal sign '=' directly follows the English full name, without any spaces in between
 - The translation directly follows the equal sign '=', without any spaces in between
-- '[Optional]' The English full name is placed in brackets '( )' after the translation
+- The English full name is placed in brackets '( )' after the translation [Optional]
 - The last line in the file follows the format \*Translator\*="Translator's Name"
 - Do a pull request if you've done some translations; alternatively, send the translations to [me](https://github.com/v-xup6) thru email
 
