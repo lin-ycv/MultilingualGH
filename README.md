@@ -10,13 +10,15 @@ Proof-of-concept demo: [https://www.instagram.com/p/CI5NP_3nEyw/](https://www.in
 I'm hoping the community can help do translations of different languages while I focus on ironing out the coding.
 If you're interesting in doing translations:
 
-- Take a look at my [WIP translation to Traditional Chinese](Languages/Chinese%20Traditional)
+- Take a look at my [Traditional Chinese translation](Languages/Chinese%20Traditional)
 - Each line is one component translation
 - Each line starts with the **EXACT** English full name of the component
 - An equal sign '=' directly follows the English full name, without any spaces in between
 - The translation directly follows the equal sign '=', without any spaces in between
-- The English full name is placed in brackets '( )' after the translation [Optional]
+- The English full name is placed in brackets '( )' after the translation (Optional)
 - The last line in the file follows the format \*Translator\*="Translator's Name"
+- If you're revising a translation, add your name at the end of the last line, serperated with comma ','
+- Do not discredit other by removing their names from the last line
 - Do a pull request if you've done some translations; alternatively, send the translations to [me](https://github.com/v-xup6) thru email
 
 As this is a side project I'm doing on my own, any contribution is and will be highly appreciated.
