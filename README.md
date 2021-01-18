@@ -1,6 +1,6 @@
 # MultilingualGH
 Annotating Grasshopper components in a desired language.<br>
-This is being developed as an educational tool to help students who aren't well-versed in English. This plugin aims to help these students understand and learn grasshopper.
+This is developed as an educational tool. This plugin aims to help users understand and learn grasshopper by annotating components with languages that the user is familiar with.
 
 - Download the [latest version](https://github.com/v-xup6/MultilingualGH/releases)
 - Download a [translation file](https://github.com/v-xup6/MultilingualGH/tree/main/Languages)
