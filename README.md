@@ -1,4 +1,4 @@
-# MultilingualGH
+# MultilingualGH ![MGH](https://raw.githubusercontent.com/v-xup6/MultilingualGH/main/Docs/MGH_icon32x32.png)
 Annotating Grasshopper components in a desired language.<br>
 This is developed as an educational tool. This plugin aims to help users understand and learn grasshopper by annotating components with languages that the user is familiar with.
 
