@@ -164,9 +164,10 @@ namespace MultilingualGH
         static string Alias(string lang, IGH_DocumentObject comp)
         {
             if (lang == "English") return comp.Name;
-            var index = translations[lang];
-            if (index.TryGetValue(comp.Name, out string translated) || index.TryGetValue(comp.Name + comp.Category, out translated))
-                return translated;
+            if(translations.TryGetValue(lang, out Dictionary<string, string> index))
+                if (index.TryGetValue(comp.Name + comp.Category, out string translated) || index.TryGetValue(comp.Name, out translated))
+                    return translated;
+                else return comp.Name;
             else return comp.Name;
         }
 

@@ -17,6 +17,15 @@ namespace MultilingualGH
         internal string prevLang;
         internal Guid compGuid = Guid.Empty;
 
+        internal MultilingualInstance()
+        {
+            enabled = Grasshopper.Instances.Settings.GetValue("MGHenable", false);
+            textLabel = Grasshopper.Instances.Settings.GetValue("MGHLabelMethod", false);
+            excludeDefault = Grasshopper.Instances.Settings.GetValue("MGHUseDe", true);
+            excludeUser = Grasshopper.Instances.Settings.GetValue("MGHUseUe", string.Empty);
+            keep = Grasshopper.Instances.Settings.GetValue("MGHKeepAnno", false);
+            language = Grasshopper.Instances.Settings.GetValue("MGHLangSel", "English");
+        }
         static internal void EventHandler(GH_Canvas sender, MultilingualInstance mgh)
         {
             sender.Document.ObjectsAdded -= Translation.CompAdded;
@@ -36,10 +45,19 @@ namespace MultilingualGH
             {
                 if (!mgh.textLabel && !mgh.keep)
                 {
-                        Translation.Clear(sender.Document);
+                    Translation.Clear(sender.Document);
                 }
             }
             sender.Refresh();
+        }
+        static internal void SaveSettings(MultilingualInstance mgh)
+        {
+            Grasshopper.Instances.Settings.SetValue("MGHenable", mgh.enabled);
+            Grasshopper.Instances.Settings.SetValue("MGHLabelMethod", mgh.textLabel);
+            Grasshopper.Instances.Settings.SetValue("MGHUseDe", mgh.excludeDefault);
+            Grasshopper.Instances.Settings.SetValue("MGHUseUe", mgh.excludeUser);
+            Grasshopper.Instances.Settings.SetValue("MGHKeepAnno", mgh.keep);
+            Grasshopper.Instances.Settings.SetValue("MGHLangSel", mgh.language);
         }
     }
 }

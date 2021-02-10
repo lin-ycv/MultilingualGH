@@ -7,7 +7,11 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("MultilingualGH")]
 [assembly: AssemblyDescription("Annotates components with desired language")]
-[assembly: AssemblyConfiguration("")]
+#if (DEBUG)
+[assembly: AssemblyConfiguration("Debug")]
+#else
+[assembly: AssemblyConfiguration("Release")]
+#endif
 [assembly: AssemblyCompany("Victor (Yu Chieh) Lin")]
 [assembly: AssemblyProduct("MultilingualGH")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
@@ -32,7 +36,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.9.2.*")]
+[assembly: AssemblyVersion("1.0.0.*")]
 #pragma warning disable CS7035 // The specified version string does not conform to the recommended format - major.minor.build.revision
-[assembly: AssemblyFileVersion("0.9.2.*")]
+[assembly: AssemblyFileVersion("1.0.0.*")]
 #pragma warning restore CS7035 // The specified version string does not conform to the recommended format - major.minor.build.revision

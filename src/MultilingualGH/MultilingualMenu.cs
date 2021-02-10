@@ -95,7 +95,7 @@ namespace MultilingualGH
             translationMethod.Items.AddRange(new object[] {
             "Bubble Label",
             "Text Label"});
-            translationMethod.SelectedIndex = 0;
+            translationMethod.SelectedIndex = 1;
             translationMethod.SelectedIndexChanged += (s, e) =>
             {
                 bool basic = translationMethod.SelectedIndex == 0;
@@ -128,12 +128,26 @@ namespace MultilingualGH
                 }
                 userOption.Checked = mgh.excludeUser != string.Empty;
             };
+            ToolStripMenuItem saveSettings = new ToolStripMenuItem { Name = "Save", Text = "Save As Default", ToolTipText = "Save current settings as the default values for new documents"};
+            saveSettings.Click += (s, e) =>
+            {
+                MultilingualInstance.SaveSettings(mgh);
+                MessageBox.Show($"Settings saved as default\r\n" +
+                    $"Enabled: {mgh.enabled}\r\n" +
+                    $"Text Label: {mgh.textLabel}\r\n" +
+                    $"Default Exclusions: {mgh.excludeDefault}\r\n" +
+                    $"User Exclusions: {mgh.excludeUser.Length > 0}\r\n" +
+                    $"Keep Annotations: {mgh.keep}\r\n" +
+                    $"Language: {mgh.language}");
+            };
             ToolStripMenuItem langOption = new ToolStripMenuItem { Name = "English", Text = "English", Checked = "English" == mgh.language };
             langOption.Click += new EventHandler(LanguageSelection_Click);
 
             List<ToolStripItem> menuOptions = new List<ToolStripItem> {
                 toggle,
                 translationMethod,
+                new ToolStripSeparator(),
+                saveSettings,
                 new ToolStripSeparator(),
                 defaultOption,
                 userOption,
