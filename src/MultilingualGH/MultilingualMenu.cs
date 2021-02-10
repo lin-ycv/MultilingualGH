@@ -128,7 +128,7 @@ namespace MultilingualGH
                 }
                 userOption.Checked = mgh.excludeUser != string.Empty;
             };
-            ToolStripMenuItem saveSettings = new ToolStripMenuItem { Name = "Save", Text = "Save As Default", ToolTipText = "Save current settings as the default values for new documents"};
+            ToolStripMenuItem saveSettings = new ToolStripMenuItem { Name = "Save", Text = "Save As Default", ToolTipText = "Save current settings as the default values for new documents" };
             saveSettings.Click += (s, e) =>
             {
                 MultilingualInstance.SaveSettings(mgh);
@@ -153,7 +153,8 @@ namespace MultilingualGH
                 userOption,
                 keepOption,
                 new ToolStripSeparator(),
-                langOption};
+                langOption
+            };
 
             if (Translation.noRoot || Translation.files.Count == 0)
             {
@@ -181,6 +182,18 @@ namespace MultilingualGH
                     langOption = new ToolStripMenuItem { Name = lang, Text = lang, ToolTipText = "Translation by " + credit, Checked = lang == mgh.language };
                     langOption.Click += new EventHandler(LanguageSelection_Click);
                     menuOptions.Add(langOption);
+                }
+            }
+            if (Translation.extraFiles.Count > 0)
+            {
+                menuOptions.Add(new ToolStripSeparator());
+                foreach (var fileName in Translation.extraFiles)
+                {
+                    var plugin = fileName.Split('_')[0];
+                    Translation.extraTranslations[plugin].TryGetValue("*Translator*", out string credit);
+                    var pluginTranslations = new ToolStripMenuItem { Name = fileName, Text = fileName, ToolTipText = "Translation by " + credit, Checked = mgh.extras.Contains($"*{plugin}*") };
+                    pluginTranslations.Click += new EventHandler(PluginSelection_Click);
+                    menuOptions.Add(pluginTranslations);
                 }
             }
             mghDropdown.DropDownItems.AddRange(menuOptions.ToArray());
@@ -213,7 +226,24 @@ namespace MultilingualGH
                 }
                 Grasshopper.Instances.ActiveCanvas.Refresh();
             }
-
+        }
+        static void PluginSelection_Click(object sender, EventArgs e)
+        {
+            string plugin = sender.ToString().Split('_')[0];
+            if (mgh.extras.Contains($"*{plugin}*"))
+            {
+                mgh.extras = mgh.extras.Replace($"*{plugin}*", "");
+            }
+            else
+            {
+                mgh.extras += $"*{plugin}*";
+                if (!mgh.textLabel)
+                {
+                    Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
+                    MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
+                }
+                Grasshopper.Instances.ActiveCanvas.Refresh();
+            }
         }
         static internal void UpdateMenu(MultilingualInstance mgh)
         {
@@ -229,12 +259,16 @@ namespace MultilingualGH
                 ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Enabled = true;
                 ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Checked = mgh.keep;
             }
-                    ((ToolStripMenuItem)mghDropdown.DropDownItems["Default"]).Checked = mgh.excludeDefault;
+            ((ToolStripMenuItem)mghDropdown.DropDownItems["Default"]).Checked = mgh.excludeDefault;
             ((ToolStripMenuItem)mghDropdown.DropDownItems["User"]).Checked = mgh.excludeUser != string.Empty;
             ((ToolStripMenuItem)mghDropdown.DropDownItems["English"]).Checked = mgh.language == "English";
             foreach (var lang in Translation.files)
             {
                 ((ToolStripMenuItem)mghDropdown.DropDownItems[lang]).Checked = mgh.language == lang;
+            }
+            foreach (var plugin in Translation.extraFiles)
+            {
+                ((ToolStripMenuItem)mghDropdown.DropDownItems[plugin]).Checked = mgh.extras.Contains(plugin);
             }
         }
         class CutomToolStripMenuRenderer : ToolStripProfessionalRenderer

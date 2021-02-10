@@ -23,8 +23,10 @@ namespace MultilingualGH
         static internal readonly string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "GHLanguage");
         static internal bool noRoot = false;
         static internal readonly string[] exclusionDefault = new string[] { "MultilingualGH", "Scribble", "Panel", "Value List", "Button", "Boolean Toggle", "Number Slider" };
-        static internal List<string> files = new List<string>();
+        static internal readonly List<string> files = new List<string>();
+        static internal readonly List<string> extraFiles = new List<string>();
         static internal readonly Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
+        static internal Dictionary<string, Dictionary<string, string>> extraTranslations = new Dictionary<string, Dictionary<string, string>>();
         static byte temp;
 
         static internal void GetFiles()
@@ -37,32 +39,48 @@ namespace MultilingualGH
                     var translationDictionary = new Dictionary<string, string>();
                     string nameOnly = Path.GetFileNameWithoutExtension(file);
                     files.Add(nameOnly);
-                    string fileContent = File.ReadAllText(file);
-                    if (fileContent[0] == '[')
-                    {
-                        JavaScriptSerializer serializer = new JavaScriptSerializer();
-                        var translationPair = serializer.Deserialize<TranslationInfo[]>(fileContent);
-                        foreach (var info in translationPair)
-                        {
-                            if (!translationDictionary.ContainsKey(info.name + info.category))
-                                translationDictionary.Add(info.name + info.category, info.translation);
-                        }
-                    }
-                    else
-                    {
-                        string[] translationPairs = fileContent.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
-                        foreach (string info in translationPairs)
-                        {
-                            string[] pair = info.Split('=');
-                            if (!translationDictionary.ContainsKey(pair[0]) && pair.Length == 2 && pair[1] != "")
-                                translationDictionary.Add(pair[0], pair[1]);
-                        }
-                    }
+                    ParseFile(file, ref translationDictionary);
                     translations.Add(nameOnly, translationDictionary);
                 }
             }
             else
                 noRoot = true;
+            if (Directory.Exists(Path.Combine(folder, "Extras")))
+            {
+                string[] inFolder = Directory.GetFiles(Path.Combine(folder, "Extras"));
+                foreach (var file in inFolder)
+                {
+                    var translationDictionary = new Dictionary<string, string>();
+                    string nameOnly = Path.GetFileNameWithoutExtension(file);
+                    extraFiles.Add(nameOnly);
+                    ParseFile(file, ref translationDictionary);
+                    extraTranslations.Add(nameOnly.Split('_')[0], translationDictionary);
+                }
+            }
+        }
+        static private void ParseFile(string file, ref Dictionary<string, string> translationDictionary)
+        {
+            string fileContent = File.ReadAllText(file);
+            if (fileContent[0] == '[')
+            {
+                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                var translationPair = serializer.Deserialize<TranslationInfo[]>(fileContent);
+                foreach (var info in translationPair)
+                {
+                    if (!translationDictionary.ContainsKey(info.name + info.category))
+                        translationDictionary.Add(info.name + info.category, info.translation);
+                }
+            }
+            else
+            {
+                string[] translationPairs = fileContent.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                foreach (string info in translationPairs)
+                {
+                    string[] pair = info.Split('=');
+                    if (!translationDictionary.ContainsKey(pair[0]) && pair.Length == 2 && pair[1] != "")
+                        translationDictionary.Add(pair[0], pair[1]);
+                }
+            }
         }
         static internal void CompAdded(object sender, object e)
         {
@@ -109,7 +127,7 @@ namespace MultilingualGH
                     Colour = Color.FromArgb(0, 255, 255, 255)
                 };
                 annotation.AddObject(comp.InstanceGuid);
-                annotation.NickName = Alias(mgh.language, comp);
+                annotation.NickName = Alias(mgh, comp);
                 ghDoc.AddObject(annotation, false);
                 annotation.ExpireCaches();
             }
@@ -130,12 +148,16 @@ namespace MultilingualGH
                     if (IsExclusion(comp, exclusions) || comp is GH_Group) continue;
                     RectangleF anchor = comp.Attributes.Bounds;
                     float x = anchor.X + 0.5f * anchor.Width;
-                    float y = anchor.Y - 1.25f * size;
+                    float y;
+                    if (((IGH_ActiveObject)comp).RuntimeMessageLevel == GH_RuntimeMessageLevel.Blank || ZUI)
+                        y = anchor.Y - 0.25f * size;
+                    else
+                        y = anchor.Y - 1.25f * size;
 
                     Font font = new Font("Arial", size);
                     SolidBrush brush = new SolidBrush(Color.Black);
-                    StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
-                    sender.Graphics.DrawString(Alias(mgh.language, comp), font, brush, x, y, alignment);
+                    StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Far };
+                    sender.Graphics.DrawString(Alias(mgh, comp), font, brush, x, y, alignment);
                     font.Dispose();
                     brush.Dispose();
                     alignment.Dispose();
@@ -161,14 +183,16 @@ namespace MultilingualGH
                 return true;
             return false;
         }
-        static string Alias(string lang, IGH_DocumentObject comp)
+        static string Alias(MultilingualInstance mgh, IGH_DocumentObject comp)
         {
-            if (lang == "English") return comp.Name;
-            if(translations.TryGetValue(lang, out Dictionary<string, string> index))
+            if (mgh.language == "English") return comp.Name;
+            if (translations.TryGetValue(mgh.language, out Dictionary<string, string> index))
                 if (index.TryGetValue(comp.Name + comp.Category, out string translated) || index.TryGetValue(comp.Name, out translated))
                     return translated;
-                else return comp.Name;
-            else return comp.Name;
+            if (mgh.extras.Contains(comp.Category) && extraTranslations.TryGetValue(comp.Category, out Dictionary<string, string> eIndex))
+                if (eIndex.TryGetValue(comp.Name, out string eTranslated))
+                    return eTranslated;
+            return comp.Name;
         }
 
         static internal void Clear(GH_Document ghDoc)

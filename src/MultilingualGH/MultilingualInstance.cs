@@ -1,6 +1,7 @@
 ﻿using Grasshopper.GUI.Canvas;
 using System;
 using System.Collections.Generic;
+using Grasshopper.Kernel;
 
 namespace MultilingualGH
 {
@@ -14,6 +15,7 @@ namespace MultilingualGH
         internal string excludeUser = string.Empty;
         internal bool keep = false;
         internal string language = "English";
+        internal string extras = string.Empty;
         internal string prevLang;
         internal Guid compGuid = Guid.Empty;
 
@@ -25,6 +27,17 @@ namespace MultilingualGH
             excludeUser = Grasshopper.Instances.Settings.GetValue("MGHUseUe", string.Empty);
             keep = Grasshopper.Instances.Settings.GetValue("MGHKeepAnno", false);
             language = Grasshopper.Instances.Settings.GetValue("MGHLangSel", "English");
+            extras = Grasshopper.Instances.Settings.GetValue("MGHExtras", string.Empty);
+        }
+        static internal void SaveSettings(MultilingualInstance mgh)
+        {
+            Grasshopper.Instances.Settings.SetValue("MGHenable", mgh.enabled);
+            Grasshopper.Instances.Settings.SetValue("MGHLabelMethod", mgh.textLabel);
+            Grasshopper.Instances.Settings.SetValue("MGHUseDe", mgh.excludeDefault);
+            Grasshopper.Instances.Settings.SetValue("MGHUseUe", mgh.excludeUser);
+            Grasshopper.Instances.Settings.SetValue("MGHKeepAnno", mgh.keep);
+            Grasshopper.Instances.Settings.SetValue("MGHLangSel", mgh.language);
+            Grasshopper.Instances.Settings.GetValue("MGHExtras", mgh.extras);
         }
         static internal void EventHandler(GH_Canvas sender, MultilingualInstance mgh)
         {
@@ -50,14 +63,6 @@ namespace MultilingualGH
             }
             sender.Refresh();
         }
-        static internal void SaveSettings(MultilingualInstance mgh)
-        {
-            Grasshopper.Instances.Settings.SetValue("MGHenable", mgh.enabled);
-            Grasshopper.Instances.Settings.SetValue("MGHLabelMethod", mgh.textLabel);
-            Grasshopper.Instances.Settings.SetValue("MGHUseDe", mgh.excludeDefault);
-            Grasshopper.Instances.Settings.SetValue("MGHUseUe", mgh.excludeUser);
-            Grasshopper.Instances.Settings.SetValue("MGHKeepAnno", mgh.keep);
-            Grasshopper.Instances.Settings.SetValue("MGHLangSel", mgh.language);
-        }
+
     }
 }
