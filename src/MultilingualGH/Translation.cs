@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
+using System.Windows.Forms;
 
 namespace MultilingualGH
 {
@@ -64,11 +65,20 @@ namespace MultilingualGH
             if (fileContent[0] == '[')
             {
                 JavaScriptSerializer serializer = new JavaScriptSerializer();
-                var translationPair = serializer.Deserialize<TranslationInfo[]>(fileContent);
-                foreach (var info in translationPair)
+                try
                 {
-                    if (!translationDictionary.ContainsKey(info.name + info.category))
-                        translationDictionary.Add(info.name + info.category, info.translation);
+                    var translationPair = serializer.Deserialize<TranslationInfo[]>(fileContent);
+                    foreach (var info in translationPair)
+                    {
+                        if (!translationDictionary.ContainsKey(info.name + info.category))
+                            translationDictionary.Add(info.name + info.category, info.translation);
+                    }
+                }
+                catch
+                {
+#if (DEBUG)
+                    MessageBox.Show($"{file} is not a valid JSON");
+#endif
                 }
             }
             else
@@ -133,6 +143,7 @@ namespace MultilingualGH
             }
             ghDoc.RemoveObjects(shouldRemove.Keys, false);
         }
+        static private Guid galapagosID = new Guid("E6DD2904-14BC-455b-8376-948BF2E3A7BC");
         static internal void Paint(GH_Canvas sender)
         {
             MultilingualInstance.documents.TryGetValue(sender.Document.DocumentID, out MultilingualInstance mgh);
@@ -149,7 +160,7 @@ namespace MultilingualGH
                     RectangleF anchor = comp.Attributes.Bounds;
                     float x = anchor.X + 0.5f * anchor.Width;
                     float y;
-                    if (((IGH_ActiveObject)comp).RuntimeMessageLevel == GH_RuntimeMessageLevel.Blank || ZUI)
+                    if (comp.ComponentGuid == galapagosID || ((IGH_ActiveObject)comp).RuntimeMessageLevel == GH_RuntimeMessageLevel.Blank || ZUI)
                         y = anchor.Y - 0.25f * size;
                     else
                         y = anchor.Y - 1.25f * size;

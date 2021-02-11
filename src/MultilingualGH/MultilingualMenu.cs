@@ -11,6 +11,7 @@ namespace MultilingualGH
     {
         static MultilingualInstance mgh;
         static internal ToolStripMenuItem mghDropdown = new ToolStripMenuItem();
+        static private ToolStripItemCollection options = null;
 
         public override GH_LoadingInstruction PriorityLoad()
         {
@@ -197,25 +198,22 @@ namespace MultilingualGH
                 }
             }
             mghDropdown.DropDownItems.AddRange(menuOptions.ToArray());
+            options = mghDropdown.DropDownItems;
             mghDropdown.Enabled = false;
             mghDropdown.ToolTipText = "No GH document opened";
             mghDropdown.Name = "MultilingualGH";
             mghDropdown.Text = "MultilingualGH";
-            mghDropdown.Click += (s, e) =>
-            {
-                ToolStripItemCollection options = mghDropdown.DropDownItems;
-                ToolStripMenuItem lang = (ToolStripMenuItem)options["English"];
-                lang.Checked = mgh.language == lang.Text;
-                foreach (var langs in Translation.files)
-                {
-                    lang = (ToolStripMenuItem)options[langs];
-                    lang.Checked = mgh.language == lang.Text;
-                }
-            };
         }
         static void LanguageSelection_Click(object sender, EventArgs e)
         {
             mgh.language = sender.ToString();
+            ToolStripMenuItem lang = (ToolStripMenuItem)options["English"];
+            lang.Checked = mgh.language == lang.Text;
+            foreach (var langs in Translation.files)
+            {
+                lang = (ToolStripMenuItem)options[langs];
+                lang.Checked = mgh.language == lang.Text;
+            }
             if (mgh.enabled)
             {
                 if (!mgh.textLabel && (mgh.language != sender.ToString() || mgh.prevLang != sender.ToString()))
@@ -226,17 +224,36 @@ namespace MultilingualGH
                 }
                 Grasshopper.Instances.ActiveCanvas.Refresh();
             }
+            if (mgh.language == "English")
+            {
+                foreach (var plugin in Translation.extraFiles)
+                {
+                    ((ToolStripMenuItem)options[plugin]).Checked = false;
+                    ((ToolStripMenuItem)options[plugin]).Enabled = false;
+                }
+            }
+            else
+            {
+                foreach (var plugin in Translation.extraFiles)
+                {
+                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin);
+                    ((ToolStripMenuItem)options[plugin]).Enabled = true;
+                }
+            }
         }
         static void PluginSelection_Click(object sender, EventArgs e)
         {
+            ToolStripMenuItem pOption = (ToolStripMenuItem)options[sender.ToString()];
             string plugin = sender.ToString().Split('_')[0];
             if (mgh.extras.Contains($"*{plugin}*"))
             {
+                pOption.Checked = false;
                 mgh.extras = mgh.extras.Replace($"*{plugin}*", "");
             }
             else
             {
                 mgh.extras += $"*{plugin}*";
+                pOption.Checked = true;
                 if (!mgh.textLabel)
                 {
                     Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
@@ -247,28 +264,38 @@ namespace MultilingualGH
         }
         static internal void UpdateMenu(MultilingualInstance mgh)
         {
-            ((ToolStripMenuItem)mghDropdown.DropDownItems["Version"]).Checked = mgh.enabled;
-            ((ToolStripComboBox)mghDropdown.DropDownItems["Method"]).SelectedIndex = mgh.textLabel ? 1 : 0;
+            ((ToolStripMenuItem)options["Version"]).Checked = mgh.enabled;
+            ((ToolStripComboBox)options["Method"]).SelectedIndex = mgh.textLabel ? 1 : 0;
             if (mgh.textLabel)
             {
-                ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Checked = false;
-                ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Enabled = false;
+                ((ToolStripMenuItem)options["Keep"]).Checked = false;
+                ((ToolStripMenuItem)options["Keep"]).Enabled = false;
             }
             else
             {
-                ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Enabled = true;
-                ((ToolStripMenuItem)mghDropdown.DropDownItems["Keep"]).Checked = mgh.keep;
+                ((ToolStripMenuItem)options["Keep"]).Enabled = true;
+                ((ToolStripMenuItem)options["Keep"]).Checked = mgh.keep;
             }
-            ((ToolStripMenuItem)mghDropdown.DropDownItems["Default"]).Checked = mgh.excludeDefault;
-            ((ToolStripMenuItem)mghDropdown.DropDownItems["User"]).Checked = mgh.excludeUser != string.Empty;
-            ((ToolStripMenuItem)mghDropdown.DropDownItems["English"]).Checked = mgh.language == "English";
+            ((ToolStripMenuItem)options["Default"]).Checked = mgh.excludeDefault;
+            ((ToolStripMenuItem)options["User"]).Checked = mgh.excludeUser != string.Empty;
+            bool isEng = mgh.language == "English";
+            ((ToolStripMenuItem)options["English"]).Checked = isEng;
             foreach (var lang in Translation.files)
             {
-                ((ToolStripMenuItem)mghDropdown.DropDownItems[lang]).Checked = mgh.language == lang;
+                ((ToolStripMenuItem)options[lang]).Checked = mgh.language == lang;
             }
             foreach (var plugin in Translation.extraFiles)
             {
-                ((ToolStripMenuItem)mghDropdown.DropDownItems[plugin]).Checked = mgh.extras.Contains(plugin);
+                if (isEng)
+                {
+                    ((ToolStripMenuItem)options[plugin]).Checked = false;
+                    ((ToolStripMenuItem)options[plugin]).Enabled = false;
+                }
+                else
+                {
+                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin);
+                    ((ToolStripMenuItem)options[plugin]).Enabled = true;
+                }
             }
         }
         class CutomToolStripMenuRenderer : ToolStripProfessionalRenderer

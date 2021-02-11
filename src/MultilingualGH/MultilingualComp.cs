@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Text;
 using System.Windows.Forms;
 using Grasshopper.GUI;
 using Grasshopper.GUI.Canvas;
@@ -102,8 +103,14 @@ namespace MultilingualGH
             {
                 Menu_AppendItem(menu, lang, (s, e) => LangSelection(lang), true, mgh.language == lang);
             }
+            if(Translation.extraFiles.Count>0)
+                Menu_AppendSeparator(menu);
+            foreach (var plugin in Translation.extraFiles)
+            {
+                string shorten = $"*{plugin.Split('_')[0]}*";
+                Menu_AppendItem(menu, plugin, (s, e) => PluginSelection(shorten), mgh.language!="English", mgh.language != "English" && mgh.extras.Contains(shorten));
+            }
         }
-
         internal void LangSelection(string lang)
         {
             mgh.language = lang;
@@ -117,6 +124,24 @@ namespace MultilingualGH
                     ExpireSolution(true);
                 }
                 MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);                
+            }
+        }
+        internal void PluginSelection(string plugin)
+        {
+            bool clean = false;
+            if (mgh.extras.Contains($"*{plugin}*"))
+                mgh.extras = mgh.extras.Replace($"*{plugin}*", "");
+            else
+            {
+                mgh.extras += $"*{plugin}*";
+                clean = true;
+            }
+            if (mgh.enabled)
+            {
+                if(clean)
+                    Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
+                ExpireSolution(true);
+                MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
             }
         }
 
@@ -145,7 +170,13 @@ namespace MultilingualGH
             else
             {
                 Translation.translations[mgh.language].TryGetValue("*Translator*", out string credit);
-                DA.SetData(0, "Translation by " + credit);
+                StringBuilder eCredits = new StringBuilder();
+                foreach(string plugin in mgh.extras.Split(new string[] { "**", "*" }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    Translation.extraTranslations[plugin].TryGetValue("*Translator*", out string cred);
+                    eCredits.Append(", " + cred);
+                }
+                DA.SetData(0, "Translation(s) by " + credit+eCredits.ToString());
             }
             MultilingualInstance.EventHandler(canvas, mgh);
         }

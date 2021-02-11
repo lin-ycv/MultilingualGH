@@ -73,7 +73,7 @@ namespace MultilingualGH
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(513, 322);
             this.Name = "UserForm";
-            this.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.Padding = new System.Windows.Forms.Padding(7);
             this.ShowInTaskbar = false;
             this.Text = "Define Exclusions";
             this.TopMost = true;
