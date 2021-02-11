@@ -1,0 +1,176 @@
+[{
+name:"Custom command",
+translation:"指令
+(Custom command)"
+},{
+name:"Group command",
+translation:"指令群組
+(Group command)"
+},{
+name:"Message",
+translation:"註解
+(Message)"
+},{
+name:"Pulse DO",
+translation:"數位訊號波
+(Pulse DO)"
+},{
+name:"Set AO",
+translation:"類比訊號
+(Set AO)"
+},{
+name:"Set DO",
+translation:"數位訊號
+(Set DO)"
+},{
+name:"Speed Aproximation",
+translation:"保持速度指令
+(Speed Aproximation)"
+},{
+name:"Stop program",
+translation:"暫停程式
+(Stop program)"
+},{
+name:"Wait",
+translation:"等
+(Wait)"
+},{
+name:"Wait DI",
+translation:"等待
+(Wait DI)"
+},{
+name:"Create tool",
+translation:"工具資訊
+(Create tool)"
+},{
+name:"Load robot system",
+translation:"選擇手臂
+(Load robot system)"
+},{
+name:"Load robot tool",
+translation:"選擇工具
+(Load robot tool)"
+},{
+name:"Create frame",
+translation:"目標平面進階
+(Create frame)"
+},{
+name:"Create speed",
+translation:"指定速度
+(Create speed)"
+},{
+name:"Create target",
+translation:"移動目標
+(Create target)"
+},{
+name:"Deconstruct target",
+translation:"拆解目標資訊
+(Deconstruct target)"
+},{
+name:"Check collisions",
+translation:"碰撞檢查
+(Check collisions)"
+},{
+name:"Create program",
+translation:"創造程式
+(Create program)"
+},{
+name:"Custom code",
+translation:"特殊指令
+(Custom code)"
+},{
+name:"Merge KRL",
+translation:"整合程式碼
+(Merge KRL)"
+},{
+name:"Kinematics",
+translation:"動力學計算
+(Kinematics)"
+},{
+name:"Program simulation",
+translation:"程式模擬
+(Program simulation)"
+},{
+name:"IIWA XML",
+translation:"IIWA程式碼
+(IIWA XML)"
+},{
+name:"Remote Connection",
+translation:"遠端控制
+(Remote Connection)"
+},{
+name:"Remote KUKA",
+translation:"遠端控制
+(Remote KUKA)"
+},{
+name:"Save program",
+translation:"儲存程式
+(Save program)"
+},{
+name:"RobotSystem parameter",
+translation:"手臂參數容器
+(RobotSystem parameter)"
+},{
+name:"Command parameter",
+translation:"特殊指令容器
+(Command parameter)"
+},{
+name:"Frame parameter",
+translation:"目標平面容器
+(Frame parameter)"
+},{
+name:"Speed parameter",
+translation:"速度容器
+(Speed parameter)"
+},{
+name:"Target parameter",
+translation:"移動目標容器
+(Target parameter)"
+},{
+name:"Tool parameter",
+translation:"工具資訊容器
+(Tool parameter)"
+},{
+name:"Zone parameter",
+translation:"倒圓角數值容器
+(Zone parameter)"
+},{
+name:"Program parameter",
+translation:"程式容器
+(Program parameter)"
+},{
+name:"Toolpath",
+translation:"路徑容器
+(Toolpath)"
+},{
+name:"Define Joints",
+translation:"指定各軸角度
+(Define Joints)"
+},{
+name:"Degrees to radians",
+translation:"度轉內建弧度
+(Degrees to radians)"
+},{
+name:"From plane",
+translation:"拆解平面資訊
+(From plane)"
+},{
+name:"Get plane",
+translation:"資訊轉平面
+(Get plane)"
+},{
+name:"Deconstruct program targets",
+translation:"程式目標資訊
+(Deconstruct program targets)"
+},{
+name:"Simple trail",
+translation:"顯示路徑
+(Simple trail)"
+},{
+name:"Render Colour",
+translation:"模擬上色
+(Render Colour)"
+},{
+name:"*Translator*",
+translation:"林裕傑 (Victor Lin)"
+}]
