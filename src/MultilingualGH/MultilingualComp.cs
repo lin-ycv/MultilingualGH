@@ -17,7 +17,7 @@ namespace MultilingualGH
 
         public MultilingualComp()
           : base("MultilingualGH", "MGH",
-              "Annotates components with desired language.",
+              UI.CompDes,
               "Params", "Util")
         {
         }
@@ -25,7 +25,7 @@ namespace MultilingualGH
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
-            pManager.AddTextParameter("Exclude", "X", "List of components to exclude from annotations", GH_ParamAccess.list);
+            pManager.AddTextParameter(UI.CompIn, "X", UI.CompInDes, GH_ParamAccess.list);
             pManager[0].Optional = true;
         }
 
@@ -43,14 +43,14 @@ namespace MultilingualGH
                 {
                     if (mgh.compGuid != Guid.Empty && mgh.compGuid != InstanceGuid)
                     {
-                        MessageBox.Show("There is already an instance of MultilingualGH on the canvas. No need for another one.", "MultilingualGH", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(UI.TooMany, "MultilingualGH", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         document.RemoveObject(this, false);
                     }
                     else
                     {
                         mgh.compGuid = InstanceGuid;
                         MultilingualMenu.mghDropdown.Enabled = false;
-                        MultilingualMenu.mghDropdown.ToolTipText = "Menu disabled when MGH component is in use";
+                        MultilingualMenu.mghDropdown.ToolTipText = UI.MenuDisabled;
                         document.ObjectsDeleted += RemovedMe;
                         IGH_Param inputParam = base.Params.Input[0];
                         if (mgh.excludeUser != string.Empty && inputParam.SourceCount == 0)
@@ -80,19 +80,38 @@ namespace MultilingualGH
             var canvas = Grasshopper.Instances.ActiveCanvas;
             var items = MultilingualMenu.mghDropdown.DropDownItems;
             base.AppendAdditionalMenuItems(menu);
-            Menu_AppendItem(menu, "Use Text Label", (s, e) =>
+            Menu_AppendItem(menu, UI.UseTextLabel, (s, e) =>
             {
                 mgh.textLabel = !mgh.textLabel;
                 ((ToolStripComboBox)items["Method"]).SelectedIndex = mgh.textLabel ? 1 : 0;
                 MultilingualInstance.EventHandler(canvas, mgh);
             }, true, mgh.textLabel);
-            Menu_AppendItem(menu, "Use Default Exclusions", (s, e) =>
+            if (mgh.textLabel)
+            {
+                NumericUpDown textSize = new NumericUpDown
+                {
+                    Minimum = 1,
+                    Maximum = 254,
+                    Increment = 1,
+                    Value = mgh.size,
+                    DecimalPlaces = 0
+                };
+                textSize.ValueChanged += (s, e) =>
+                {
+                    var inputSize = ((NumericUpDown)s).Value;
+                    if (inputSize > textSize.Maximum) inputSize = textSize.Maximum;
+                    else if (inputSize < textSize.Minimum) inputSize = textSize.Minimum;
+                    mgh.size = Convert.ToInt32(inputSize);
+                };
+                Menu_AppendCustomItem(menu, textSize);
+            }
+            Menu_AppendItem(menu, UI.UseDefaultExclusions, (s, e) =>
             {
                 mgh.excludeDefault = !mgh.excludeDefault;
                 ((ToolStripMenuItem)items["Default"]).Checked = mgh.excludeDefault;
                 MultilingualInstance.EventHandler(canvas, mgh);
             }, true, mgh.excludeDefault);
-            Menu_AppendItem(menu, "Keep annotations", (s, e) =>
+            Menu_AppendItem(menu, UI.KeepAnnotations, (s, e) =>
             {
                 mgh.keep = !mgh.keep;
                 ((ToolStripMenuItem)items["Keep"]).Checked = mgh.keep;
@@ -103,12 +122,12 @@ namespace MultilingualGH
             {
                 Menu_AppendItem(menu, lang, (s, e) => LangSelection(lang), true, mgh.language == lang);
             }
-            if(Translation.extraFiles.Count>0)
+            if (Translation.extraFiles.Count > 0)
                 Menu_AppendSeparator(menu);
             foreach (var plugin in Translation.extraFiles)
             {
                 string shorten = $"*{plugin.Split('_')[0]}*";
-                Menu_AppendItem(menu, plugin, (s, e) => PluginSelection(shorten), mgh.language!="English", mgh.language != "English" && mgh.extras.Contains(shorten));
+                Menu_AppendItem(menu, plugin, (s, e) => PluginSelection(shorten), mgh.language != "English", mgh.language != "English" && mgh.extras.Contains(shorten));
             }
         }
         internal void LangSelection(string lang)
@@ -123,7 +142,7 @@ namespace MultilingualGH
                     mgh.prevLang = lang;
                     ExpireSolution(true);
                 }
-                MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);                
+                MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
             }
         }
         internal void PluginSelection(string plugin)
@@ -138,7 +157,7 @@ namespace MultilingualGH
             }
             if (mgh.enabled)
             {
-                if(clean)
+                if (clean)
                     Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
                 ExpireSolution(true);
                 MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
@@ -147,7 +166,7 @@ namespace MultilingualGH
 
         protected override void SolveInstance(IGH_DataAccess DA)
         {
-            AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, "Version " + MultilingualGHInfo.Ver);
+            AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, UI.Version + MultilingualGHInfo.Ver);
             var canvas = Grasshopper.Instances.ActiveCanvas;
             if (mgh == null) AddedToDocument(canvas.Document);
             if (Translation.noRoot) this.AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, $" Folder '{Translation.folder}' not found");
@@ -163,7 +182,7 @@ namespace MultilingualGH
                 mgh.excludeUser = string.Empty;
                 ((ToolStripMenuItem)MultilingualMenu.mghDropdown.DropDownItems["User"]).Checked = false;
             }
-            Message = mgh.enabled ? mgh.language : "Disabled";
+            Message = mgh.enabled ? mgh.language : UI.Disabled;
 
             if (mgh.language == "English")
                 DA.SetData(0, "https://github.com/v-xup6/MultilingualGH");
@@ -171,12 +190,12 @@ namespace MultilingualGH
             {
                 Translation.translations[mgh.language].TryGetValue("*Translator*", out string credit);
                 StringBuilder eCredits = new StringBuilder();
-                foreach(string plugin in mgh.extras.Split(new string[] { "**", "*" }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (string plugin in mgh.extras.Split(new string[] { "**", "*" }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     Translation.extraTranslations[plugin].TryGetValue("*Translator*", out string cred);
                     eCredits.Append(", " + cred);
                 }
-                DA.SetData(0, "Translation(s) by " + credit+eCredits.ToString());
+                DA.SetData(0, UI.TranslationBy + credit + eCredits.ToString());
             }
             MultilingualInstance.EventHandler(canvas, mgh);
         }
@@ -208,7 +227,7 @@ namespace MultilingualGH
             {
                 MultilingualInstance.documents.TryGetValue(sender.Document.DocumentID, out MultilingualInstance mgh);
                 mgh.enabled = !mgh.enabled;
-                base.Owner.Message = mgh.enabled ? mgh.language : "Disabled";
+                base.Owner.Message = mgh.enabled ? mgh.language : UI.Disabled;
                 if (mgh.enabled)
                 {
                     if (!mgh.textLabel)
@@ -238,6 +257,8 @@ namespace MultilingualGH
             writer.SetBoolean("MGHKeepAnno", mgh.keep);
             writer.SetBoolean("MGHUseDe", mgh.excludeDefault);
             writer.SetBoolean("MGHLabelMethod", mgh.textLabel);
+            writer.SetString("MGHExtras", mgh.extras);
+            writer.SetInt32("MGHTextSize", mgh.size);
             return base.Write(writer);
         }
         public override bool Read(GH_IO.Serialization.GH_IReader reader)
@@ -251,6 +272,8 @@ namespace MultilingualGH
                 reader.TryGetBoolean("MGHKeepAnno", ref mgh.keep);
                 reader.TryGetBoolean("MGHUseDe", ref mgh.excludeDefault);
                 reader.TryGetBoolean("MGHLabelMethod", ref mgh.textLabel);
+                reader.TryGetString("MGHExtras", ref mgh.extras);
+                reader.TryGetInt32("MGHTextSize", ref mgh.size);
             }
             return base.Read(reader);
         }

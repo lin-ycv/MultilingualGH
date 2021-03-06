@@ -38,7 +38,7 @@ namespace MultilingualGH
             // 
             this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.submitButton.Location = new System.Drawing.Point(210, 246);
+            this.submitButton.Location = new System.Drawing.Point(214, 240);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(66, 27);
             this.submitButton.TabIndex = 0;
@@ -57,7 +57,7 @@ namespace MultilingualGH
             this.textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 7);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(475, 227);
+            this.textBox.Size = new System.Drawing.Size(477, 221);
             this.textBox.TabIndex = 1;
             // 
             // UserForm
@@ -65,16 +65,17 @@ namespace MultilingualGH
             this.AcceptButton = this.submitButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(497, 283);
+            this.ClientSize = new System.Drawing.Size(495, 277);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.submitButton);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(513, 322);
+            this.MinimumSize = new System.Drawing.Size(511, 316);
             this.Name = "UserForm";
             this.Padding = new System.Windows.Forms.Padding(7);
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Define Exclusions";
             this.TopMost = true;
             this.ResumeLayout(false);

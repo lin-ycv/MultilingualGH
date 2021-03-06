@@ -37,7 +37,7 @@ namespace MultilingualGH
                 if (docServer.DocumentCount == 0)
                 {
                     mghDropdown.Enabled = false;
-                    mghDropdown.ToolTipText = "No GH document opened";
+                    mghDropdown.ToolTipText = UI.NoDoc;
                 }
             };
             GH_DocumentEditor docEditor = Grasshopper.Instances.DocumentEditor;
@@ -72,7 +72,7 @@ namespace MultilingualGH
         static void SetupMenu()
         {
             var canvas = Grasshopper.Instances.ActiveCanvas;
-            ToolStripMenuItem toggle = new ToolStripMenuItem { Name = "Version", Text = "Version " + MultilingualGHInfo.Ver, ToolTipText = "Click to enable/disable", Checked = mgh.enabled };
+            ToolStripMenuItem toggle = new ToolStripMenuItem { Name = "Version", Text = UI.Version + MultilingualGHInfo.Ver, ToolTipText = UI.ClickEnable, Checked = mgh.enabled };
             toggle.Click += (s, e) =>
             {
                 mgh.enabled = !mgh.enabled;
@@ -86,21 +86,40 @@ namespace MultilingualGH
                     mgh.prevLang = mgh.language;
                 }
             };
-            ToolStripMenuItem keepOption = new ToolStripMenuItem { Name = "Keep", Text = "Keep Annotations", Checked = mgh.keep };
+            ToolStripMenuItem keepOption = new ToolStripMenuItem { Name = "Keep", Text = UI.KeepAnnotations, Checked = mgh.keep };
             keepOption.Click += (s, e) =>
             {
                 mgh.keep = !mgh.keep;
                 keepOption.Checked = mgh.keep;
             };
+            NumericUpDown textSize = new NumericUpDown
+            {
+                Minimum = 1,
+                Maximum = 254,
+                Increment = 1,
+                Value = mgh.size,
+                DecimalPlaces = 0
+            };
+            textSize.ValueChanged += (s, e) =>
+            {
+                var inputSize = ((NumericUpDown)s).Value;
+                if (inputSize > textSize.Maximum) inputSize = textSize.Maximum;
+                else if (inputSize < textSize.Minimum) inputSize = textSize.Minimum;
+                mgh.size = Convert.ToInt32(inputSize);
+            };
+            textSize.Enabled = mgh.textLabel;
+            ToolStripControlHost numericSize = new ToolStripControlHost(textSize, "TextSize");
+            ToolStripMenuItem defaultOption = new ToolStripMenuItem { Name = "Default", Text = UI.UseDefaultExclusions, Checked = mgh.excludeDefault };
             ToolStripComboBox translationMethod = new ToolStripComboBox { Name = "Method", DropDownStyle = ComboBoxStyle.DropDownList, FlatStyle = FlatStyle.Flat };
             translationMethod.Items.AddRange(new object[] {
-            "Bubble Label",
-            "Text Label"});
+            UI.BubbleLabel,
+            UI.TextLabel});
             translationMethod.SelectedIndex = 1;
             translationMethod.SelectedIndexChanged += (s, e) =>
             {
                 bool basic = translationMethod.SelectedIndex == 0;
                 keepOption.Enabled = basic;
+                textSize.Enabled = !basic;
                 if (!basic)
                 {
                     mgh.keep = false;
@@ -109,7 +128,6 @@ namespace MultilingualGH
                 mgh.textLabel = !basic;
                 if (mgh.compGuid == Guid.Empty) MultilingualInstance.EventHandler(canvas, mgh);
             };
-            ToolStripMenuItem defaultOption = new ToolStripMenuItem { Name = "Default", Text = "Use Default Exclusions", Checked = mgh.excludeDefault };
             defaultOption.Click += (s, e) =>
             {
                 mgh.excludeDefault = !mgh.excludeDefault;
@@ -117,7 +135,7 @@ namespace MultilingualGH
                 canvas.Refresh();
                 defaultOption.Checked = mgh.excludeDefault;
             };
-            ToolStripMenuItem userOption = new ToolStripMenuItem { Name = "User", Text = "Custom Exclusions", Checked = mgh.excludeUser != string.Empty };
+            ToolStripMenuItem userOption = new ToolStripMenuItem { Name = "User", Text = UI.CustomExclusions, Checked = mgh.excludeUser != string.Empty };
             userOption.Click += (s, e) =>
             {
                 UserForm form = new UserForm();
@@ -129,17 +147,19 @@ namespace MultilingualGH
                 }
                 userOption.Checked = mgh.excludeUser != string.Empty;
             };
-            ToolStripMenuItem saveSettings = new ToolStripMenuItem { Name = "Save", Text = "Save As Default", ToolTipText = "Save current settings as the default values for new documents" };
+            ToolStripMenuItem saveSettings = new ToolStripMenuItem { Name = "Save", Text = UI.SaveAsDefault, ToolTipText = UI.SaveDeTooltip };
             saveSettings.Click += (s, e) =>
             {
                 MultilingualInstance.SaveSettings(mgh);
                 MessageBox.Show($"Settings saved as default\r\n" +
                     $"Enabled: {mgh.enabled}\r\n" +
                     $"Text Label: {mgh.textLabel}\r\n" +
+                    $"Text Size: {mgh.size}\r\n" +
                     $"Default Exclusions: {mgh.excludeDefault}\r\n" +
                     $"User Exclusions: {mgh.excludeUser.Length > 0}\r\n" +
                     $"Keep Annotations: {mgh.keep}\r\n" +
-                    $"Language: {mgh.language}");
+                    $"Language: {mgh.language}\r\n" +
+                    $"Plugins: {mgh.extras.Length > 0}\r\n");
             };
             ToolStripMenuItem langOption = new ToolStripMenuItem { Name = "English", Text = "English", Checked = "English" == mgh.language };
             langOption.Click += new EventHandler(LanguageSelection_Click);
@@ -147,6 +167,7 @@ namespace MultilingualGH
             List<ToolStripItem> menuOptions = new List<ToolStripItem> {
                 toggle,
                 translationMethod,
+                numericSize,
                 new ToolStripSeparator(),
                 saveSettings,
                 new ToolStripSeparator(),
@@ -161,7 +182,7 @@ namespace MultilingualGH
             {
                 ToolStripMenuItem help = new ToolStripMenuItem
                 {
-                    Text = "Help"
+                    Text = UI.Help
                 };
                 help.Click += (s, e) =>
                 {
@@ -180,7 +201,7 @@ namespace MultilingualGH
                 foreach (var lang in Translation.files)
                 {
                     Translation.translations[lang].TryGetValue("*Translator*", out string credit);
-                    langOption = new ToolStripMenuItem { Name = lang, Text = lang, ToolTipText = "Translation by " + credit, Checked = lang == mgh.language };
+                    langOption = new ToolStripMenuItem { Name = lang, Text = lang, ToolTipText = UI.TranslationBy + credit, Checked = lang == mgh.language };
                     langOption.Click += new EventHandler(LanguageSelection_Click);
                     menuOptions.Add(langOption);
                 }
@@ -192,7 +213,7 @@ namespace MultilingualGH
                 {
                     var plugin = fileName.Split('_')[0];
                     Translation.extraTranslations[plugin].TryGetValue("*Translator*", out string credit);
-                    var pluginTranslations = new ToolStripMenuItem { Name = fileName, Text = fileName, ToolTipText = "Translation by " + credit, Checked = mgh.extras.Contains($"*{plugin}*") };
+                    var pluginTranslations = new ToolStripMenuItem { Name = fileName, Text = fileName, ToolTipText = UI.TranslationBy + credit, Checked = mgh.extras.Contains($"*{plugin}*") };
                     pluginTranslations.Click += new EventHandler(PluginSelection_Click);
                     menuOptions.Add(pluginTranslations);
                 }
@@ -200,7 +221,7 @@ namespace MultilingualGH
             mghDropdown.DropDownItems.AddRange(menuOptions.ToArray());
             options = mghDropdown.DropDownItems;
             mghDropdown.Enabled = false;
-            mghDropdown.ToolTipText = "No GH document opened";
+            mghDropdown.ToolTipText = UI.NoDoc;
             mghDropdown.Name = "MultilingualGH";
             mghDropdown.Text = "MultilingualGH";
         }
@@ -236,7 +257,7 @@ namespace MultilingualGH
             {
                 foreach (var plugin in Translation.extraFiles)
                 {
-                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin);
+                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin.Split('_')[0]);
                     ((ToolStripMenuItem)options[plugin]).Enabled = true;
                 }
             }
@@ -270,12 +291,15 @@ namespace MultilingualGH
             {
                 ((ToolStripMenuItem)options["Keep"]).Checked = false;
                 ((ToolStripMenuItem)options["Keep"]).Enabled = false;
+                ((NumericUpDown)((ToolStripControlHost)options["TextSize"]).Control).Enabled = true;
             }
             else
             {
                 ((ToolStripMenuItem)options["Keep"]).Enabled = true;
                 ((ToolStripMenuItem)options["Keep"]).Checked = mgh.keep;
+                ((NumericUpDown)((ToolStripControlHost)options["TextSize"]).Control).Enabled = false;
             }
+            ((NumericUpDown)((ToolStripControlHost)options["TextSize"]).Control).Value = mgh.size;
             ((ToolStripMenuItem)options["Default"]).Checked = mgh.excludeDefault;
             ((ToolStripMenuItem)options["User"]).Checked = mgh.excludeUser != string.Empty;
             bool isEng = mgh.language == "English";
@@ -293,7 +317,7 @@ namespace MultilingualGH
                 }
                 else
                 {
-                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin);
+                    ((ToolStripMenuItem)options[plugin]).Checked = mgh.extras.Contains(plugin.Split('_')[0]);
                     ((ToolStripMenuItem)options[plugin]).Enabled = true;
                 }
             }

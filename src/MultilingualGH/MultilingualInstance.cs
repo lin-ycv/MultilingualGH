@@ -18,6 +18,7 @@ namespace MultilingualGH
         internal string extras = string.Empty;
         internal string prevLang;
         internal Guid compGuid = Guid.Empty;
+        internal int size = 8;
 
         internal MultilingualInstance()
         {
@@ -28,6 +29,7 @@ namespace MultilingualGH
             keep = Grasshopper.Instances.Settings.GetValue("MGHKeepAnno", false);
             language = Grasshopper.Instances.Settings.GetValue("MGHLangSel", "English");
             extras = Grasshopper.Instances.Settings.GetValue("MGHExtras", string.Empty);
+            size = Grasshopper.Instances.Settings.GetValue("MGHTextSize", 8);
         }
         static internal void SaveSettings(MultilingualInstance mgh)
         {
@@ -37,7 +39,8 @@ namespace MultilingualGH
             Grasshopper.Instances.Settings.SetValue("MGHUseUe", mgh.excludeUser);
             Grasshopper.Instances.Settings.SetValue("MGHKeepAnno", mgh.keep);
             Grasshopper.Instances.Settings.SetValue("MGHLangSel", mgh.language);
-            Grasshopper.Instances.Settings.GetValue("MGHExtras", mgh.extras);
+            Grasshopper.Instances.Settings.SetValue("MGHExtras", mgh.extras);
+            Grasshopper.Instances.Settings.SetValue("MGHTextSize", mgh.size);
         }
         static internal void EventHandler(GH_Canvas sender, MultilingualInstance mgh)
         {

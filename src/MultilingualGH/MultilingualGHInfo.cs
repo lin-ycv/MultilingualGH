@@ -62,6 +62,5 @@ namespace MultilingualGH
                 return Ver;
             }
         }
-        
     }
 }

@@ -28,6 +28,7 @@ namespace MultilingualGH
         static internal readonly List<string> extraFiles = new List<string>();
         static internal readonly Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
         static internal Dictionary<string, Dictionary<string, string>> extraTranslations = new Dictionary<string, Dictionary<string, string>>();
+        static internal bool UILang = false;
         static byte temp;
 
         static internal void GetFiles()
@@ -39,9 +40,17 @@ namespace MultilingualGH
                 {
                     var translationDictionary = new Dictionary<string, string>();
                     string nameOnly = Path.GetFileNameWithoutExtension(file);
-                    files.Add(nameOnly);
                     ParseFile(file, ref translationDictionary);
-                    translations.Add(nameOnly, translationDictionary);
+                    if(!nameOnly.StartsWith("UILang"))
+                    {
+                        files.Add(nameOnly);
+                        translations.Add(nameOnly, translationDictionary);
+                    }
+                    else if (!UILang)
+                    {
+                        UI.Update(translationDictionary);
+                        UILang = true;
+                    }
                 }
             }
             else
@@ -58,6 +67,18 @@ namespace MultilingualGH
                     extraTranslations.Add(nameOnly.Split('_')[0], translationDictionary);
                 }
             }
+            /*if (Directory.Exists(Path.Combine(folder, "UILang")))
+            {
+                string[] inFolder = Directory.GetFiles(Path.Combine(folder, "UILang"));
+                foreach (var file in inFolder)
+                {
+                    var translationDictionary = new Dictionary<string, string>();
+                    string nameOnly = Path.GetFileNameWithoutExtension(file);
+                    uiFiles.Add(nameOnly);
+                    ParseFile(file, ref translationDictionary);
+                    uiTranslations.Add(nameOnly, translationDictionary);
+                }
+            }*/
         }
         static private void ParseFile(string file, ref Dictionary<string, string> translationDictionary)
         {
@@ -143,7 +164,6 @@ namespace MultilingualGH
             }
             ghDoc.RemoveObjects(shouldRemove.Keys, false);
         }
-        static private Guid galapagosID = new Guid("E6DD2904-14BC-455b-8376-948BF2E3A7BC");
         static internal void Paint(GH_Canvas sender)
         {
             MultilingualInstance.documents.TryGetValue(sender.Document.DocumentID, out MultilingualInstance mgh);
@@ -153,26 +173,27 @@ namespace MultilingualGH
             {
                 var exclusions = ExclusionSetup(mgh);
                 bool ZUI = GH_Canvas.ZoomFadeHigh == 255;
-                float size = ZUI ? 6 : 8;
+                float size = (float)(ZUI ? mgh.size*0.5 : mgh.size);
+                Font font = new Font("sans-serif", size);
+                SolidBrush brush = new SolidBrush(Color.Black);
+                StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Far };
                 foreach (var comp in sender.Document.Objects)
                 {
-                    if (IsExclusion(comp, exclusions) || comp is GH_Group) continue;
+                    RectangleF bnd = comp.Attributes.Bounds;
+                    if (!sender.Viewport.IsVisible(ref bnd, 20) || IsExclusion(comp, exclusions) || comp is GH_Group) continue;
                     RectangleF anchor = comp.Attributes.Bounds;
                     float x = anchor.X + 0.5f * anchor.Width;
-                    float y;
-                    if (comp.ComponentGuid == galapagosID || ((IGH_ActiveObject)comp).RuntimeMessageLevel == GH_RuntimeMessageLevel.Blank || ZUI)
-                        y = anchor.Y - 0.25f * size;
+                    float y = anchor.Y - 0.1f * size;
+                    /*if (!(comp is IGH_ActiveObject component) || component.RuntimeMessageLevel == GH_RuntimeMessageLevel.Blank || ZUI)
+                        y = anchor.Y - 0.1f * size;
                     else
-                        y = anchor.Y - 1.25f * size;
+                        y = anchor.Y - 1.25f * size;*/
 
-                    Font font = new Font("Arial", size);
-                    SolidBrush brush = new SolidBrush(Color.Black);
-                    StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Far };
                     sender.Graphics.DrawString(Alias(mgh, comp), font, brush, x, y, alignment);
-                    font.Dispose();
-                    brush.Dispose();
-                    alignment.Dispose();
                 }
+                font.Dispose();
+                brush.Dispose();
+                alignment.Dispose();
             }
         }
         static ConcurrentDictionary<string, byte> ExclusionSetup(MultilingualInstance mgh)
