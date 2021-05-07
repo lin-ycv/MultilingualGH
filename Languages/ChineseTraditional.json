@@ -1,2561 +1,1922 @@
 [{
-name:"Point",
-translation:"點
-Point"
-},{
-name:"Vector",
-translation:"向量
-Vector"
-},{
-name:"Circle",
-translation:"圓容器
-Circle",
-category:"Params"
-},{
-name:"Circle",
-translation:"創圓
-Circle"
-},{
-name:"Curve",
-translation:"線條
-Curve"
-},{
-name:"Plane",
-translation:"平面
-Plane"
-},{
-name:"Circular Arc",
-translation:"圓弧
-Circular Arc"
-},{
-name:"Line",
-translation:"直線
-Line"
-},{
-name:"Rectangle",
-translation:"矩形
-Rectangle"
-},{
-name:"Box",
-translation:"立方體
-Box"
-},{
-name:"Mesh",
-translation:"網格
-Mesh"
-},{
-name:"Surface",
-translation:"面
-Surface"
-},{
-name:"Brep",
-translation:"邊界表示幾何
-Brep"
-},{
-name:"Mesh Face",
-translation:"網格面
-Mesh Face"
-},{
-name:"Twisted Box",
-translation:"扭曲立方體
-Twisted Box"
-},{
-name:"Field",
-translation:"向量場
-Field"
-},{
-name:"Geometry Cache",
-translation:"幾何快取
-Geometry Cache"
-},{
-name:"Group",
-translation:"群組
-Group"
-},{
-name:"Geometry",
-translation:"幾何
-Geometry"
-},{
-name:"Geometry Pipeline",
-translation:"幾何連結
-Geometry Pipeline"
-},{
-name:"Transform",
-translation:"移動
-Transform"
-},{
-name:"Boolean",
-translation:"布林
-Boolean"
-},{
-name:"Number",
-translation:"數字
-Number"
-},{
-name:"Integer",
-translation:"整數
-Integer"
-},{
-name:"Text",
-translation:"文字
-Text"
-},{
-name:"Colour",
-translation:"顏色
-Colour"
+"name":"Point",
+"translation":"點"
 },{
-name:"Culture",
-translation:"文化特性
-Culture"
+"name":"Vector",
+"translation":"向量"
 },{
-name:"Domain2",
-translation:"區間2
-Domain2"
+"name":"Circle",
+"translation":"圓容器",
+"category":"Params"
 },{
-name:"Matrix",
-translation:"矩陣
-Matrix"
+"name":"Circle",
+"translation":"創圓"
 },{
-name:"Complex",
-translation:"複數
-Complex"
+"name":"Curve",
+"translation":"線條"
 },{
-name:"Domain",
-translation:"區間
-Domain"
+"name":"Plane",
+"translation":"平面"
 },{
-name:"Guid",
-translation:"識別碼
-Guid"
+"name":"Circular Arc",
+"translation":"圓弧"
 },{
-name:"Time",
-translation:"時間
-Time"
+"name":"Line",
+"translation":"直線"
 },{
-name:"Data",
-translation:"資訊
-Data"
+"name":"Rectangle",
+"translation":"矩形"
 },{
-name:"File Path",
-translation:"文件路徑
-File Path"
+"name":"Box",
+"translation":"立方體"
 },{
-name:"Data Path",
-translation:"資料層路徑
-Data Path"
+"name":"Mesh",
+"translation":"網格"
 },{
-name:"Shader",
-translation:"著色器
-Shader"
+"name":"Surface",
+"translation":"面"
 },{
-name:"Control Knob",
-translation:"數值旋鈕
-Control Knob"
+"name":"Brep",
+"translation":"邊界表示幾何"
 },{
-name:"Value List",
-translation:"清單
-Value List"
+"name":"Mesh Face",
+"translation":"網格面"
 },{
-name:"Calendar",
-translation:"日曆
-Calendar"
+"name":"Twisted Box",
+"translation":"扭曲立方體"
 },{
-name:"Colour Picker",
-translation:"調色
-Colour Picker"
+"name":"Field",
+"translation":"向量場"
 },{
-name:"Colour Wheel",
-translation:"色環
-Colour Wheel"
+"name":"Geometry Cache",
+"translation":"幾何快取"
 },{
-name:"Graph Mapper",
-translation:"圖表映射
-Graph Mapper"
+"name":"Group",
+"translation":"群組"
 },{
-name:"Clock",
-translation:"時鐘
-Clock"
+"name":"Geometry",
+"translation":"幾何"
 },{
-name:"Colour Swatch",
-translation:"色板
-Colour Swatch"
+"name":"Geometry Pipeline",
+"translation":"幾何連結"
 },{
-name:"Gradient",
-translation:"漸層
-Gradient"
+"name":"Transform",
+"translation":"移動"
 },{
-name:"Image Sampler",
-translation:"影像取樣
-Image Sampler"
+"name":"Boolean",
+"translation":"布林"
 },{
-name:"Import Coordinates",
-translation:"匯入坐標
-Import Coordinates"
+"name":"Number",
+"translation":"數字"
 },{
-name:"Import PDB",
-translation:"匯入PDB
-Import PDB"
+"name":"Integer",
+"translation":"整數"
 },{
-name:"Object Details",
-translation:"物件細節
-Object Details"
+"name":"Text",
+"translation":"文字"
 },{
-name:"Import 3DM",
-translation:"匯入3DM
-Import 3DM"
+"name":"Colour",
+"translation":"顏色"
 },{
-name:"Import Image",
-translation:"匯入圖片
-Import Image"
+"name":"Culture",
+"translation":"文化特性"
 },{
-name:"Import SHP",
-translation:"匯入SHP
-Import SHP"
+"name":"Domain2",
+"translation":"區間2"
 },{
-name:"Read File",
-translation:"讀取檔案
-Read File"
+"name":"Matrix",
+"translation":"矩陣"
 },{
-name:"Cherry Picker",
-translation:"完美單選
-Cherry Picker"
+"name":"Complex",
+"translation":"複數"
 },{
-name:"Param Viewer",
-translation:"顯示資料結構
-Param Viewer"
+"name":"Domain",
+"translation":"區間"
 },{
-name:"Jump",
-translation:"跳至
-Jump"
+"name":"Guid",
+"translation":"識別碼"
 },{
-name:"Data Dam",
-translation:"數據大壩
-Data Dam"
+"name":"Time",
+"translation":"時間"
 },{
-name:"Relay",
-translation:"節點
-Relay"
+"name":"Data",
+"translation":"資訊"
 },{
-name:"Timer",
-translation:"計時器
-Timer"
+"name":"File Path",
+"translation":"文件路徑"
 },{
-name:"Trigger",
-translation:"計時器
-Trigger"
+"name":"Data Path",
+"translation":"資料層路徑"
 },{
-name:"Data Recorder",
-translation:"黑盒子
-Data Recorder"
+"name":"Shader",
+"translation":"著色器"
 },{
-name:"Suirify",
-translation:"資料結構最簡化
-Suirify"
+"name":"Control Knob",
+"translation":"數值旋鈕"
 },{
-name:"Cluster Input",
-translation:"打包輸入
-Cluster Input"
+"name":"Value List",
+"translation":"清單"
 },{
-name:"Data Input",
-translation:"資訊輸入
-Data Input"
+"name":"Calendar",
+"translation":"日曆"
 },{
-name:"Cluster Output",
-translation:"打包輸出
-Cluster Output"
+"name":"Colour Picker",
+"translation":"調色"
 },{
-name:"Data Output",
-translation:"資訊輸出
-Data Output"
+"name":"Colour Wheel",
+"translation":"色環"
 },{
-name:"Fitness Landscape",
-translation:"適應度景觀
-Fitness Landscape"
+"name":"Graph Mapper",
+"translation":"圖表映射"
 },{
-name:"Gene Pool",
-translation:"基因庫
-Gene Pool"
+"name":"Clock",
+"translation":"時鐘"
 },{
-name:"Galapagos",
-translation:"反覆試驗
-Galapagos"
+"name":"Colour Swatch",
+"translation":"色板"
 },{
-name:"Construct Domain",
-translation:"創造區間
-Construct Domain"
+"name":"Gradient",
+"translation":"漸層"
 },{
-name:"Deconstruct Domain",
-translation:"區間界限
-Deconstruct Domain"
+"name":"Image Sampler",
+"translation":"影像取樣"
 },{
-name:"Bounds",
-translation:"界限
-Bounds"
+"name":"Import Coordinates",
+"translation":"匯入坐標"
 },{
-name:"Consecutive Domains",
-translation:"連續區間
-Consecutive Domains"
+"name":"Import PDB",
+"translation":"匯入PDB"
 },{
-name:"Divide Domain",
-translation:"區間分割
-Divide Domain"
+"name":"Object Details",
+"translation":"物件細節"
 },{
-name:"Find Domain",
-translation:"區間查詢
-Find Domain"
+"name":"Import 3DM",
+"translation":"匯入3DM"
 },{
-name:"Includes",
-translation:"包含
-Includes"
+"name":"Import Image",
+"translation":"匯入圖片"
 },{
-name:"Remap Numbers",
-translation:"映射數字
-Remap Numbers"
+"name":"Import SHP",
+"translation":"匯入SHP"
 },{
-name:"Construct Domain2",
-translation:"創造區間²
-Construct Domain2"
+"name":"Read File",
+"translation":"讀取檔案"
 },{
-name:"Deconstruct Domain2",
-translation:"區間²界限
-Deconstruct Domain2"
+"name":"Cherry Picker",
+"translation":"完美單選"
 },{
-name:"Bounds 2D",
-translation:"界限2D
-Bounds 2D"
+"name":"Param Viewer",
+"translation":"顯示資料結構"
 },{
-name:"Divide Domain2",
-translation:"分割區間²
-Divide Domain2"
+"name":"Jump",
+"translation":"跳至"
 },{
-name:"Construct Matrix",
-translation:"建立矩陣
-Construct Matrix"
+"name":"Data Dam",
+"translation":"數據大壩"
 },{
-name:"Deconstruct Matrix",
-translation:"拆解矩陣
-Deconstruct Matrix"
+"name":"Relay",
+"translation":"節點"
 },{
-name:"Display Matrix",
-translation:"顯示矩陣
-Display Matrix"
+"name":"Timer",
+"translation":"計時器"
 },{
-name:"Invert Matrix",
-translation:"反矩陣
-Invert Matrix"
+"name":"Trigger",
+"translation":"計時器"
 },{
-name:"Transpose Matrix",
-translation:"轉置矩陣
-Transpose Matrix"
+"name":"Data Recorder",
+"translation":"黑盒子"
 },{
-name:"Swap Columns",
-translation:"交換列
-Swap Columns"
+"name":"Suirify",
+"translation":"資料結構最簡化"
 },{
-name:"Swap Rows",
-translation:"交換行
-Swap Rows"
+"name":"Cluster Input",
+"translation":"打包輸入"
 },{
-name:"Addition",
-translation:"加法
-Addition"
+"name":"Data Input",
+"translation":"資訊輸入"
 },{
-name:"Multiplication",
-translation:"乘法
-Multiplication"
+"name":"Cluster Output",
+"translation":"打包輸出"
 },{
-name:"Power",
-translation:"次方
-Power"
+"name":"Data Output",
+"translation":"資訊輸出"
 },{
-name:"Division",
-translation:"除法
-Division"
+"name":"Fitness Landscape",
+"translation":"適應度景觀"
 },{
-name:"Negative",
-translation:"相反數
-Negative"
+"name":"Gene Pool",
+"translation":"基因庫"
 },{
-name:"Subtraction",
-translation:"減法
-Subtraction"
+"name":"Galapagos",
+"translation":"反覆試驗"
 },{
-name:"Absolute",
-translation:"絕對值
-Absolute"
+"name":"Construct Domain",
+"translation":"創造區間"
 },{
-name:"Factorial",
-translation:"階乘
-Factorial"
+"name":"Deconstruct Domain",
+"translation":"區間界限"
 },{
-name:"Interger Division",
-translation:"整除
-Interger Division"
+"name":"Bounds",
+"translation":"界限"
 },{
-name:"Modulus",
-translation:"模除
-Modulus"
+"name":"Consecutive Domains",
+"translation":"連續區間"
 },{
-name:"Mass Addition",
-translation:"累加
-Mass Addition"
+"name":"Divide Domain",
+"translation":"區間分割"
 },{
-name:"Relative Differences",
-translation:"相對差異
-Relative Differences"
+"name":"Find Domain",
+"translation":"區間查詢"
 },{
-name:"Mass Multiplication",
-translation:"累乘
-Mass Multiplication"
+"name":"Includes",
+"translation":"包含"
 },{
-name:"Equality",
-translation:"相等
-Equality"
+"name":"Remap Numbers",
+"translation":"映射數字"
 },{
-name:"Similarity",
-translation:"相似
-Similarity"
+"name":"Construct Domain2",
+"translation":"創造區間²"
 },{
-name:"Larger Than",
-translation:"大於
-Larger Than"
+"name":"Deconstruct Domain2",
+"translation":"區間²界限"
 },{
-name:"Smaller Than",
-translation:"小於
-Smaller Than"
+"name":"Bounds 2D",
+"translation":"界限2D"
 },{
-name:"Gate And",
-translation:"及閘
-Gate And"
+"name":"Divide Domain2",
+"translation":"分割區間²"
 },{
-name:"Gate Or",
-translation:"或閘
-Gate Or"
+"name":"Construct Matrix",
+"translation":"建立矩陣"
 },{
-name:"Gate Not",
-translation:"反閘
-Gate Not"
+"name":"Deconstruct Matrix",
+"translation":"拆解矩陣"
 },{
-name:"Gate Xor",
-translation:"互斥或閘
-Gate Xor"
+"name":"Display Matrix",
+"translation":"顯示矩陣"
 },{
-name:"Gate Majority",
-translation:"多數閘
-Gate Majority"
+"name":"Invert Matrix",
+"translation":"反矩陣"
 },{
-name:"Gate Nor",
-translation:"反或閘
-Gate Nor"
+"name":"Transpose Matrix",
+"translation":"轉置矩陣"
 },{
-name:"Gate Nand",
-translation:"反及閘
-Gate Nand"
+"name":"Swap Columns",
+"translation":"交換列"
 },{
-name:"Gate Xnor",
-translation:"互斥反或閘
-Gate Xnor"
+"name":"Swap Rows",
+"translation":"交換行"
 },{
-name:"Cube",
-translation:"立方
-Cube"
+"name":"Addition",
+"translation":"加法"
 },{
-name:"Cube Root",
-translation:"立方根
-Cube Root"
+"name":"Multiplication",
+"translation":"乘法"
 },{
-name:"Square",
-translation:"平方
-Square"
+"name":"Power",
+"translation":"次方"
 },{
-name:"Square Root",
-translation:"平方根
-Square Root"
+"name":"Division",
+"translation":"除法"
 },{
-name:"One Over X",
-translation:"X分之一
-One Over X"
+"name":"Negative",
+"translation":"相反數"
 },{
-name:"Power of 10",
-translation:"10次方
-Power of 10"
+"name":"Subtraction",
+"translation":"減法"
 },{
-name:"Power of 2",
-translation:"2次方
-Power of 2"
+"name":"Absolute",
+"translation":"絕對值"
 },{
-name:"Power of E",
-translation:"E次方
-Power of E"
+"name":"Factorial",
+"translation":"階乘"
 },{
-name:"Logarithm",
-translation:"對數
-Logarithm"
+"name":"Interger Division",
+"translation":"整除"
 },{
-name:"Natural Logarithm",
-translation:"自然對數
-Natural Logarithm"
+"name":"Modulus",
+"translation":"模除"
 },{
-name:"Evaluate",
-translation:"公式計算
-Evaluate"
+"name":"Mass Addition",
+"translation":"累加"
 },{
-name:"Expression",
-translation:"公式
-Expression"
+"name":"Relative Differences",
+"translation":"相對差異"
 },{
-name:"C# Script",
-translation:"C#程式
-C# Script"
+"name":"Mass Multiplication",
+"translation":"累乘"
 },{
-name:"GhPython Script",
-translation:"GhPython程式
-GhPython Script"
+"name":"Equality",
+"translation":"相等"
 },{
-name:"VB Script",
-translation:"VB程式
-VB Script"
+"name":"Similarity",
+"translation":"相似"
 },{
-name:"Construct Date",
-translation:"日期
-Construct Date"
+"name":"Larger Than",
+"translation":"大於"
 },{
-name:"Construct Exotic Date",
-translation:"曆法日期
-Construct Exotic Date"
+"name":"Smaller Than",
+"translation":"小於"
 },{
-name:"Construct Time",
-translation:"時間
-Construct Time"
+"name":"Gate And",
+"translation":"及閘"
 },{
-name:"Deconstruct Date",
-translation:"拆解日期
-Deconstruct Date"
+"name":"Gate Or",
+"translation":"或閘"
 },{
-name:"Combine Date & Time",
-translation:"合併日期時間
-Combine Date & Time"
+"name":"Gate Not",
+"translation":"反閘"
 },{
-name:"Date Range",
-translation:"時段
-Date Range"
+"name":"Gate Xor",
+"translation":"互斥或閘"
 },{
-name:"Tangent",
-translation:"切線
-Tangent"
+"name":"Gate Majority",
+"translation":"多數閘"
 },{
-name:"Degrees",
-translation:"度
-Degrees"
+"name":"Gate Nor",
+"translation":"反或閘"
 },{
-name:"Radians",
-translation:"弧度
-Radians"
+"name":"Gate Nand",
+"translation":"反及閘"
 },{
-name:"Golden Ratio",
-translation:"黃金比例
-Golden Ratio"
+"name":"Gate Xnor",
+"translation":"互斥反或閘"
 },{
-name:"Extremes",
-translation:"極端
-Extremes"
+"name":"Cube",
+"translation":"立方"
 },{
-name:"Minimum",
-translation:"最小值
-Minimum"
+"name":"Cube Root",
+"translation":"立方根"
 },{
-name:"Maximum",
-translation:"最大值
-Maximum"
+"name":"Square",
+"translation":"平方"
 },{
-name:"Round",
-translation:"四捨五入
-Round"
+"name":"Square Root",
+"translation":"平方根"
 },{
-name:"Average",
-translation:"平均
-Average"
+"name":"One Over X",
+"translation":"X分之一"
 },{
-name:"Truncate",
-translation:"截尾
-Truncate"
+"name":"Power of 10",
+"translation":"10次方"
 },{
-name:"Weighted Average",
-translation:"加權平均
-Weighted Average"
+"name":"Power of 2",
+"translation":"2次方"
 },{
-name:"Insert Items",
-translation:"插入清單
-Insert Items"
+"name":"Power of E",
+"translation":"E次方"
 },{
-name:"List Item",
-translation:"索引挑選
-List Item"
+"name":"Logarithm",
+"translation":"對數"
 },{
-name:"Partition List",
-translation:"分割清單
-Partition List"
+"name":"Natural Logarithm",
+"translation":"自然對數"
 },{
-name:"Reverse List",
-translation:"反轉清單
-Reverse List"
+"name":"Evaluate",
+"translation":"公式計算"
 },{
-name:"Sort List",
-translation:"排序清單
-Sort List"
+"name":"Expression",
+"translation":"公式"
 },{
-name:"Sub List",
-translation:"子清單
-Sub List"
+"name":"C# Script",
+"translation":"C#程式"
 },{
-name:"Item Index",
-translation:"項目索引
-Item Index"
+"name":"GhPython Script",
+"translation":"GhPython程式"
 },{
-name:"List Length",
-translation:"清單長度
-List Length"
+"name":"VB Script",
+"translation":"VB程式"
 },{
-name:"Replace Items",
-translation:"更換項目
-Replace Items"
+"name":"Construct Date",
+"translation":"日期"
 },{
-name:"Shift List",
-translation:"清單平移
-Shift List"
+"name":"Construct Exotic Date",
+"translation":"曆法日期"
 },{
-name:"Split List",
-translation:"切割清單
-Split List"
+"name":"Construct Time",
+"translation":"時間"
 },{
-name:"Dispatch",
-translation:"分配
-Dispatch"
+"name":"Deconstruct Date",
+"translation":"拆解日期"
 },{
-name:"Pick'n'Choose",
-translation:"挑選
-Pick'n'Choose"
+"name":"Combine Date & Time",
+"translation":"合併日期時間"
 },{
-name:"Weave",
-translation:"編織
-Weave"
+"name":"Date Range",
+"translation":"時段"
 },{
-name:"Null Item",
-translation:"無效檢驗
-Null Item"
+"name":"Tangent",
+"translation":"切線"
 },{
-name:"Replace Nulls",
-translation:"更換無效
-Replace Nulls"
+"name":"Degrees",
+"translation":"度"
 },{
-name:"Combine Data",
-translation:"合併資料
-Combine Data"
+"name":"Radians",
+"translation":"弧度"
 },{
-name:"Sift Pattern",
-translation:"資料分流
-Sift Pattern"
+"name":"Golden Ratio",
+"translation":"黃金比例"
 },{
-name:"Cross Reference",
-translation:"交叉參考
-Cross Reference"
+"name":"Extremes",
+"translation":"極端"
 },{
-name:"Shortest List",
-translation:"最短清單
-Shortest List"
+"name":"Minimum",
+"translation":"最小值"
 },{
-name:"Longest List",
-translation:"最長清單
-Longest List"
+"name":"Maximum",
+"translation":"最大值"
 },{
-name:"Cull Index",
-translation:"剔除
-Cull Index"
+"name":"Round",
+"translation":"四捨五入"
 },{
-name:"Cull Nth",
-translation:"剔除第N個
-Cull Nth"
+"name":"Average",
+"translation":"平均"
 },{
-name:"Cull Pattern",
-translation:"剔除樣式
-Cull Pattern"
+"name":"Truncate",
+"translation":"截尾"
 },{
-name:"Random Reduce",
-translation:"隨機減少
-Random Reduce"
+"name":"Weighted Average",
+"translation":"加權平均"
 },{
-name:"Char Sequence",
-translation:"字符序列
-Char Sequence"
+"name":"Insert Items",
+"translation":"插入清單"
 },{
-name:"Duplicate Data",
-translation:"資料複製
-Duplicate Data"
+"name":"List Item",
+"translation":"索引挑選"
 },{
-name:"Range",
-translation:"範圍
-Range"
+"name":"Partition List",
+"translation":"分割清單"
 },{
-name:"Repeat Data",
-translation:"重複資料
-Repeat Data"
+"name":"Reverse List",
+"translation":"反轉清單"
 },{
-name:"Series",
-translation:"數字系列
-Series"
+"name":"Sort List",
+"translation":"排序清單"
 },{
-name:"Stack Data",
-translation:"資料堆疊
-Stack Data"
+"name":"Sub List",
+"translation":"子清單"
 },{
-name:"Jitter",
-translation:"打散
-Jitter"
+"name":"Item Index",
+"translation":"項目索引"
 },{
-name:"Random",
-translation:"隨機
-Random"
+"name":"List Length",
+"translation":"清單長度"
 },{
-name:"Create Set",
-translation:"創造字典
-Create Set"
+"name":"Replace Items",
+"translation":"更換項目"
 },{
-name:"Set Difference",
-translation:"字典去除
-Set Difference"
+"name":"Shift List",
+"translation":"清單平移"
 },{
-name:"Set Difference(S)",
-translation:"字典去除差異
-Set Difference(S)"
+"name":"Split List",
+"translation":"切割清單"
 },{
-name:"Set Intersection",
-translation:"字典相交
-Set Intersection"
+"name":"Dispatch",
+"translation":"分配"
 },{
-name:"Set Majority",
-translation:"字典多數
-Set Majority"
+"name":"Pick'n'Choose",
+"translation":"挑選"
 },{
-name:"Set Union",
-translation:"字典相加
-Set Union"
+"name":"Weave",
+"translation":"編織"
 },{
-name:"Carthesian Product",
-translation:"配對
-Carthesian Product"
+"name":"Null Item",
+"translation":"無效檢驗"
 },{
-name:"Member Index",
-translation:"單字索引
-Member Index"
+"name":"Replace Nulls",
+"translation":"更換無效"
 },{
-name:"Replace Members",
-translation:"更換單字
-Replace Members"
+"name":"Combine Data",
+"translation":"合併資料"
 },{
-name:"SubSet",
-translation:"子集
-SubSet"
+"name":"Sift Pattern",
+"translation":"資料分流"
 },{
-name:"Delete Consecutive",
-translation:"刪除連續
-Delete Consecutive"
+"name":"Cross Reference",
+"translation":"交叉參考"
 },{
-name:"Find Similar member",
-translation:"尋找相似單字
-Find Similar member"
+"name":"Shortest List",
+"translation":"最短清單"
 },{
-name:"Key/Value Search",
-translation:"關鍵字值搜索
-Key/Value Search"
+"name":"Longest List",
+"translation":"最長清單"
 },{
-name:"Characters",
-translation:"字元
-Characters"
+"name":"Cull Index",
+"translation":"剔除"
 },{
-name:"Concatenate",
-translation:"字串合併
-Concatenate"
+"name":"Cull Nth",
+"translation":"剔除第N個"
 },{
-name:"Text Join",
-translation:"字串連接
-Text Join"
+"name":"Cull Pattern",
+"translation":"剔除樣式"
 },{
-name:"Text Length",
-translation:"字串長度
-Text Length"
+"name":"Random Reduce",
+"translation":"隨機減少"
 },{
-name:"Text Split",
-translation:"切割字串
-Text Split"
+"name":"Char Sequence",
+"translation":"字符序列"
 },{
-name:"Format",
-translation:"格式
-Format"
+"name":"Duplicate Data",
+"translation":"資料複製"
 },{
-name:"Text Case",
-translation:"大小寫
-Text Case"
+"name":"Range",
+"translation":"範圍"
 },{
-name:"Text Fragment",
-translation:"字串片段
-Text Fragment"
+"name":"Repeat Data",
+"translation":"重複資料"
 },{
-name:"Text Trim",
-translation:"文字修飾
-Text Trim"
+"name":"Series",
+"translation":"數字系列"
 },{
-name:"Match Text",
-translation:"正規表達式
-Match Text"
+"name":"Stack Data",
+"translation":"資料堆疊"
 },{
-name:"Replace Text",
-translation:"更換字串
-Replace Text"
+"name":"Jitter",
+"translation":"打散"
 },{
-name:"Sort Text",
-translation:"字串排序
-Sort Text"
+"name":"Random",
+"translation":"隨機"
 },{
-name:"Text Distance",
-translation:"字串距離
-Text Distance "
+"name":"Create Set",
+"translation":"創造字典"
 },{
-name:"Clean Tree",
-translation:"清理資料結構
-Clean Tree"
+"name":"Set Difference",
+"translation":"字典去除"
 },{
-name:"Graft Tree",
-translation:"增層
-Graft Tree"
+"name":"Set Difference(S)",
+"translation":"字典去除差異"
 },{
-name:"Simplify Tree",
-translation:"資料結構簡化
-Simplify Tree"
+"name":"Set Intersection",
+"translation":"字典相交"
 },{
-name:"Trim Tree",
-translation:"回推資料結構層
-Trim Tree"
+"name":"Set Majority",
+"translation":"字典多數"
 },{
-name:"Flatten Tree",
-translation:"壓平資料結構
-Flatten Tree"
+"name":"Set Union",
+"translation":"字典相加"
 },{
-name:"Prune Tree",
-translation:"修剪資料結構
-Prune Tree"
+"name":"Carthesian Product",
+"translation":"配對"
 },{
-name:"Tree Statistics",
-translation:"資料結構資訊
-Tree Statistics"
+"name":"Member Index",
+"translation":"單字索引"
 },{
-name:"Unflatten Tree",
-translation:"重創資料結構
-Unflatten Tree"
+"name":"Replace Members",
+"translation":"更換單字"
 },{
-name:"Entwine",
-translation:"壓平編層
-Entwine"
+"name":"SubSet",
+"translation":"子集"
 },{
-name:"Flip Matrix",
-translation:"層次轉置
-Flip Matrix"
+"name":"Delete Consecutive",
+"translation":"刪除連續"
 },{
-name:"Explode Tree",
-translation:"層次爆炸
-Explode Tree"
+"name":"Find Similar member",
+"translation":"尋找相似單字"
 },{
-name:"Merge",
-translation:"合併
-Merge"
+"name":"Key/Value Search",
+"translation":"關鍵字值搜索"
 },{
-name:"Match Tree",
-translation:"層次相配
-Match Tree"
+"name":"Characters",
+"translation":"字元"
 },{
-name:"Shift Paths",
-translation:"剔除資料結構層
-Shift Paths"
+"name":"Concatenate",
+"translation":"字串合併"
 },{
-name:"Path Mapper",
-translation:"編層
-Path Mapper"
+"name":"Text Join",
+"translation":"字串連接"
 },{
-name:"Split Tree",
-translation:"資料結構層篩選
-Split Tree"
+"name":"Text Length",
+"translation":"字串長度"
 },{
-name:"Stream Filter",
-translation:"選取資料流
-Stream Filter"
+"name":"Text Split",
+"translation":"切割字串"
 },{
-name:"Stream Gate",
-translation:"分流閘
-Stream Gate"
+"name":"Format",
+"translation":"格式"
 },{
-name:"Relative Item",
-translation:"相對選取
-Relative Item"
+"name":"Text Case",
+"translation":"大小寫"
 },{
-name:"Tree Branch",
-translation:"資料結構層選取
-Tree Branch"
+"name":"Text Fragment",
+"translation":"字串片段"
 },{
-name:"Relative Items",
-translation:"相對流選取
-Relative Items"
+"name":"Text Trim",
+"translation":"文字修飾"
 },{
-name:"Tree Item",
-translation:"挑選
-Tree Item"
+"name":"Match Text",
+"translation":"正規表達式"
 },{
-name:"Construct Path",
-translation:"創層次字串
-Construct Path"
+"name":"Replace Text",
+"translation":"更換字串"
 },{
-name:"Deconstruct Path",
-translation:"拆解層次字串
-Deconstruct Path"
+"name":"Sort Text",
+"translation":"字串排序"
 },{
-name:"Replace Paths",
-translation:"更換層次標號
-Replace Paths"
+"name":"Text Distance",
+"translation":"字串距離"
 },{
-name:"Hexagonal",
-translation:"六角型陣列
-Hexagonal"
+"name":"Clean Tree",
+"translation":"清理資料結構"
 },{
-name:"Radial",
-translation:"放射型陣列
-Radial"
+"name":"Graft Tree",
+"translation":"增層"
 },{
-name:"Rectangular",
-translation:"矩形陣列
-Rectangular"
+"name":"Simplify Tree",
+"translation":"資料結構簡化"
 },{
-name:"Square",
-translation:"正方形陣列
-Square"
+"name":"Trim Tree",
+"translation":"回推資料結構層"
 },{
-name:"Triangular",
-translation:"三角形陣列
-Triangular"
+"name":"Flatten Tree",
+"translation":"壓平資料結構"
 },{
-name:"Populate 2D",
-translation:"隨機創點2D
-Populate 2D"
+"name":"Prune Tree",
+"translation":"修剪資料結構"
 },{
-name:"Populate 3D",
-translation:"隨機創點3D
-Populate 3D"
+"name":"Tree Statistics",
+"translation":"資料結構資訊"
 },{
-name:"Populate Geometry",
-translation:"形內隨機創點
-Populate Geometry"
+"name":"Unflatten Tree",
+"translation":"重創資料結構"
 },{
-name:"Deconstruct Plane",
-translation:"拆解平面
-Deconstruct Plane"
+"name":"Entwine",
+"translation":"壓平編層"
 },{
-name:"XZ Plane",
-translation:"XZ平面
-XZ Plane"
+"name":"Flip Matrix",
+"translation":"層次轉置"
 },{
-name:"XY Plane",
-translation:"XY平面
-XY Plane"
+"name":"Explode Tree",
+"translation":"層次爆炸"
 },{
-name:"YZ Plane",
-translation:"YZ平面
-YZ Plane"
+"name":"Merge",
+"translation":"合併"
 },{
-name:"Construct Plane",
-translation:"創造平面
-Construct Plane"
+"name":"Match Tree",
+"translation":"層次相配"
 },{
-name:"Line + Pt",
-translation:"線點創平面
-Line + Pt"
+"name":"Shift Paths",
+"translation":"剔除資料結構層"
 },{
-name:"Plane Fit",
-translation:"平面切合點
-Plane Fit"
+"name":"Path Mapper",
+"translation":"編層"
 },{
-name:"Plane Offset",
-translation:"平面偏移
-Plane Offset"
+"name":"Split Tree",
+"translation":"資料結構層篩選"
 },{
-name:"Line + Line",
-translation:"線線創平面
-Line + Line"
+"name":"Stream Filter",
+"translation":"選取資料流"
 },{
-name:"Plane 3Pt",
-translation:"3點創平面
-Plane 3Pt"
+"name":"Stream Gate",
+"translation":"分流閘"
 },{
-name:"Plane Normal",
-translation:"法線創平面
-Plane Normal"
+"name":"Relative Item",
+"translation":"相對選取"
 },{
-name:"Plane Origin",
-translation:"平面移原點
-Plane Origin"
+"name":"Tree Branch",
+"translation":"資料結構層選取"
 },{
-name:"Adjust Plane",
-translation:"對齊平面法線
-Adjust Plane"
+"name":"Relative Items",
+"translation":"相對流選取"
 },{
-name:"Align Planes",
-translation:"平面對齊平面
-Align Planes"
+"name":"Tree Item",
+"translation":"挑選"
 },{
-name:"Plane Closest Point",
-translation:"平面最點
-Plane Closest Point"
+"name":"Construct Path",
+"translation":"創層次字串"
 },{
-name:"Rotate Plane",
-translation:"旋轉平面
-Rotate Plane"
+"name":"Deconstruct Path",
+"translation":"拆解層次字串"
 },{
-name:"Align Plane",
-translation:"對齊平面
-Align Plane"
+"name":"Replace Paths",
+"translation":"更換層次標號"
 },{
-name:"Flip Plane",
-translation:"翻轉平面
-Flip Plane"
+"name":"Hexagonal",
+"translation":"六角型陣列"
 },{
-name:"Plane Coordinates",
-translation:"新座標系統
-Plane Coordinates"
+"name":"Radial",
+"translation":"放射型陣列"
 },{
-name:"Construct Point",
-translation:"創點
-Construct Point"
+"name":"Rectangular",
+"translation":"矩形陣列"
 },{
-name:"Numbers to Points",
-translation:"座標創點
-Numbers to Points"
+"name":"Square",
+"translation":"正方形陣列"
 },{
-name:"Deconstruct",
-translation:"拆解點
-Deconstruct"
+"name":"Triangular",
+"translation":"三角形陣列"
 },{
-name:"Points to Numbers",
-translation:"點座標
-Points to Numbers"
+"name":"Populate 2D",
+"translation":"隨機創點2D"
 },{
-name:"Point Cylindrical",
-translation:"圓柱座標系點
-Point Cylindrical"
+"name":"Populate 3D",
+"translation":"隨機創點3D"
 },{
-name:"Point Polar",
-translation:"極座標系點
-Point Polar"
+"name":"Populate Geometry",
+"translation":"形內隨機創點"
 },{
-name:"Distance",
-translation:"距離
-Distance"
+"name":"Deconstruct Plane",
+"translation":"拆解平面"
 },{
-name:"Point Oriented",
-translation:"平面座標點
-Point Oriented"
+"name":"XZ Plane",
+"translation":"XZ平面"
 },{
-name:"To Polar",
-translation:"極座標系
-To Polar"
+"name":"XY Plane",
+"translation":"XY平面"
 },{
-name:"Closest Point",
-translation:"最近點
-Closest Point"
+"name":"YZ Plane",
+"translation":"YZ平面"
 },{
-name:"Cull Duplicates",
-translation:"剔除重複點
-Cull Duplicates"
+"name":"Construct Plane",
+"translation":"創造平面"
 },{
-name:"Project Point",
-translation:"投影點
-Project Point"
+"name":"Line + Pt",
+"translation":"線點創平面"
 },{
-name:"Sort Along Curve",
-translation:"沿曲線排序
-Sort Along Curve"
+"name":"Plane Fit",
+"translation":"平面切合點"
 },{
-name:"Closest Points",
-translation:"最近點
-Closest Points"
+"name":"Plane Offset",
+"translation":"平面偏移"
 },{
-name:"Point Groups",
-translation:"點群組
-Point Groups"
+"name":"Line + Line",
+"translation":"線線創平面"
 },{
-name:"Pull Point",
-translation:"拉點
-Pull Point"
+"name":"Plane 3Pt",
+"translation":"3點創平面"
 },{
-name:"Sort Points",
-translation:"排序點
-Sort Points"
+"name":"Plane Normal",
+"translation":"法線創平面"
 },{
-name:"Deconstruct Vector",
-translation:"拆解向量
-Deconstruct Vector"
+"name":"Plane Origin",
+"translation":"平面移原點"
 },{
-name:"Vector XYZ",
-translation:"向量XYZ
-Vector XYZ"
+"name":"Adjust Plane",
+"translation":"對齊平面法線"
 },{
-name:"Unit Vector",
-translation:"單位向量
-Unit Vector"
+"name":"Align Planes",
+"translation":"平面對齊平面"
 },{
-name:"Unit X",
-translation:"X向量
-Unit X"
+"name":"Plane Closest Point",
+"translation":"平面最點"
 },{
-name:"Unit Y",
-translation:"Y向量
-Unit Y"
+"name":"Rotate Plane",
+"translation":"旋轉平面"
 },{
-name:"Unit Z",
-translation:"Z向量
-Unit Z"
+"name":"Align Plane",
+"translation":"對齊平面"
 },{
-name:"Amplitude",
-translation:"向量幅度
-Amplitude"
+"name":"Flip Plane",
+"translation":"翻轉平面"
 },{
-name:"Angle",
-translation:"角度
-Angle"
+"name":"Plane Coordinates",
+"translation":"新座標系統"
 },{
-name:"Cross Product",
-translation:"向量積
-Cross Product"
+"name":"Construct Point",
+"translation":"創點"
 },{
-name:"Dot Product",
-translation:"內積
-Dot Product"
+"name":"Numbers to Points",
+"translation":"座標創點"
 },{
-name:"Reverse",
-translation:"逆向向量
-Reverse"
+"name":"Deconstruct",
+"translation":"拆解點"
 },{
-name:"Vector 2Pt",
-translation:"2點向量
-Vector 2Pt"
+"name":"Points to Numbers",
+"translation":"點座標"
 },{
-name:"Vector Length",
-translation:"向量長度
-Vector Length"
+"name":"Point Cylindrical",
+"translation":"圓柱座標系點"
 },{
-name:"Control Points",
-translation:"控制點
-Control Points"
+"name":"Point Polar",
+"translation":"極座標系點"
 },{
-name:"Curve Middle",
-translation:"線中點
-Curve Middle"
+"name":"Distance",
+"translation":"距離"
 },{
-name:"Deconstruct Rectangle",
-translation:"拆解矩形
-Deconstruct Rectangle"
+"name":"Point Oriented",
+"translation":"平面座標點"
 },{
-name:"Polygon Center",
-translation:"多邊形中心
-Polygon Center"
+"name":"To Polar",
+"translation":"極座標系"
 },{
-name:"Control Polygon",
-translation:"多邊形控制點
-Control Polygon"
+"name":"Closest Point",
+"translation":"最近點"
 },{
-name:"Deconstruct Arc",
-translation:"拆解弧
-Deconstruct Arc"
+"name":"Cull Duplicates",
+"translation":"剔除重複點"
 },{
-name:"End Points",
-translation:"終點
-End Points"
+"name":"Project Point",
+"translation":"投影點"
 },{
-name:"Closed",
-translation:"是封閉
-Closed"
+"name":"Sort Along Curve",
+"translation":"沿曲線排序"
 },{
-name:"Deconstruct Rectangle",
-translation:"拆解長方形
-Deconstruct Rectangle"
+"name":"Closest Points",
+"translation":"最近點"
 },{
-name:"Curve Closest Point",
-translation:"線最近點
-Curve Closest Point"
+"name":"Point Groups",
+"translation":"點群組"
 },{
-name:"Curve Proximity",
-translation:"線最近處
-Curve Proximity"
+"name":"Pull Point",
+"translation":"拉點"
 },{
-name:"Discontinuity",
-translation:"不連續性處
-Discontinuity"
+"name":"Sort Points",
+"translation":"排序點"
 },{
-name:"Planar",
-translation:"是平面
-Planar"
+"name":"Deconstruct Vector",
+"translation":"拆解向量"
 },{
-name:"Curvature Graph",
-translation:"曲率梳
-Curvature Graph"
+"name":"Vector XYZ",
+"translation":"向量XYZ"
 },{
-name:"Curve Nearest Object",
-translation:"線最近物
-Curve Nearest Object"
+"name":"Unit Vector",
+"translation":"單位向量"
 },{
-name:"Curve Side",
-translation:"線左右
-Curve Side"
+"name":"Unit X",
+"translation":"X向量"
 },{
-name:"Curvature",
-translation:"曲率
-Curvature"
+"name":"Unit Y",
+"translation":"Y向量"
 },{
-name:"Derivatives",
-translation:"導數
-Derivatives"
+"name":"Unit Z",
+"translation":"Z向量"
 },{
-name:"Horizontal Frame",
-translation:"水平平面
-Horizontal Frame"
+"name":"Amplitude",
+"translation":"向量幅度"
 },{
-name:"Horizontal Frames",
-translation:"水平平面
-Horizontal Frames"
+"name":"Angle",
+"translation":"角度"
 },{
-name:"Point On Curve",
-translation:"線上點
-Point on Curve"
+"name":"Cross Product",
+"translation":"向量積"
 },{
-name:"Curve Frame",
-translation:"線條平面
-Curve Frame"
+"name":"Dot Product",
+"translation":"內積"
 },{
-name:"Curve Frames",
-translation:"線條平面
-Curve Frames"
+"name":"Reverse",
+"translation":"逆向向量"
 },{
-name:"Evaluate Curve",
-translation:"評估線
-Evaluate Curve"
+"name":"Vector 2Pt",
+"translation":"2點向量"
 },{
-name:"Perp Frame",
-translation:"垂直平面
-Perp Frame"
+"name":"Vector Length",
+"translation":"向量長度"
 },{
-name:"Perp Frames",
-translation:"垂直平面
-Prep Frames"
+"name":"Control Points",
+"translation":"控制點"
 },{
-name:"Torsion",
-translation:"扭轉
-Torsion"
+"name":"Curve Middle",
+"translation":"線中點"
 },{
-name:"Curve Domain",
-translation:"映射線條區間
-Curve Domain"
+"name":"Deconstruct Rectangle",
+"translation":"拆解矩形"
 },{
-name:"Length",
-translation:"長度
-Length"
+"name":"Polygon Center",
+"translation":"多邊形中心"
 },{
-name:"Length Parameter",
-translation:"參數長度
-Length Parameter"
+"name":"Control Polygon",
+"translation":"多邊形控制點"
 },{
-name:"Evaluate Length",
-translation:"評估長度
-Evaluate Length"
+"name":"Deconstruct Arc",
+"translation":"拆解弧"
 },{
-name:"Length Domain",
-translation:"區間長度
-Length Domain"
+"name":"End Points",
+"translation":"終點"
 },{
-name:"Segment Lengths",
-translation:"線段最長短
-Segment Lengths"
+"name":"Closed",
+"translation":"是封閉"
 },{
-name:"Point In Curve",
-translation:"線內點
-Point In Curve"
+"name":"Deconstruct Rectangle",
+"translation":"拆解長方形"
 },{
-name:"Point in Curves",
-translation:"線內點
-Point in Curves"
+"name":"Curve Closest Point",
+"translation":"線最近點"
 },{
-name:"Contour",
-translation:"等高線
-Contour"
+"name":"Curve Proximity",
+"translation":"線最近處"
 },{
-name:"Contour (ex)",
-translation:"等高線(進階)
-Contour (ex)"
+"name":"Discontinuity",
+"translation":"不連續性處"
 },{
-name:"Dash Pattern",
-translation:"虛線
-Dash Pattern"
+"name":"Planar",
+"translation":"是平面"
 },{
-name:"Divide Curve",
-translation:"等長分割
-Divide Curve"
+"name":"Curvature Graph",
+"translation":"曲率梳"
 },{
-name:"Divide Distance",
-translation:"等距分割
-Divide Distance"
+"name":"Curve Nearest Object",
+"translation":"線最近物"
 },{
-name:"Divide Length",
-translation:"長度分割
-Divide Length"
+"name":"Curve Side",
+"translation":"線左右"
 },{
-name:"Shatter",
-translation:"打碎
-Shatter"
+"name":"Curvature",
+"translation":"曲率"
 },{
-name:"Fit Line",
-translation:"線切合點
-Fit Line"
+"name":"Derivatives",
+"translation":"導數"
 },{
-name:"Line 2Plane",
-translation:"平面連接線
-Line 2Plane"
+"name":"Horizontal Frame",
+"translation":"水平平面"
 },{
-name:"Line SDL",
-translation:"線始向長
-Line SDL"
+"name":"Horizontal Frames",
+"translation":"水平平面"
 },{
-name:"Tangent Lines",
-translation:"點圓切線
-Tangent Lines"
+"name":"Point On Curve",
+"translation":"線上點"
 },{
-name:"Tangent Lines (Ex)",
-translation:"外公切線
-Tangent Lines (Ex)"
+"name":"Curve Frame",
+"translation":"線條平面"
 },{
-name:"Tangent Lines (ln)",
-translation:"內公切線
-Tangent Lines (ln)"
+"name":"Curve Frames",
+"translation":"線條平面"
 },{
-name:"Line 4Pt",
-translation:"線點點線
-Line 4Pt"
+"name":"Evaluate Curve",
+"translation":"評估線"
 },{
-name:"Circle CNR",
-translation:"圓中法半
-Circle CNR"
+"name":"Perp Frame",
+"translation":"垂直平面"
 },{
-name:"Circle TanTan",
-translation:"圓圓切線圓
-Circle TanTan"
+"name":"Perp Frames",
+"translation":"垂直平面"
 },{
-name:"InEllipse",
-translation:"內切橢圓
-InEllipse"
+"name":"Torsion",
+"translation":"扭轉"
 },{
-name:"Circle 3Pt",
-translation:"3點圓
-Circle 3Pt"
+"name":"Curve Domain",
+"translation":"映射線條區間"
 },{
-name:"Circle Fit",
-translation:"圓切合點
-Circle Fit"
+"name":"Length",
+"translation":"長度"
 },{
-name:"Circle TanTanTan",
-translation:"圓圓圓切線圓
-Circle TanTanTan"
+"name":"Length Parameter",
+"translation":"參數長度"
 },{
-name:"Ellipse",
-translation:"橢圓
-Ellipse"
+"name":"Evaluate Length",
+"translation":"評估長度"
 },{
-name:"InCircle",
-translation:"內切圓
-InCircle"
+"name":"Length Domain",
+"translation":"區間長度"
 },{
-name:"Arc SED",
-translation:"弧結點方向
-Arc SED"
+"name":"Segment Lengths",
+"translation":"線段最長短"
 },{
-name:"Arc",
-translation:"圓弧
-Arc"
+"name":"Point In Curve",
+"translation":"線內點"
 },{
-name:"Modified Arc",
-translation:"對照圓弧
-Modified Arc"
+"name":"Point in Curves",
+"translation":"線內點"
 },{
-name:"Arc 3Pt",
-translation:"3點圓弧
-Arc 3Pt"
+"name":"Contour",
+"translation":"等高線"
 },{
-name:"BiArc",
-translation:"雙弧
-BiArc"
+"name":"Contour (ex)",
+"translation":"等高線(進階)"
 },{
-name:"Tangent Arcs",
-translation:"圓圓切線弧
-Tangent Arcs"
+"name":"Dash Pattern",
+"translation":"虛線"
 },{
-name:"Polygon",
-translation:"多邊形
-Polygon"
+"name":"Divide Curve",
+"translation":"等長分割"
 },{
-name:"Rectangle 3Pt",
-translation:"3點矩形
-Rectangle 3Pt"
+"name":"Divide Distance",
+"translation":"等距分割"
 },{
-name:"Polygon Edge",
-translation:"多邊形單邊
-Polygon Edge"
+"name":"Divide Length",
+"translation":"長度分割"
 },{
-name:"Rectangle 2Pt",
-translation:"2點矩形
-Rectangle 2Pt"
+"name":"Shatter",
+"translation":"打碎"
 },{
-name:"Bezier Span",
-translation:"2點貝茲曲線
-Bezier Span"
+"name":"Fit Line",
+"translation":"線切合點"
 },{
-name:"Interpolate (t)",
-translation:"切線內插點曲線
-Interpolate (t)"
+"name":"Line 2Plane",
+"translation":"平面連接線"
 },{
-name:"Nurbs Curve",
-translation:"非均勻有理B樣曲線
-Nurbs Curve"
+"name":"Line SDL",
+"translation":"線始向長"
 },{
-name:"PolyLine",
-translation:"聚合線
-PolyLine"
+"name":"Tangent Lines",
+"translation":"點圓切線"
 },{
-name:"Interpolate",
-translation:"內插點曲線
-Interpolate"
+"name":"Tangent Lines (Ex)",
+"translation":"外公切線"
 },{
-name:"Kinky Curve",
-translation:"混合式連接線
-Kinky Curve"
+"name":"Tangent Lines (ln)",
+"translation":"內公切線"
 },{
-name:"Tangent Curve",
-translation:"點切線連接線
-Tangent Curve"
+"name":"Line 4Pt",
+"translation":"線點點線"
 },{
-name:"Curve On Surface",
-translation:"面上連接線
-Curve On Surface"
+"name":"Circle CNR",
+"translation":"圓中法半"
 },{
-name:"Iso Curve",
-translation:"等值線
-Iso Curve"
+"name":"Circle TanTan",
+"translation":"圓圓切線圓"
 },{
-name:"Tween Curve",
-translation:"線間線
-Tween Curve"
+"name":"InEllipse",
+"translation":"內切橢圓"
 },{
-name:"Geodesic",
-translation:"測地線
-Geodesic"
+"name":"Circle 3Pt",
+"translation":"3點圓"
 },{
-name:"Sub Curve",
-translation:"子線段
-Sub Curve"
+"name":"Circle Fit",
+"translation":"圓切合點"
 },{
-name:"Blend Curve",
-translation:"混和曲線
-Blend Curve"
+"name":"Circle TanTanTan",
+"translation":"圓圓圓切線圓"
 },{
-name:"Blend Curve Pt",
-translation:"點混合曲線
-Blend Curve Pt"
+"name":"Ellipse",
+"translation":"橢圓"
 },{
-name:"Catenary",
-translation:"懸鏈線
-Catenary"
+"name":"InCircle",
+"translation":"內切圓"
 },{
-name:"Connect Curves",
-translation:"連接曲線
-Connect Curves"
+"name":"Arc SED",
+"translation":"弧結點方向"
 },{
-name:"Explode",
-translation:"爆炸
-Explode"
+"name":"Arc",
+"translation":"圓弧"
 },{
-name:"Flip Curve",
-translation:"線條反向
-Flip Curve"
+"name":"Modified Arc",
+"translation":"對照圓弧"
 },{
-name:"Extend Curve",
-translation:"延伸線條
-Extend Curve"
+"name":"Arc 3Pt",
+"translation":"3點圓弧"
 },{
-name:"Join Curves",
-translation:"接合線條
-Join Curves"
+"name":"BiArc",
+"translation":"雙弧"
 },{
-name:"Fillet",
-translation:"圓角
-Fillet"
+"name":"Tangent Arcs",
+"translation":"圓圓切線弧"
 },{
-name:"Fillet Distance",
-translation:"圓角距離
-Fillet Distance"
+"name":"Polygon",
+"translation":"多邊形"
 },{
-name:"Fillet Edge",
-translation:"邊緣圓角
-Fillet Edge"
+"name":"Rectangle 3Pt",
+"translation":"3點矩形"
 },{
-name:"Offset Curve Loose",
-translation:"線條偏移(簡單)
-Offset Curve Loose"
+"name":"Polygon Edge",
+"translation":"多邊形單邊"
 },{
-name:"Offset Curve",
-translation:"曲線偏移
-Offset Curve"
+"name":"Rectangle 2Pt",
+"translation":"2點矩形"
 },{
-name:"Project",
-translation:"投影
-Project"
+"name":"Bezier Span",
+"translation":"2點貝茲曲線"
 },{
-name:"Seam",
-translation:"接縫
-Seam"
+"name":"Interpolate (t)",
+"translation":"切線內插點曲線"
 },{
-name:"Offset on Srf",
-translation:"面上偏移
-Offset on Srf"
+"name":"Nurbs Curve",
+"translation":"非均勻有理B樣曲線"
 },{
-name:"Pull Curve",
-translation:"線拉至面
-Pull Curve"
+"name":"PolyLine",
+"translation":"聚合線"
 },{
-name:"Curve To Polyline",
-translation:"轉換為聚合線
-Curve To Polyline"
+"name":"Interpolate",
+"translation":"內插點曲線"
 },{
-name:"Polyline Collapse",
-translation:"簡化聚合線
-Polyline Collapse"
+"name":"Kinky Curve",
+"translation":"混合式連接線"
 },{
-name:"Reduce",
-translation:"剔雜點
-Reduce"
+"name":"Tangent Curve",
+"translation":"點切線連接線"
 },{
-name:"Smooth Polyline",
-translation:"平滑聚合線
-Smooth Polyline"
+"name":"Curve On Surface",
+"translation":"面上連接線"
 },{
-name:"Fit Curve",
-translation:"曲線切合點
-Fit Curve"
+"name":"Iso Curve",
+"translation":"等值線"
 },{
-name:"Rebuild Curve",
-translation:"重建線條
-Rebuild Curve"
+"name":"Tween Curve",
+"translation":"線間線"
 },{
-name:"Simplify Curve",
-translation:"簡化線條
-Simplify Curve"
+"name":"Geodesic",
+"translation":"測地線"
 },{
-name:"Box Corners",
-translation:"立方體角
-Box Corners"
+"name":"Sub Curve",
+"translation":"子線段"
 },{
-name:"Deconstruct Box",
-translation:"拆解立方體
-Deconstruct Box"
+"name":"Blend Curve",
+"translation":"混和曲線"
 },{
-name:"Box Properties",
-translation:"立方體屬性
-Box Properties"
+"name":"Blend Curve Pt",
+"translation":"點混合曲線"
 },{
-name:"Evaluate Box",
-translation:"評立方體
-Evaluate Box"
+"name":"Catenary",
+"translation":"懸鏈線"
 },{
-name:"Brep Edges",
-translation:"幾何邊
-Brep Edges"
+"name":"Connect Curves",
+"translation":"連接曲線"
 },{
-name:"Brep Wireframe",
-translation:"幾何邊框
-Brep Wireframe"
+"name":"Explode",
+"translation":"爆炸"
 },{
-name:"Dimensions",
-translation:"UV尺寸
-Dimensions"
+"name":"Flip Curve",
+"translation":"線條反向"
 },{
-name:"Surface Points",
-translation:"面控制點
-Surface Points"
+"name":"Extend Curve",
+"translation":"延伸線條"
 },{
-name:"Deconstruct Brep",
-translation:"拆解幾何
-Deconstruct Brep"
+"name":"Join Curves",
+"translation":"接合線條"
 },{
-name:"Is Planar",
-translation:"是平面
-Is Planar"
+"name":"Fillet",
+"translation":"圓角"
 },{
-name:"Area",
-translation:"面積
-Area"
+"name":"Fillet Distance",
+"translation":"圓角距離"
 },{
-name:"Volume",
-translation:"體積
-Volume"
+"name":"Fillet Edge",
+"translation":"邊緣圓角"
 },{
-name:"Brep Closest Point",
-translation:"幾何最近點
-Brep Closest Point"
+"name":"Offset Curve Loose",
+"translation":"線條偏移(簡單)"
 },{
-name:"Surface Closest Point",
-translation:"面最近點
-Surface Closest Point"
+"name":"Offset Curve",
+"translation":"曲線偏移"
 },{
-name:"Point In Brep",
-translation:"點在幾何內
-Point In Brep"
+"name":"Project",
+"translation":"投影"
 },{
-name:"Point In Trim",
-translation:"點在顯示面內
-Point In Trim"
+"name":"Seam",
+"translation":"接縫"
 },{
-name:"Point In Breps",
-translation:"點在幾何內
-Point In Breps"
+"name":"Offset on Srf",
+"translation":"面上偏移"
 },{
-name:"Shape In Brep",
-translation:"幾何在幾何內
-Shape In Brep"
+"name":"Pull Curve",
+"translation":"線拉至面"
 },{
-name:"Evaluate Surface",
-translation:"評估面
-Evaluate Surface"
+"name":"Curve To Polyline",
+"translation":"轉換為聚合線"
 },{
-name:"Principal Curvature",
-translation:"主曲率
-Principal Curvature"
+"name":"Polyline Collapse",
+"translation":"簡化聚合線"
 },{
-name:"Surface Curvature",
-translation:"表面曲率
-Surface Curvature"
+"name":"Reduce",
+"translation":"剔雜點"
 },{
-name:"4Point Surface",
-translation:"面4點
-4Point Surface"
+"name":"Smooth Polyline",
+"translation":"平滑聚合線"
 },{
-name:"Surface From Points",
-translation:"點創面
-Surface From Points"
+"name":"Fit Curve",
+"translation":"曲線切合點"
 },{
-name:"Boundary Surfaces",
-translation:"邊界創平面
-Boundary Surfaces"
+"name":"Rebuild Curve",
+"translation":"重建線條"
 },{
-name:"Edge Surface",
-translation:"邊緣創面
-Edge Surface"
+"name":"Simplify Curve",
+"translation":"簡化線條"
 },{
-name:"Loft",
-translation:"斷面混成
-Loft"
+"name":"Box Corners",
+"translation":"立方體角"
 },{
-name:"Network Surface",
-translation:"網絡線創面
-Network Surface"
+"name":"Deconstruct Box",
+"translation":"拆解立方體"
 },{
-name:"Sum Surface",
-translation:"簡單掃掠
-Sum Surface"
+"name":"Box Properties",
+"translation":"立方體屬性"
 },{
-name:"Control Point Loft",
-translation:"控制點斷面混成
-Control Point Loft"
+"name":"Evaluate Box",
+"translation":"評立方體"
 },{
-name:"Fit Loft",
-translation:"斷面混成切合
-Fit Loft"
+"name":"Brep Edges",
+"translation":"幾何邊"
 },{
-name:"Loft Options",
-translation:"斷面混成選項
-Loft Options"
+"name":"Brep Wireframe",
+"translation":"幾何邊框"
 },{
-name:"Ruled Surface",
-translation:"直紋表面
-Ruled Surface"
+"name":"Dimensions",
+"translation":"UV尺寸"
 },{
-name:"Extrude",
-translation:"擠出
-Extrude"
+"name":"Surface Points",
+"translation":"面控制點"
 },{
-name:"Extrude Linear",
-translation:"直線擠出
-Extrude Linear"
+"name":"Deconstruct Brep",
+"translation":"拆解幾何"
 },{
-name:"Extrude Along",
-translation:"沿著擠出
-Extrude Along"
+"name":"Is Planar",
+"translation":"是平面"
 },{
-name:"Extrude Point",
-translation:"擠出至點
-Extrude Point"
+"name":"Area",
+"translation":"面積"
 },{
-name:"Patch",
-translation:"補丁
-Patch"
+"name":"Volume",
+"translation":"體積"
 },{
-name:"Fragment Patch",
-translation:"片段補丁
-Fragment Patch"
+"name":"Brep Closest Point",
+"translation":"幾何最近點"
 },{
-name:"Pipe",
-translation:"圓管
-Pipe"
+"name":"Surface Closest Point",
+"translation":"面最近點"
 },{
-name:"Sweep1",
-translation:"掃掠
-Sweep1"
+"name":"Point In Brep",
+"translation":"點在幾何內"
 },{
-name:"Sweep2",
-translation:"掃掠2
-Sweep2"
+"name":"Point In Trim",
+"translation":"點在顯示面內"
 },{
-name:"Pipe Variable",
-translation:"變形圓管
-Pipe Variable"
+"name":"Point In Breps",
+"translation":"點在幾何內"
 },{
-name:"Plane Surface",
-translation:"平面創面
-Plane Surface"
+"name":"Shape In Brep",
+"translation":"幾何在幾何內"
 },{
-name:"Plane Through Shape",
-translation:"投影面積
-Plane Through Shape"
+"name":"Evaluate Surface",
+"translation":"評估面"
 },{
-name:"Bounding Box",
-translation:"邊界立方體
-Bounding Box"
+"name":"Principal Curvature",
+"translation":"主曲率"
 },{
-name:"Box 2Pt",
-translation:"2點立方體
-Box 2Pt"
+"name":"Surface Curvature",
+"translation":"表面曲率"
 },{
-name:"Box Rectangle",
-translation:"矩形立方體
-Box Rectangle"
+"name":"4Point Surface",
+"translation":"面4點"
 },{
-name:"Center Box",
-translation:"中心立方體
-Center Box"
+"name":"Surface From Points",
+"translation":"點創面"
 },{
-name:"Domain Box",
-translation:"區間立方體
-Domain Box"
+"name":"Boundary Surfaces",
+"translation":"邊界創平面"
 },{
-name:"Cone",
-translation:"錐體
-Cone"
+"name":"Edge Surface",
+"translation":"邊緣創面"
 },{
-name:"Cylinder",
-translation:"圓柱
-Cylinder"
+"name":"Loft",
+"translation":"斷面混成"
 },{
-name:"Quad Sphere",
-translation:"球體
-Quad Sphere"
+"name":"Network Surface",
+"translation":"網絡線創面"
 },{
-name:"Sphere",
-translation:"球體
-Sphere"
+"name":"Sum Surface",
+"translation":"簡單掃掠"
 },{
-name:"Sphere 4Pt",
-translation:"4點球體
-Sphere 4Pt"
+"name":"Control Point Loft",
+"translation":"控制點斷面混成"
 },{
-name:"Sphere Fit",
-translation:"球體切合點
-Sphere Fit"
+"name":"Fit Loft",
+"translation":"斷面混成切合"
 },{
-name:"Divide Surface",
-translation:"面UV點
-Divide Surface"
+"name":"Loft Options",
+"translation":"斷面混成選項"
 },{
-name:"Surface Frames",
-translation:"面UV平面
-Surface Frames"
+"name":"Ruled Surface",
+"translation":"直紋表面"
 },{
-name:"Copy Trim",
-translation:"複製UV裁切
-Copy Trim"
+"name":"Extrude",
+"translation":"擠出"
 },{
-name:"Retrim",
-translation:"重新裁切
-Retrim"
+"name":"Extrude Linear",
+"translation":"直線擠出"
 },{
-name:"Isotrim",
-translation:"區間子面
-Isotrim"
+"name":"Extrude Along",
+"translation":"沿著擠出"
 },{
-name:"Untrim",
-translation:"顯示完整面
-Untrim"
+"name":"Extrude Point",
+"translation":"擠出至點"
 },{
-name:"Brep Join",
-translation:"接合幾何
-Brep Join"
+"name":"Patch",
+"translation":"補丁"
 },{
-name:"Cap Holes Ex",
-translation:"封口(進階)
-Cap Holes Ex"
+"name":"Fragment Patch",
+"translation":"片段補丁"
 },{
-name:"Cap Holes",
-translation:"封口
-Cap Holes"
+"name":"Pipe",
+"translation":"圓管"
 },{
-name:"Merge Faces",
-translation:"結合面
-Merge Faces"
+"name":"Sweep1",
+"translation":"掃掠"
 },{
-name:"Flip",
-translation:"翻面
-Flip"
+"name":"Sweep2",
+"translation":"掃掠2"
 },{
-name:"Offset Surface Loose",
-translation:"偏移面(簡單)
-Offset Surface Loose"
+"name":"Pipe Variable",
+"translation":"變形圓管"
 },{
-name:"Offset Surface",
-translation:"偏移面
-Offset Surface"
+"name":"Plane Surface",
+"translation":"平面創面"
 },{
-name:"Convex Edges",
-translation:"凹凸邊
-Convex Edges"
+"name":"Plane Through Shape",
+"translation":"投影面積"
 },{
-name:"Deconstruct Face",
-translation:"拆解網格面
-Deconstruct Face"
+"name":"Bounding Box",
+"translation":"邊界立方體"
 },{
-name:"Deconstruct Mesh",
-translation:"拆解網格
-Deconstruct Mesh"
+"name":"Box 2Pt",
+"translation":"2點立方體"
 },{
-name:"Face Normals",
-translation:"網格面法線
-Face Normals"
+"name":"Box Rectangle",
+"translation":"矩形立方體"
 },{
-name:"Mesh Edges",
-translation:"網格邊
-Mesh Edges"
+"name":"Center Box",
+"translation":"中心立方體"
 },{
-name:"Face Boundaries",
-translation:"網格面邊界
-Face Boundaries"
+"name":"Domain Box",
+"translation":"區間立方體"
 },{
-name:"Mesh Inclusion",
-translation:"點在網格內
-Mesh Inclusion"
+"name":"Cone",
+"translation":"錐體"
 },{
-name:"Mesh Closest Point",
-translation:"網格最近點
-Mesh Closest Point"
+"name":"Cylinder",
+"translation":"圓柱"
 },{
-name:"Mesh Eval",
-translation:"評估網格
-Mesh Eval"
+"name":"Quad Sphere",
+"translation":"球體"
 },{
-name:"Construct Mesh",
-translation:"創造網格
-Construct Mesh"
+"name":"Sphere",
+"translation":"球體"
 },{
-name:"Mesh Colours",
-translation:"網格顏色
-Mesh Colours"
+"name":"Sphere 4Pt",
+"translation":"4點球體"
 },{
-name:"Mesh Quad",
-translation:"四邊形網格
-Mesh Quad"
+"name":"Sphere Fit",
+"translation":"球體切合點"
 },{
-name:"Mesh Spray",
-translation:"網格噴漆
-Mesh Spray"
+"name":"Divide Surface",
+"translation":"面UV點"
 },{
-name:"Mesh Triangle",
-translation:"三角形網格
-Mesh Triangle"
+"name":"Surface Frames",
+"translation":"面UV平面"
 },{
-name:"Mesh Box",
-translation:"網格立方體
-Mesh Box"
+"name":"Copy Trim",
+"translation":"複製UV裁切"
 },{
-name:"Mesh Plane",
-translation:"網格平面
-Mesh Plane"
+"name":"Retrim",
+"translation":"重新裁切"
 },{
-name:"Mesh Sphere",
-translation:"網格球體
-Mesh Sphere"
+"name":"Isotrim",
+"translation":"區間子面"
 },{
-name:"MeshSphere Ex",
-translation:"四邊形網格球體
-MeshSphere Ex"
+"name":"Untrim",
+"translation":"顯示完整面"
 },{
-name:"Convex Hull",
-translation:"凸包
-Convex Hull"
+"name":"Brep Join",
+"translation":"接合幾何"
 },{
-name:"Delaunay Mesh",
-translation:"德勞內三角化
-Delaunay Mesh"
+"name":"Cap Holes Ex",
+"translation":"封口(進階)"
 },{
-name:"Delaunay Edges",
-translation:"德勞內邊緣
-Delaunay Edges"
+"name":"Cap Holes",
+"translation":"封口"
 },{
-name:"Facet Dome",
-translation:"刻面圓頂
-Facet Dome"
+"name":"Merge Faces",
+"translation":"結合面"
 },{
-name:"Voronoi 3D",
-translation:"沃羅諾伊3D
-Voronoi 3D"
+"name":"Flip",
+"translation":"翻面"
 },{
-name:"Voronoi Groups",
-translation:"自定沃羅諾伊
-Voronoi Groups"
+"name":"Offset Surface Loose",
+"translation":"偏移面(簡單)"
 },{
-name:"Voronoi",
-translation:"沃羅諾伊圖
-Voronoi"
+"name":"Offset Surface",
+"translation":"偏移面"
 },{
-name:"Voronoi Cell",
-translation:"沃羅諾伊細胞
-Voronoi Cell"
+"name":"Convex Edges",
+"translation":"凹凸邊"
 },{
-name:"OcTree",
-translation:"八元樹
-OcTree"
+"name":"Deconstruct Face",
+"translation":"拆解網格面"
 },{
-name:"Proximity 3D",
-translation:"相近3D
-Proximity 3D"
+"name":"Deconstruct Mesh",
+"translation":"拆解網格"
 },{
-name:"Proximity 2D",
-translation:"相近2D
-Proximity 2D"
+"name":"Face Normals",
+"translation":"網格面法線"
 },{
-name:"QuadTree",
-translation:"四元樹
-QuadTree"
+"name":"Mesh Edges",
+"translation":"網格邊"
 },{
-name:"MetaBall",
-translation:"元球
-MetaBall"
+"name":"Face Boundaries",
+"translation":"網格面邊界"
 },{
-name:"MetaBall(t) Custom",
-translation:"自定元球
-MetaBall(t) Custom"
+"name":"Mesh Inclusion",
+"translation":"點在網格內"
 },{
-name:"MetaBall(t)",
-translation:"參數元球
-MetaBall(t)"
+"name":"Mesh Closest Point",
+"translation":"網格最近點"
 },{
-name:"Mesh Brep",
-translation:"幾何創網格
-Mesh Brep"
+"name":"Mesh Eval",
+"translation":"評估網格"
 },{
-name:"Settings (Custom)",
-translation:"網格自定設定
-Settings (Custom)"
+"name":"Construct Mesh",
+"translation":"創造網格"
 },{
-name:"Settings (Speed)",
-translation:"網格快速設定
-Settings (Speed)"
+"name":"Mesh Colours",
+"translation":"網格顏色"
 },{
-name:"Settings (Quality)",
-translation:"網格優質設定
-Settings (Quality)"
+"name":"Mesh Quad",
+"translation":"四邊形網格"
 },{
-name:"Mesh Surface",
-translation:"面創網格
-Mesh Surface"
+"name":"Mesh Spray",
+"translation":"網格噴漆"
 },{
-name:"Simple Mesh",
-translation:"簡單網格
-Simple Mesh"
+"name":"Mesh Triangle",
+"translation":"三角形網格"
 },{
-name:"Blur Mesh",
-translation:"網格混色
-Blur Mesh"
+"name":"Mesh Box",
+"translation":"網格立方體"
 },{
-name:"Cull Vertices",
-translation:"剔除頂點
-Cull Vertices"
+"name":"Mesh Plane",
+"translation":"網格平面"
 },{
-name:"Delete Vertices",
-translation:"刪除頂點
-Delete Vertices"
+"name":"Mesh Sphere",
+"translation":"網格球體"
 },{
-name:"Mesh Join",
-translation:"網格接合
-Mesh Join"
+"name":"MeshSphere Ex",
+"translation":"四邊形網格球體"
 },{
-name:"Mesh Split Plane",
-translation:"平面分割網格
-Mesh Split Plane"
+"name":"Convex Hull",
+"translation":"凸包"
 },{
-name:"Cull Faces",
-translation:"剔除面
-Cull Faces"
+"name":"Delaunay Mesh",
+"translation":"德勞內三角化"
 },{
-name:"Delete Faces",
-translation:"刪除面
-Delete Faces"
+"name":"Delaunay Edges",
+"translation":"德勞內邊緣"
 },{
-name:"Disjoint Mesh",
-translation:"不相交的網格
-Disjoint Mesh"
+"name":"Facet Dome",
+"translation":"刻面圓頂"
 },{
-name:"Mesh Shadow",
-translation:"網格陰影
-Mesh Shadow"
+"name":"Voronoi 3D",
+"translation":"沃羅諾伊3D"
 },{
-name:"Smooth Mesh",
-translation:"平滑網格
-Smooth Mesh"
+"name":"Voronoi Groups",
+"translation":"自定沃羅諾伊"
 },{
-name:"Align Vertices",
-translation:"對齊頂點
-Align Vertices"
+"name":"Voronoi",
+"translation":"沃羅諾伊圖"
 },{
-name:"Quadrangulate",
-translation:"簡化為四邊形網格
-Quadrangulate"
+"name":"Voronoi Cell",
+"translation":"沃羅諾伊細胞"
 },{
-name:"Triangulate",
-translation:"簡化為三角形網格
-Triangulate"
+"name":"OcTree",
+"translation":"八元樹"
 },{
-name:"Unify Mesh",
-translation:"統一法線
-Unify Mesh"
+"name":"Proximity 3D",
+"translation":"相近3D"
 },{
-name:"Weld Mesh",
-translation:"簡化網格
-Weld Mesh"
+"name":"Proximity 2D",
+"translation":"相近2D"
 },{
-name:"Flip Mesh",
-translation:"翻轉網格
-Flip Mesh"
+"name":"QuadTree",
+"translation":"四元樹"
 },{
-name:"Unweld Mesh",
-translation:"網格摺痕
-Unweld Mesh"
+"name":"MetaBall",
+"translation":"元球"
 },{
-name:"Brep | Line",
-translation:"幾何 | 線
-Brep | Line"
+"name":"MetaBall(t) Custom",
+"translation":"自定元球"
 },{
-name:"Line | Line",
-translation:"線 | 線
-Line | Line"
+"name":"MetaBall(t)",
+"translation":"參數元球"
 },{
-name:"Surface | Line",
-translation:"面 | 線
-Surface | Line"
+"name":"Mesh Brep",
+"translation":"幾何創網格"
 },{
-name:"Curve | Line",
-translation:"曲線 | 線
-Curve | Line"
+"name":"Settings (Custom)",
+"translation":"網格自定設定"
 },{
-name:"Mesh | Ray",
-translation:"網眼 | 射線
-Mesh | Ray"
+"name":"Settings (Speed)",
+"translation":"網格快速設定"
 },{
-name:"Brep | Plane",
-translation:"幾何 | 平面
-Brep | Plane"
+"name":"Settings (Quality)",
+"translation":"網格優質設定"
 },{
-name:"Line | Plane",
-translation:"線 | 平面
-Line | Plane"
+"name":"Mesh Surface",
+"translation":"面創網格"
 },{
-name:"Plane | Plane",
-translation:"平面| 平面
-Plane | Plane"
+"name":"Simple Mesh",
+"translation":"簡單網格"
 },{
-name:"Plane Region",
-translation:"平面交集區
-Plane Region"
+"name":"Blur Mesh",
+"translation":"網格混色"
 },{
-name:"Curve | Plane",
-translation:"曲線 | 平面
-Curve | Plane"
+"name":"Cull Vertices",
+"translation":"剔除頂點"
 },{
-name:"Mesh | Plane",
-translation:"網格 | 平面
-Mesh | Plane"
+"name":"Delete Vertices",
+"translation":"刪除頂點"
 },{
-name:"Plane | Plane | Plane",
-translation:" 平面 | 平面 | 平面
-Plane | Plane | Plane"
+"name":"Mesh Join",
+"translation":"網格接合"
 },{
-name:"IsoVist",
-translation:"視域
-IsoVist"
+"name":"Mesh Split Plane",
+"translation":"平面分割網格"
 },{
-name:"IsoVist Ray",
-translation:"視域射線
-IsoVist Ray"
+"name":"Cull Faces",
+"translation":"剔除面"
 },{
-name:"Curve | Curve",
-translation:"曲線 | 曲線
-Curve | Curve"
+"name":"Delete Faces",
+"translation":"刪除面"
 },{
-name:"Curve | Self",
-translation:"曲線自交
-Curve | Self"
+"name":"Disjoint Mesh",
+"translation":"不相交的網格"
 },{
-name:"Multiple Curves",
-translation:"多線交集
-Multiple Curves"
+"name":"Mesh Shadow",
+"translation":"網格陰影"
 },{
-name:"Brep | Brep",
-translation:"幾何 | 幾何
-Brep | Brep"
+"name":"Smooth Mesh",
+"translation":"平滑網格"
 },{
-name:"Brep | Curve",
-translation:"幾何 | 曲線
-Brep | Curve"
+"name":"Align Vertices",
+"translation":"對齊頂點"
 },{
-name:"Surface | Curve",
-translation:"面 | 曲線
-Surface | Curve"
+"name":"Quadrangulate",
+"translation":"簡化為四邊形網格"
 },{
-name:"Surface Split",
-translation:"面切割
-Surface Split"
+"name":"Triangulate",
+"translation":"簡化為三角形網格"
 },{
-name:"Mesh | Curve",
-translation:"網格 | 曲線
-Mesh | Curve"
+"name":"Unify Mesh",
+"translation":"統一法線"
 },{
-name:"Mesh | Mesh",
-translation:"網格 | 網格 
-Mesh | Mesh"
+"name":"Weld Mesh",
+"translation":"簡化網格"
 },{
-name:"Collision Many|Many",
-translation:"多對多碰撞
-Collision Many|Many"
+"name":"Flip Mesh",
+"translation":"翻轉網格"
 },{
-name:"Collision One|Many",
-translation:"一對多碰撞
-Collision One|Many"
+"name":"Unweld Mesh",
+"translation":"網格摺痕"
 },{
-name:"Split with Brep",
-translation:"幾何切線
-Split with Brep"
+"name":"Brep | Line",
+"translation":"幾何 | 線"
 },{
-name:"Split with Breps",
-translation:"幾何切線段
-Split with Breps"
+"name":"Line | Line",
+"translation":"線 | 線"
 },{
-name:"Trim with Brep",
-translation:"幾何刪線
-Trim with Brep"
+"name":"Surface | Line",
+"translation":"面 | 線"
 },{
-name:"Trim with Breps",
-translation:"幾何刪線段
-Trim with Breps"
+"name":"Curve | Line",
+"translation":"曲線 | 線"
 },{
-name:"Trim with Region",
-translation:"區域刪線
-Trim with Region"
+"name":"Mesh | Ray",
+"translation":"網眼 | 射線"
 },{
-name:"Trim with Regions",
-translation:"區域刪線段
-Trim with Regions"
+"name":"Brep | Plane",
+"translation":"幾何 | 平面"
 },{
-name:"Boundary Volume",
-translation:"邊界多面體
-Boundary Volume"
+"name":"Line | Plane",
+"translation":"線 | 平面"
 },{
-name:"Solid Intersection",
-translation:"布林交集
-Solid Intersection"
+"name":"Plane | Plane",
+"translation":"平面| 平面"
 },{
-name:"Split Brep",
-translation:"布林分割
-Split Brep"
+"name":"Plane Region",
+"translation":"平面交集區"
 },{
-name:"Trim Solid",
-translation:"布林修剪
-Trim Solid"
+"name":"Curve | Plane",
+"translation":"曲線 | 平面"
 },{
-name:"Solid Difference",
-translation:"布林差集
-Solid Difference"
+"name":"Mesh | Plane",
+"translation":"網格 | 平面"
 },{
-name:"Solid Union",
-translation:"布林聯集
-Solid Union"
+"name":"Plane | Plane | Plane",
+"translation":" 平面 | 平面 | 平面"
 },{
-name:"Split Brep Multiple",
-translation:"布林分割多
-Split Brep Multiple"
+"name":"IsoVist",
+"translation":"視域"
 },{
-name:"Region Difference",
-translation:"區域差集
-Region Difference"
+"name":"IsoVist Ray",
+"translation":"視域射線"
 },{
-name:"Region Union",
-translation:"區域聯集
-Region Union"
+"name":"Curve | Curve",
+"translation":"曲線 | 曲線"
 },{
-name:"Region Intersection",
-translation:"區域交集
-Region Intersection"
+"name":"Curve | Self",
+"translation":"曲線自交"
 },{
-name:"Region Splits",
-translation:"區域分割
-Region Splits"
+"name":"Multiple Curves",
+"translation":"多線交集"
 },{
-name:"Mesh Difference",
-translation:"網格布林差集
-Mesh Difference"
+"name":"Brep | Brep",
+"translation":"幾何 | 幾何"
 },{
-name:"Mesh Split",
-translation:"網格布林分割
-Mesh Split"
+"name":"Brep | Curve",
+"translation":"幾何 | 曲線"
 },{
-name:"Mesh Intersection",
-translation:"網格布林交集
-Mesh Intersection"
+"name":"Surface | Curve",
+"translation":"面 | 曲線"
 },{
-name:"Mesh Union",
-translation:"網格布林聯集
-Mesh Union"
+"name":"Surface Split",
+"translation":"面切割"
 },{
-name:"Box Slits",
-translation:"榫接
-Box Slits"
+"name":"Mesh | Curve",
+"translation":"網格 | 曲線"
 },{
-name:"Camera Obscura",
-translation:"暗箱
-Camera Obscura"
+"name":"Mesh | Mesh",
+"translation":"網格 | 網格 "
 },{
-name:"Scale",
-translation:"等比例縮放
-Scale"
+"name":"Collision Many|Many",
+"translation":"多對多碰撞"
 },{
-name:"Scale NU",
-translation:"不等比例縮放
-Scale NU"
+"name":"Collision One|Many",
+"translation":"一對多碰撞"
 },{
-name:"Shear",
-translation:"剪力
-Shear"
+"name":"Split with Brep",
+"translation":"幾何切線"
 },{
-name:"Shear Angle",
-translation:"剪切角
-Shear Angle"
+"name":"Split with Breps",
+"translation":"幾何切線段"
 },{
-name:"Box Mapping",
-translation:"立方體映射
-Box Mapping"
+"name":"Trim with Brep",
+"translation":"幾何刪線"
 },{
-name:"Orient Direction",
-translation:"定位方向
-Orient Direction"
+"name":"Trim with Breps",
+"translation":"幾何刪線段"
 },{
-name:"Project Along",
-translation:"投影方向
-Project Along"
+"name":"Trim with Region",
+"translation":"區域刪線"
 },{
-name:"Rectangle Mapping",
-translation:"矩形映射
-Rectangle Mapping"
+"name":"Trim with Regions",
+"translation":"區域刪線段"
 },{
-name:"Triangle Mapping",
-translation:"三角形映射
-Triangle Mapping"
+"name":"Boundary Volume",
+"translation":"邊界多面體"
 },{
-name:"Rectangular Array",
-translation:"長方形陣列
-Rectangular Array"
+"name":"Solid Intersection",
+"translation":"布林交集"
 },{
-name:"Box Array",
-translation:"立方體陣列
-Box Array"
+"name":"Split Brep",
+"translation":"布林分割"
 },{
-name:"Curve Array",
-translation:"曲線陣列
-Curve Array"
+"name":"Trim Solid",
+"translation":"布林修剪"
 },{
-name:"Linear Array",
-translation:"陣列
-Linear Array"
+"name":"Solid Difference",
+"translation":"布林差集"
 },{
-name:"Polar Array",
-translation:"環形陣列
-Polar Array"
+"name":"Solid Union",
+"translation":"布林聯集"
 },{
-name:"Rectanglar Array",
-translation:"矩形陣列
-Rectanglar Array"
+"name":"Split Brep Multiple",
+"translation":"布林分割多"
 },{
-name:"Kaleidoscope",
-translation:"萬花筒
-Kaleidoscope"
+"name":"Region Difference",
+"translation":"區域差集"
 },{
-name:"Mirror",
-translation:"鏡射
-Mirror"
+"name":"Region Union",
+"translation":"區域聯集"
 },{
-name:"Move",
-translation:"移動
-Move"
+"name":"Region Intersection",
+"translation":"區域交集"
 },{
-name:"Move Away From",
-translation:"從...移開
-Move Away From"
+"name":"Region Splits",
+"translation":"區域分割"
 },{
-name:"Move To Plane",
-translation:"移至平面
-Move To Plane"
+"name":"Mesh Difference",
+"translation":"網格布林差集"
 },{
-name:"Orient",
-translation:"定位
-Orient"
+"name":"Mesh Split",
+"translation":"網格布林分割"
 },{
-name:"Rotate",
-translation:"旋轉
-Rotate"
+"name":"Mesh Intersection",
+"translation":"網格布林交集"
 },{
-name:"Rotate 3D",
-translation:"3D旋轉
-Rotate 3D"
+"name":"Mesh Union",
+"translation":"網格布林聯集"
 },{
-name:"Rotate Axis",
-translation:"定軸旋轉
-Rotate Axis"
+"name":"Box Slits",
+"translation":"榫接"
 },{
-name:"Rotate Direction",
-translation:"旋轉至
-Rotate Direction"
+"name":"Camera Obscura",
+"translation":"暗箱"
 },{
-name:"Surface Box",
-translation:"面上立方體
-Surface Box"
+"name":"Scale",
+"translation":"等比例縮放"
 },{
-name:"Box Morph",
-translation:"立方體變形
-Box Morph"
+"name":"Scale NU",
+"translation":"不等比例縮放"
 },{
-name:"Bend Deform",
-translation:"彎曲變形
-Bend Deform"
+"name":"Shear",
+"translation":"剪力"
 },{
-name:"Mirror Surface",
-translation:"面鏡射
-Mirror Surface"
+"name":"Shear Angle",
+"translation":"剪切角"
 },{
-name:"Sporph",
-translation:"變形至
-Sporph"
+"name":"Box Mapping",
+"translation":"立方體映射"
 },{
-name:"Twist",
-translation:"扭轉
-Twist"
+"name":"Orient Direction",
+"translation":"定位方向"
 },{
-name:"Flow",
-translation:"沿著
-Flow"
+"name":"Project Along",
+"translation":"投影方向"
 },{
-name:"Mirror Curve",
-translation:"線鏡射
-Mirror Curve"
+"name":"Rectangle Mapping",
+"translation":"矩形映射"
 },{
-name:"Splop",
-translation:"包
-Splop"
+"name":"Triangle Mapping",
+"translation":"三角形映射"
 },{
-name:"Stretch",
-translation:"伸展
-Stretch"
+"name":"Rectangular Array",
+"translation":"長方形陣列"
 },{
-name:"Taper",
-translation:"漸縮
-Taper"
+"name":"Box Array",
+"translation":"立方體陣列"
 },{
-name:"Map to Surface",
-translation:"貼至
-Map to Surface"
+"name":"Curve Array",
+"translation":"曲線陣列"
 },{
-name:"Point Deform",
-translation:"控制點變形
-Point Deform"
+"name":"Linear Array",
+"translation":"陣列"
 },{
-name:"Transform Matrix",
-translation:"移動矩陣
-Transform Matrix"
+"name":"Polar Array",
+"translation":"環形陣列"
 },{
-name:"Group",
-translation:"群組
-Group"
+"name":"Rectanglar Array",
+"translation":"矩形陣列"
 },{
-name:"Ungroup",
-translation:"分解群組
-Ungroup"
+"name":"Kaleidoscope",
+"translation":"萬花筒"
 },{
-name:"Merge Group",
-translation:"合併群組
-Merge Group"
+"name":"Mirror",
+"translation":"鏡射"
 },{
-name:"Split Group",
-translation:"拆分群組
-Split Group"
+"name":"Move",
+"translation":"移動"
 },{
-name:"Colour CMYK",
-translation:"顏色CMYK
-Colour CMYK"
+"name":"Move Away From",
+"translation":"從...移開"
 },{
-name:"Colour HSL",
-translation:"顏色HSL
-Colour HSL"
+"name":"Move To Plane",
+"translation":"移至平面"
 },{
-name:"Colour HSV",
-translation:"顏色HSV
-Colour HSV"
+"name":"Orient",
+"translation":"定位"
 },{
-name:"Colour L*ab",
-translation:"顏色L*ab
-Colour L*ab"
+"name":"Rotate",
+"translation":"旋轉"
 },{
-name:"Colour LCH",
-translation:"顏色LCH
-Colour LCH"
+"name":"Rotate 3D",
+"translation":"3D旋轉"
 },{
-name:"Colour RGB",
-translation:"顏色RGB
-Colour RGB"
+"name":"Rotate Axis",
+"translation":"定軸旋轉"
 },{
-name:"Colour RGB (f)",
-translation:"顏色RGB(f)
-Colour RGB (f)"
+"name":"Rotate Direction",
+"translation":"旋轉至"
 },{
-name:"Colour XYZ",
-translation:"顏色XYZ
-Colour XYZ"
+"name":"Surface Box",
+"translation":"面上立方體"
 },{
-name:"Split AHSL",
-translation:"拆分AHSL
-Split AHSL"
+"name":"Box Morph",
+"translation":"立方體變形"
 },{
-name:"Split AHSV",
-translation:"拆分AHSV
-Split AHSV"
+"name":"Bend Deform",
+"translation":"彎曲變形"
 },{
-name:"Split ARGB",
-translation:"拆分ARGB
-Split ARGB"
+"name":"Mirror Surface",
+"translation":"面鏡射"
 },{
-name:"Text Tag",
-translation:"文字標籤
-Text Tag"
+"name":"Sporph",
+"translation":"變形至"
 },{
-name:"Text Tag 3D",
-translation:"3D文字標籤
-Text Tag 3D"
+"name":"Twist",
+"translation":"扭轉"
 },{
-name:"Make2D",
-translation:"投影圖
-Make2D"
+"name":"Flow",
+"translation":"沿著"
 },{
-name:"Make2D Parallel View",
-translation:"平行投影圖
-Make2D Parallel View"
+"name":"Mirror Curve",
+"translation":"線鏡射"
 },{
-name:"Make2D Perspective View",
-translation:"透視投影圖
-Make2D Perspective View"
+"name":"Splop",
+"translation":"包"
 },{
-name:"Make2D Rhino View",
-translation:"Rhino投影圖
-Make2D Rhino View"
+"name":"Stretch",
+"translation":"伸展"
 },{
-name:"Bar Graph",
-translation:"條狀圖
-Bar Graph"
+"name":"Taper",
+"translation":"漸縮"
 },{
-name:"Legend",
-translation:"圖例
-Legend"
+"name":"Map to Surface",
+"translation":"貼至"
 },{
-name:"Pie Chart",
-translation:"餅形圖
-Pie Chart"
+"name":"Point Deform",
+"translation":"控制點變形"
 },{
-name:"Quick Graph",
-translation:"快速圖表
-Quick Graph"
+"name":"Transform Matrix",
+"translation":"移動矩陣"
 },{
-name:"Image Gallery",
-translation:"圖片庫
-Image Gallery"
+"name":"Group",
+"translation":"群組"
 },{
-name:"Value Tracker",
-translation:"數值追踪
-Value Tracker"
+"name":"Ungroup",
+"translation":"分解群組"
 },{
-name:"Create Material",
-translation:"自定材料
-Create Material"
+"name":"Merge Group",
+"translation":"合併群組"
 },{
-name:"Custom Preview",
-translation:"上色顯示
-Custom Preview"
+"name":"Split Group",
+"translation":"拆分群組"
 },{
-name:"Cloud Display",
-translation:"點雲顯示
-Cloud Display"
+"name":"Colour CMYK",
+"translation":"顏色CMYK"
 },{
-name:"Dot Display",
-translation:"點顯示
-Dot Display"
+"name":"Colour HSL",
+"translation":"顏色HSL"
 },{
-name:"Symbol (Advanced)",
-translation:"符號(進階)
-Symbol (Advanced)"
+"name":"Colour HSV",
+"translation":"顏色HSV"
 },{
-name:"Symbol (Simple)",
-translation:"符號(簡單)
-Symbol (Simple)"
+"name":"Colour L*ab",
+"translation":"顏色L*ab"
 },{
-name:"Symbol Display",
-translation:"符號顯示
-Symbol Display"
+"name":"Colour LCH",
+"translation":"顏色LCH"
 },{
-name:"Point List",
-translation:"點列表
-Point List"
+"name":"Colour RGB",
+"translation":"顏色RGB"
 },{
-name:"Point Order",
-translation:"點路徑
-Point Order"
+"name":"Colour RGB (f)",
+"translation":"顏色RGB(f)"
 },{
-name:"Vector Display",
-translation:"向量顯示
-Vector Display"
+"name":"Colour XYZ",
+"translation":"顏色XYZ"
 },{
-name:"Vector Display Ex",
-translation:"向量顯示(進階)
-Vector Display Ex"
+"name":"Split AHSL",
+"translation":"拆分AHSL"
 },{
-name:"*Translator*",
-translation:"林裕傑 (Victor Lin)"
+"name":"Split AHSV",
+"translation":"拆分AHSV"
+},{
+"name":"Split ARGB",
+"translation":"拆分ARGB"
+},{
+"name":"Text Tag",
+"translation":"文字標籤"
+},{
+"name":"Text Tag 3D",
+"translation":"3D文字標籤"
+},{
+"name":"Make2D",
+"translation":"投影圖"
+},{
+"name":"Make2D Parallel View",
+"translation":"平行投影圖"
+},{
+"name":"Make2D Perspective View",
+"translation":"透視投影圖"
+},{
+"name":"Make2D Rhino View",
+"translation":"Rhino投影圖"
+},{
+"name":"Bar Graph",
+"translation":"條狀圖"
+},{
+"name":"Legend",
+"translation":"圖例"
+},{
+"name":"Pie Chart",
+"translation":"餅形圖"
+},{
+"name":"Quick Graph",
+"translation":"快速圖表"
+},{
+"name":"Image Gallery",
+"translation":"圖片庫"
+},{
+"name":"Value Tracker",
+"translation":"數值追踪"
+},{
+"name":"Create Material",
+"translation":"自定材料"
+},{
+"name":"Custom Preview",
+"translation":"上色顯示"
+},{
+"name":"Cloud Display",
+"translation":"點雲顯示"
+},{
+"name":"Dot Display",
+"translation":"點顯示"
+},{
+"name":"Symbol (Advanced)",
+"translation":"符號(進階)"
+},{
+"name":"Symbol (Simple)",
+"translation":"符號(簡單)"
+},{
+"name":"Symbol Display",
+"translation":"符號顯示"
+},{
+"name":"Point List",
+"translation":"點列表"
+},{
+"name":"Point Order",
+"translation":"點路徑"
+},{
+"name":"Vector Display",
+"translation":"向量顯示"
+},{
+"name":"Vector Display Ex",
+"translation":"向量顯示(進階)"
+},{
+"name":"*Translator*",
+"translation":"林裕傑 (Victor Lin)"
 }]
