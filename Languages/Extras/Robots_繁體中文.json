@@ -1,176 +1,133 @@
 [{
-name:"Custom command",
-translation:"指令
-Custom command"
+"name":"Custom command",
+"translation":"指令"
 },{
-name:"Group command",
-translation:"指令群組
-Group command"
+"name":"Group command",
+"translation":"指令群組"
 },{
-name:"Message",
-translation:"註解
-Message"
+"name":"Message",
+"translation":"註解"
 },{
-name:"Pulse DO",
-translation:"數位訊號波
-Pulse DO"
+"name":"Pulse DO",
+"translation":"數位訊號波"
 },{
-name:"Set AO",
-translation:"類比訊號
-Set AO"
+"name":"Set AO",
+"translation":"類比訊號"
 },{
-name:"Set DO",
-translation:"數位訊號
-Set DO"
+"name":"Set DO",
+"translation":"數位訊號"
 },{
-name:"Speed Aproximation",
-translation:"保持速度指令
-Speed Aproximation"
+"name":"Speed Aproximation",
+"translation":"保持速度指令"
 },{
-name:"Stop program",
-translation:"暫停程式
-Stop program"
+"name":"Stop program",
+"translation":"暫停程式"
 },{
-name:"Wait",
-translation:"等
-Wait"
+"name":"Wait",
+"translation":"等"
 },{
-name:"Wait DI",
-translation:"等待
-Wait DI"
+"name":"Wait DI",
+"translation":"等待"
 },{
-name:"Create tool",
-translation:"工具資訊
-Create tool"
+"name":"Create tool",
+"translation":"工具資訊"
 },{
-name:"Load robot system",
-translation:"選擇手臂
-Load robot system"
+"name":"Load robot system",
+"translation":"選擇手臂"
 },{
-name:"Load robot tool",
-translation:"選擇工具
-Load robot tool"
+"name":"Load robot tool",
+"translation":"選擇工具"
 },{
-name:"Create frame",
-translation:"目標平面進階
-Create frame"
+"name":"Create frame",
+"translation":"目標平面進階"
 },{
-name:"Create speed",
-translation:"指定速度
-Create speed"
+"name":"Create speed",
+"translation":"指定速度"
 },{
-name:"Create target",
-translation:"移動目標
-Create target"
+"name":"Create target",
+"translation":"移動目標"
 },{
-name:"Deconstruct target",
-translation:"拆解目標資訊
-Deconstruct target"
+"name":"Deconstruct target",
+"translation":"拆解目標資訊"
 },{
-name:"Check collisions",
-translation:"碰撞檢查
-Check collisions"
+"name":"Check collisions",
+"translation":"碰撞檢查"
 },{
-name:"Create program",
-translation:"創造程式
-Create program"
+"name":"Create program",
+"translation":"創造程式"
 },{
-name:"Custom code",
-translation:"特殊指令
-Custom code"
+"name":"Custom code",
+"translation":"特殊指令"
 },{
-name:"Merge KRL",
-translation:"整合程式碼
-Merge KRL"
+"name":"Merge KRL",
+"translation":"整合程式碼"
 },{
-name:"Kinematics",
-translation:"動力學計算
-Kinematics"
+"name":"Kinematics",
+"translation":"動力學計算"
 },{
-name:"Program simulation",
-translation:"程式模擬
-Program simulation"
+"name":"Program simulation",
+"translation":"程式模擬"
 },{
-name:"IIWA XML",
-translation:"IIWA程式碼
-IIWA XML"
+"name":"IIWA XML",
+"translation":"IIWA程式碼"
 },{
-name:"Remote Connection",
-translation:"遠端控制
-Remote Connection"
+"name":"Remote Connection",
+"translation":"遠端控制"
 },{
-name:"Remote KUKA",
-translation:"遠端控制
-Remote KUKA"
+"name":"Remote KUKA",
+"translation":"遠端控制"
 },{
-name:"Save program",
-translation:"儲存程式
-Save program"
+"name":"Save program",
+"translation":"儲存程式"
 },{
-name:"RobotSystem parameter",
-translation:"手臂參數容器
-RobotSystem parameter"
+"name":"RobotSystem parameter",
+"translation":"手臂參數容器"
 },{
-name:"Command parameter",
-translation:"特殊指令容器
-Command parameter"
+"name":"Command parameter",
+"translation":"特殊指令容器"
 },{
-name:"Frame parameter",
-translation:"目標平面容器
-Frame parameter"
+"name":"Frame parameter",
+"translation":"目標平面容器"
 },{
-name:"Speed parameter",
-translation:"速度容器
-Speed parameter"
+"name":"Speed parameter",
+"translation":"速度容器"
 },{
-name:"Target parameter",
-translation:"移動目標容器
-Target parameter"
+"name":"Target parameter",
+"translation":"移動目標容器"
 },{
-name:"Tool parameter",
-translation:"工具資訊容器
-Tool parameter"
+"name":"Tool parameter",
+"translation":"工具資訊容器"
 },{
-name:"Zone parameter",
-translation:"倒圓角數值容器
-Zone parameter"
+"name":"Zone parameter",
+"translation":"倒圓角數值容器"
 },{
-name:"Program parameter",
-translation:"程式容器
-Program parameter"
+"name":"Program parameter",
+"translation":"程式容器"
 },{
-name:"Toolpath",
-translation:"路徑容器
-Toolpath"
+"name":"Toolpath",
+"translation":"路徑容器"
 },{
-name:"Define Joints",
-translation:"指定各軸角度
-Define Joints"
+"name":"Define Joints",
+"translation":"指定各軸角度"
 },{
-name:"Degrees to radians",
-translation:"度轉內建弧度
-Degrees to radians"
+"name":"Degrees to radians",
+"translation":"度轉內建弧度"
 },{
-name:"From plane",
-translation:"拆解平面資訊
-From plane"
+"name":"From plane",
+"translation":"拆解平面資訊"
 },{
-name:"Get plane",
-translation:"資訊轉平面
-Get plane"
+"name":"Get plane",
+"translation":"資訊轉平面"
 },{
-name:"Deconstruct program targets",
-translation:"程式目標資訊
-Deconstruct program targets"
+"name":"Deconstruct program targets",
+"translation":"程式目標資訊"
 },{
-name:"Simple trail",
-translation:"顯示路徑
-Simple trail"
+"name":"Simple trail",
+"translation":"顯示路徑"
 },{
-name:"Render Colour",
-translation:"模擬上色
-Render Colour"
+"name":"Render Colour",
+"translation":"模擬上色"
 },{
-name:"*Translator*",
-translation:"林裕傑 (Victor Lin)"
+"name":"*Translator*",
+"translation":"林裕傑 (Victor Lin)"
 }]
