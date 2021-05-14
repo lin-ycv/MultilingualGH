@@ -38,9 +38,10 @@ namespace MultilingualGH
             // 
             this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.submitButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.submitButton.Location = new System.Drawing.Point(214, 240);
+            this.submitButton.Location = new System.Drawing.Point(317, 356);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(66, 27);
+            this.submitButton.Size = new System.Drawing.Size(99, 40);
             this.submitButton.TabIndex = 0;
             this.submitButton.Text = "OK";
             this.submitButton.UseVisualStyleBackColor = true;
@@ -49,31 +50,31 @@ namespace MultilingualGH
             // textBox
             // 
             this.textBox.AcceptsReturn = true;
-            this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox.Location = new System.Drawing.Point(9, 9);
-            this.textBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 7);
+            this.textBox.Location = new System.Drawing.Point(14, 14);
+            this.textBox.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(477, 221);
+            this.textBox.Size = new System.Drawing.Size(714, 330);
             this.textBox.TabIndex = 1;
             // 
             // UserForm
             // 
             this.AcceptButton = this.submitButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(495, 277);
+            this.ClientSize = new System.Drawing.Size(734, 412);
             this.Controls.Add(this.textBox);
             this.Controls.Add(this.submitButton);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(511, 316);
+            this.MinimumSize = new System.Drawing.Size(756, 446);
             this.Name = "UserForm";
-            this.Padding = new System.Windows.Forms.Padding(7);
+            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Define Exclusions";

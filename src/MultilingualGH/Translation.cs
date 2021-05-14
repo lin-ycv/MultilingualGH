@@ -41,7 +41,7 @@ namespace MultilingualGH
                     var translationDictionary = new Dictionary<string, string>();
                     string nameOnly = Path.GetFileNameWithoutExtension(file);
                     ParseFile(file, ref translationDictionary);
-                    if(!nameOnly.StartsWith("UILang"))
+                    if (!nameOnly.StartsWith("UILang"))
                     {
                         files.Add(nameOnly);
                         translations.Add(nameOnly, translationDictionary);
@@ -125,31 +125,35 @@ namespace MultilingualGH
             var shouldRemove = new ConcurrentDictionary<IGH_DocumentObject, byte>();
             var newlyAdded = new ConcurrentDictionary<IGH_DocumentObject, byte>();
             var inGroup = new ConcurrentDictionary<IGH_DocumentObject, byte>();
-            Parallel.ForEach(ghDoc.Objects, docObject =>
-            {
-                if (docObject is GH_Group ghGroup)
-                {
-                    var objectsInGroup = ghGroup.Objects();
-                    if (objectsInGroup.Count == 1 && ghGroup.Description == objectsInGroup[0].Name)
-                    {
-                        if (IsExclusion(objectsInGroup[0], exclusions))
-                        {
-                            shouldRemove.TryAdd(docObject, temp);
-                        }
-                        inGroup.TryAdd(objectsInGroup[0], temp);
-                        newlyAdded.TryRemove(objectsInGroup[0], out temp);
-                        return;
-                    }
-                    else return;
-                }
-                else
-                {
-                    if (IsExclusion(docObject, exclusions) || inGroup.ContainsKey(docObject))
-                        return;
-                    else
-                        newlyAdded.TryAdd(docObject, temp);
-                }
-            });
+            Parallel.ForEach(e is GH_DocObjectEventArgs newObj ? newObj.Objects : ghDoc.Objects, docObject =>
+             {
+                 if (docObject is GH_Group ghGroup)
+                 {
+                     var objectsInGroup = ghGroup.Objects();
+                     if (objectsInGroup.Count == 1 && ghGroup.Description == objectsInGroup[0].Name)
+                     {
+                         if (IsExclusion(objectsInGroup[0], exclusions))
+                         {
+                             shouldRemove.TryAdd(docObject, temp);
+                         }
+                         inGroup.TryAdd(objectsInGroup[0], temp);
+                         newlyAdded.TryRemove(objectsInGroup[0], out temp);
+                         return;
+                     }
+                     else return;
+                 }
+                 else
+                 {
+                     if (IsExclusion(docObject, exclusions) || 
+                     inGroup.ContainsKey(docObject) || 
+                     (mgh.nickname == 2 && 
+                        (docObject.NickName == Grasshopper.Instances.ComponentServer.EmitObjectProxy(docObject.ComponentGuid).Desc.NickName || 
+                        docObject.NickName == "")))
+                         return;
+                     else
+                         newlyAdded.TryAdd(docObject, temp);
+                 }
+             });
             foreach (var comp in newlyAdded.Keys)
             {
                 GH_Group annotation = new GH_Group
@@ -173,14 +177,20 @@ namespace MultilingualGH
             {
                 var exclusions = ExclusionSetup(mgh);
                 bool ZUI = GH_Canvas.ZoomFadeHigh == 255;
-                float size = (float)(ZUI ? mgh.size*0.5 : mgh.size);
+                float size = (float)(ZUI ? mgh.size * 0.5 : mgh.size);
                 Font font = new Font("sans-serif", size);
                 SolidBrush brush = new SolidBrush(Color.Black);
                 StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Far };
                 foreach (var comp in sender.Document.Objects)
                 {
                     RectangleF bnd = comp.Attributes.Bounds;
-                    if (!sender.Viewport.IsVisible(ref bnd, 20) || IsExclusion(comp, exclusions) || comp is GH_Group) continue;
+                    if (!sender.Viewport.IsVisible(ref bnd, 20) || 
+                        IsExclusion(comp, exclusions) || 
+                        comp is GH_Group || 
+                        (mgh.nickname == 2 && 
+                            (comp.NickName == Grasshopper.Instances.ComponentServer.EmitObjectProxy(comp.ComponentGuid).Desc.NickName ||
+                            comp.NickName == ""))) 
+                        continue;
                     RectangleF anchor = comp.Attributes.Bounds;
                     float x = anchor.X + 0.5f * anchor.Width;
                     float y = anchor.Y - 0.1f * size;
@@ -217,14 +227,16 @@ namespace MultilingualGH
         }
         static string Alias(MultilingualInstance mgh, IGH_DocumentObject comp)
         {
-            if (mgh.language == "English") return comp.Name;
+            string subfix = mgh.nickname>=1 ? comp.NickName : comp.Name;
+            if (mgh.language == "English") goto End;
             if (translations.TryGetValue(mgh.language, out Dictionary<string, string> index))
                 if (index.TryGetValue(comp.Name + comp.Category, out string translated) || index.TryGetValue(comp.Name, out translated))
-                    return translated;
+                    return translated + (mgh.showeng ? Environment.NewLine + subfix : "");
             if (mgh.extras.Contains(comp.Category) && extraTranslations.TryGetValue(comp.Category, out Dictionary<string, string> eIndex))
                 if (eIndex.TryGetValue(comp.Name, out string eTranslated))
-                    return eTranslated;
-            return comp.Name;
+                    return eTranslated + (mgh.showeng ? Environment.NewLine + subfix : "");
+            End:
+            return subfix;
         }
 
         static internal void Clear(GH_Document ghDoc)

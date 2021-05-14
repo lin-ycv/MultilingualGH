@@ -14,6 +14,8 @@ namespace MultilingualGH
         internal bool excludeDefault = true;
         internal string excludeUser = string.Empty;
         internal bool keep = false;
+        internal bool showeng = true;
+        internal byte nickname = 0;
         internal string language = "English";
         internal string extras = string.Empty;
         internal string prevLang;
@@ -27,6 +29,8 @@ namespace MultilingualGH
             excludeDefault = Grasshopper.Instances.Settings.GetValue("MGHUseDe", true);
             excludeUser = Grasshopper.Instances.Settings.GetValue("MGHUseUe", string.Empty);
             keep = Grasshopper.Instances.Settings.GetValue("MGHKeepAnno", false);
+            showeng = Grasshopper.Instances.Settings.GetValue("MGHShowEng", true);
+            nickname = Grasshopper.Instances.Settings.GetValue("MGHNickname", (byte)0);
             language = Grasshopper.Instances.Settings.GetValue("MGHLangSel", "English");
             extras = Grasshopper.Instances.Settings.GetValue("MGHExtras", string.Empty);
             size = Grasshopper.Instances.Settings.GetValue("MGHTextSize", 8);
@@ -38,6 +42,8 @@ namespace MultilingualGH
             Grasshopper.Instances.Settings.SetValue("MGHUseDe", mgh.excludeDefault);
             Grasshopper.Instances.Settings.SetValue("MGHUseUe", mgh.excludeUser);
             Grasshopper.Instances.Settings.SetValue("MGHKeepAnno", mgh.keep);
+            Grasshopper.Instances.Settings.SetValue("MGHShowEng", mgh.showeng);
+            Grasshopper.Instances.Settings.SetValue("MGHNickname", mgh.nickname);
             Grasshopper.Instances.Settings.SetValue("MGHLangSel", mgh.language);
             Grasshopper.Instances.Settings.SetValue("MGHExtras", mgh.extras);
             Grasshopper.Instances.Settings.SetValue("MGHTextSize", mgh.size);
@@ -53,7 +59,7 @@ namespace MultilingualGH
                 }
                 else
                 {
-                    Translation.CompAdded(sender.Document, 0);
+                    Translation.CompAdded(sender.Document, null);
                     sender.Document.ObjectsAdded += Translation.CompAdded;
                 }
             }

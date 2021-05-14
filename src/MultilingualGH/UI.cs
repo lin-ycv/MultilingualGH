@@ -20,6 +20,10 @@ namespace MultilingualGH
         static public string UseDefaultExclusions { get; set; } = "Use Default Exclusions";
         static public string CustomExclusions { get; set; } = "Custom Exclusions";
         static public string KeepAnnotations { get; set; } = "Keep Annotations";
+        static public string NoNickname { get; set; } = "Show Full Names";
+        static public string NicknamePreferred { get; set; } = "Prefer Nicknames";
+        static public string NicknameOnly { get; set; } = "Only Custom Nicknames";
+        static public string ShowEnglish { get; set; } = "Show English with Translation";
         static public string BubbleLabel { get; set; } = "Bubble Label";
         static public string TextLabel { get; set; } = "Text Label";
         static public string SaveAsDefault { get; set; } = "Save As Default";

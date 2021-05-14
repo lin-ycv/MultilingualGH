@@ -21,7 +21,7 @@ namespace MultilingualGH
               "Params", "Util")
         {
         }
-        public override GH_Exposure Exposure => GH_Exposure.primary | GH_Exposure.obscure;
+        public override GH_Exposure Exposure => GH_Exposure.primary;// | GH_Exposure.obscure;
 
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
@@ -53,7 +53,7 @@ namespace MultilingualGH
                         MultilingualMenu.mghDropdown.ToolTipText = UI.MenuDisabled;
                         document.ObjectsDeleted += RemovedMe;
                         IGH_Param inputParam = base.Params.Input[0];
-                        if (mgh.excludeUser != string.Empty && inputParam.SourceCount == 0)
+                        if (mgh.excludeUser != "" && inputParam.SourceCount == 0)
                         {
                             var exPanel = new GH_Panel();
                             exPanel.CreateAttributes();
@@ -84,7 +84,6 @@ namespace MultilingualGH
             {
                 mgh.textLabel = !mgh.textLabel;
                 ((ToolStripComboBox)items["Method"]).SelectedIndex = mgh.textLabel ? 1 : 0;
-                MultilingualInstance.EventHandler(canvas, mgh);
             }, true, mgh.textLabel);
             if (mgh.textLabel)
             {
@@ -102,9 +101,26 @@ namespace MultilingualGH
                     if (inputSize > textSize.Maximum) inputSize = textSize.Maximum;
                     else if (inputSize < textSize.Minimum) inputSize = textSize.Minimum;
                     mgh.size = Convert.ToInt32(inputSize);
+                    canvas.Refresh();
                 };
                 Menu_AppendCustomItem(menu, textSize);
             }
+            Menu_AppendItem(menu, UI.NicknamePreferred, (s, e) =>
+            {
+                mgh.nickname = (byte) (((ToolStripMenuItem)s).Checked ? 0 : 1);
+                ((ToolStripComboBox)items["Nickname"]).SelectedIndex = mgh.nickname;
+            }, mgh.nickname!=2, mgh.nickname==1);
+            Menu_AppendItem(menu, UI.NicknameOnly, (s, e) =>
+            {
+                mgh.nickname = (byte)(((ToolStripMenuItem)s).Checked ? 0 : 2);
+                ((ToolStripComboBox)items["Nickname"]).SelectedIndex = mgh.nickname;
+            }, true, mgh.nickname == 2);
+            Menu_AppendItem(menu, UI.ShowEnglish, (s, e) =>
+            {
+                mgh.showeng = !mgh.showeng;
+                ((ToolStripMenuItem)items["ShowEnglish"]).Checked = mgh.showeng;
+                MultilingualInstance.EventHandler(canvas, mgh);
+            }, true, mgh.showeng);
             Menu_AppendItem(menu, UI.UseDefaultExclusions, (s, e) =>
             {
                 mgh.excludeDefault = !mgh.excludeDefault;
@@ -138,7 +154,7 @@ namespace MultilingualGH
                 Message = lang;
                 if (mgh.prevLang != lang)
                 {
-                    Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
+                    Translation.Clear(OnPingDocument());
                     mgh.prevLang = lang;
                     ExpireSolution(true);
                 }
@@ -158,7 +174,7 @@ namespace MultilingualGH
             if (mgh.enabled)
             {
                 if (clean)
-                    Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
+                    Translation.Clear(OnPingDocument());
                 ExpireSolution(true);
                 MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
             }
@@ -179,7 +195,7 @@ namespace MultilingualGH
             }
             else
             {
-                mgh.excludeUser = string.Empty;
+                mgh.excludeUser = "";
                 ((ToolStripMenuItem)MultilingualMenu.mghDropdown.DropDownItems["User"]).Checked = false;
             }
             Message = mgh.enabled ? mgh.language : UI.Disabled;
@@ -207,9 +223,10 @@ namespace MultilingualGH
             {
                 ghDoc.ObjectsDeleted -= RemovedMe;
                 ghDoc.ObjectsAdded -= Translation.CompAdded;
+                if (!mgh.keep) Translation.Clear(ghDoc);
                 if (mgh.enabled) mgh.enabled = false;
                 mgh.compGuid = Guid.Empty;
-                MultilingualMenu.mghDropdown.ToolTipText = string.Empty;
+                MultilingualMenu.mghDropdown.ToolTipText = "";
                 MultilingualMenu.mghDropdown.Enabled = true;
                 MultilingualMenu.UpdateMenu(mgh);
             }
@@ -263,7 +280,7 @@ namespace MultilingualGH
         }
         public override bool Read(GH_IO.Serialization.GH_IReader reader)
         {
-            var ghDoc = Grasshopper.Instances.ActiveCanvas.Document;
+            var ghDoc = OnPingDocument();
             if (ghDoc != null)
             {
                 MultilingualInstance.documents.TryGetValue(ghDoc.DocumentID, out mgh);
