@@ -10,6 +10,10 @@ UseTextLabel=純文字顯示法
 UseDefaultExclusions=使用預設排除
 CustomExclusions=自訂排除
 KeepAnnotations=保留翻譯
+NoNickname=顯示全名
+NicknamePreferred=顯示縮寫
+NicknameOnly=只顯示制定名稱
+ShowEnglish=翻譯後面顯示英文
 SaveAsDefault=儲存設定為預設
 
 TooMany=GH文件內已經有使用MGH的電池，不需要第二顆

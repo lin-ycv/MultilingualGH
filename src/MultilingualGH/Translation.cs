@@ -6,6 +6,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Windows.Forms;
@@ -24,6 +25,7 @@ namespace MultilingualGH
         static internal readonly string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "GHLanguage");
         static internal bool noRoot = false;
         static internal readonly string[] exclusionDefault = new string[] { "MultilingualGH", "Scribble", "Panel", "Value List", "Button", "Boolean Toggle", "Number Slider" };
+        static internal readonly string[] validExt = new string[] { ".json", ".txt" };
         static internal readonly List<string> files = new List<string>();
         static internal readonly List<string> extraFiles = new List<string>();
         static internal readonly Dictionary<string, Dictionary<string, string>> translations = new Dictionary<string, Dictionary<string, string>>();
@@ -38,18 +40,21 @@ namespace MultilingualGH
                 string[] inFolder = Directory.GetFiles(folder);
                 foreach (var file in inFolder)
                 {
-                    var translationDictionary = new Dictionary<string, string>();
-                    string nameOnly = Path.GetFileNameWithoutExtension(file);
-                    ParseFile(file, ref translationDictionary);
-                    if (!nameOnly.StartsWith("UILang"))
+                    if (validExt.Contains(Path.GetExtension(file), StringComparer.OrdinalIgnoreCase))
                     {
-                        files.Add(nameOnly);
-                        translations.Add(nameOnly, translationDictionary);
-                    }
-                    else if (!UILang)
-                    {
-                        UI.Update(translationDictionary);
-                        UILang = true;
+                        var translationDictionary = new Dictionary<string, string>();
+                        string nameOnly = Path.GetFileName(file);
+                        ParseFile(file, ref translationDictionary);
+                        if (!nameOnly.StartsWith("UILang"))
+                        {
+                            files.Add(nameOnly);
+                            translations.Add(nameOnly, translationDictionary);
+                        }
+                        else if (!UILang)
+                        {
+                            UI.Update(translationDictionary);
+                            UILang = true;
+                        }
                     }
                 }
             }
