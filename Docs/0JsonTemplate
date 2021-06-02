@@ -1,0 +1,3405 @@
+[{
+name:"Point",
+translation:"",
+category:"Params"
+},{
+name:"Vector",
+translation:"",
+category:"Params"
+},{
+name:"Circle",
+translation:"",
+category:"Params"
+},{
+name:"Circular Arc",
+translation:"",
+category:"Params"
+},{
+name:"Curve",
+translation:"",
+category:"Params"
+},{
+name:"Line",
+translation:"",
+category:"Params"
+},{
+name:"Plane",
+translation:"",
+category:"Params"
+},{
+name:"Rectangle",
+translation:"",
+category:"Params"
+},{
+name:"Box",
+translation:"",
+category:"Params"
+},{
+name:"Brep",
+translation:"",
+category:"Params"
+},{
+name:"Mesh",
+translation:"",
+category:"Params"
+},{
+name:"Matrix",
+translation:"",
+category:"Params"
+},{
+name:"Time",
+translation:"",
+category:"Params"
+},{
+name:"KUKA|prc Command",
+translation:"",
+category:"Params"
+},{
+name:"Data",
+translation:"",
+category:"Params"
+},{
+name:"Data Path",
+translation:"",
+category:"Params"
+},{
+name:"File Path",
+translation:"",
+category:"Params"
+},{
+name:"Shader",
+translation:"",
+category:"Params"
+},{
+name:"Number Slider",
+translation:"",
+category:"Params"
+},{
+name:"Panel",
+translation:"",
+category:"Params"
+},{
+name:"Boolean Toggle",
+translation:"",
+category:"Params"
+},{
+name:"Control Knob",
+translation:"",
+category:"Params"
+},{
+name:"Digit Scroller",
+translation:"",
+category:"Params"
+},{
+name:"Value List",
+translation:"",
+category:"Params"
+},{
+name:"Button",
+translation:"",
+category:"Params"
+},{
+name:"MD Slider",
+translation:"",
+category:"Params"
+},{
+name:"Gradient",
+translation:"",
+category:"Params"
+},{
+name:"Image Sampler",
+translation:"",
+category:"Params"
+},{
+name:"Calendar",
+translation:"",
+category:"Params"
+},{
+name:"Clock",
+translation:"",
+category:"Params"
+},{
+name:"Colour Picker",
+translation:"",
+category:"Params"
+},{
+name:"Colour Swatch",
+translation:"",
+category:"Params"
+},{
+name:"Colour Wheel",
+translation:"",
+category:"Params"
+},{
+name:"Graph Mapper",
+translation:"",
+category:"Params"
+},{
+name:"Atom Data",
+translation:"",
+category:"Params"
+},{
+name:"Image Resource",
+translation:"",
+category:"Params"
+},{
+name:"Import 3DM",
+translation:"",
+category:"Params"
+},{
+name:"Import Coordinates",
+translation:"",
+category:"Params"
+},{
+name:"Import Image",
+translation:"",
+category:"Params"
+},{
+name:"Import PDB",
+translation:"",
+category:"Params"
+},{
+name:"Import SHP",
+translation:"",
+category:"Params"
+},{
+name:"Object Details",
+translation:"",
+category:"Params"
+},{
+name:"Read File",
+translation:"",
+category:"Params"
+},{
+name:"Cherry Picker",
+translation:"",
+category:"Params"
+},{
+name:"Param Viewer",
+translation:"",
+category:"Params"
+},{
+name:"Jump",
+translation:"",
+category:"Params"
+},{
+name:"Jump",
+translation:"",
+category:"Params"
+},{
+name:"Scribble",
+translation:"",
+category:"Params"
+},{
+name:"Data Dam",
+translation:"",
+category:"Params"
+},{
+name:"Data Recorder",
+translation:"",
+category:"Params"
+},{
+name:"Relay",
+translation:"",
+category:"Params"
+},{
+name:"Suirify",
+translation:"",
+category:"Params"
+},{
+name:"Trigger",
+translation:"",
+category:"Params"
+},{
+name:"Cluster Input",
+translation:"",
+category:"Params"
+},{
+name:"Cluster Output",
+translation:"",
+category:"Params"
+},{
+name:"Data Input",
+translation:"",
+category:"Params"
+},{
+name:"Data Output",
+translation:"",
+category:"Params"
+},{
+name:"Galapagos",
+translation:"",
+category:"Params"
+},{
+name:"Gene Pool",
+translation:"",
+category:"Params"
+},{
+name:"Fitness Landscape",
+translation:"",
+category:"Params"
+},{
+name:"PlanktonMesh",
+translation:"",
+category:"Params"
+},{
+name:"Surface",
+translation:"",
+category:"Params"
+},{
+name:"Mesh Face",
+translation:"",
+category:"Params"
+},{
+name:"SubD",
+translation:"",
+category:"Params"
+},{
+name:"Twisted Box",
+translation:"",
+category:"Params"
+},{
+name:"Field",
+translation:"",
+category:"Params"
+},{
+name:"Geometry",
+translation:"",
+category:"Params"
+},{
+name:"Geometry Cache",
+translation:"",
+category:"Params"
+},{
+name:"Geometry Pipeline",
+translation:"",
+category:"Params"
+},{
+name:"Group",
+translation:"",
+category:"Params"
+},{
+name:"Transform",
+translation:"",
+category:"Params"
+},{
+name:"Boolean",
+translation:"",
+category:"Params"
+},{
+name:"Integer",
+translation:"",
+category:"Params"
+},{
+name:"Number",
+translation:"",
+category:"Params"
+},{
+name:"Text",
+translation:"",
+category:"Params"
+},{
+name:"Colour",
+translation:"",
+category:"Params"
+},{
+name:"Complex",
+translation:"",
+category:"Params"
+},{
+name:"Culture",
+translation:"",
+category:"Params"
+},{
+name:"Domain",
+translation:"",
+category:"Params"
+},{
+name:"Domain²",
+translation:"",
+category:"Params"
+},{
+name:"Guid",
+translation:"",
+category:"Params"
+},{
+name:"Construct Domain",
+translation:"",
+category:"Maths"
+},{
+name:"Deconstruct Domain",
+translation:"",
+category:"Maths"
+},{
+name:"Bounds",
+translation:"",
+category:"Maths"
+},{
+name:"Remap Numbers",
+translation:"",
+category:"Maths"
+},{
+name:"Consecutive Domains",
+translation:"",
+category:"Maths"
+},{
+name:"Divide Domain",
+translation:"",
+category:"Maths"
+},{
+name:"Find Domain",
+translation:"",
+category:"Maths"
+},{
+name:"Includes",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Domain²",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Domain²",
+translation:"",
+category:"Maths"
+},{
+name:"Deconstruct Domain²",
+translation:"",
+category:"Maths"
+},{
+name:"Deconstruct Domain²",
+translation:"",
+category:"Maths"
+},{
+name:"Bounds 2D",
+translation:"",
+category:"Maths"
+},{
+name:"Divide Domain²",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Matrix",
+translation:"",
+category:"Maths"
+},{
+name:"Display Matrix",
+translation:"",
+category:"Maths"
+},{
+name:"Deconstruct Matrix",
+translation:"",
+category:"Maths"
+},{
+name:"Invert Matrix",
+translation:"",
+category:"Maths"
+},{
+name:"Transpose Matrix",
+translation:"",
+category:"Maths"
+},{
+name:"Swap Columns",
+translation:"",
+category:"Maths"
+},{
+name:"Swap Rows",
+translation:"",
+category:"Maths"
+},{
+name:"Addition",
+translation:"",
+category:"Maths"
+},{
+name:"Division",
+translation:"",
+category:"Maths"
+},{
+name:"Multiplication",
+translation:"",
+category:"Maths"
+},{
+name:"Subtraction",
+translation:"",
+category:"Maths"
+},{
+name:"Negative",
+translation:"",
+category:"Maths"
+},{
+name:"Power",
+translation:"",
+category:"Maths"
+},{
+name:"Absolute",
+translation:"",
+category:"Maths"
+},{
+name:"Factorial",
+translation:"",
+category:"Maths"
+},{
+name:"Integer Division",
+translation:"",
+category:"Maths"
+},{
+name:"Modulus",
+translation:"",
+category:"Maths"
+},{
+name:"Mass Addition",
+translation:"",
+category:"Maths"
+},{
+name:"Relative Differences",
+translation:"",
+category:"Maths"
+},{
+name:"Mass Multiplication",
+translation:"",
+category:"Maths"
+},{
+name:"Larger Than",
+translation:"",
+category:"Maths"
+},{
+name:"Smaller Than",
+translation:"",
+category:"Maths"
+},{
+name:"Equality",
+translation:"",
+category:"Maths"
+},{
+name:"Similarity",
+translation:"",
+category:"Maths"
+},{
+name:"Gate And",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Not",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Or",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Xor",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Majority",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Nand",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Nor",
+translation:"",
+category:"Maths"
+},{
+name:"Gate Xnor",
+translation:"",
+category:"Maths"
+},{
+name:"Square",
+translation:"",
+category:"Maths"
+},{
+name:"Square Root",
+translation:"",
+category:"Maths"
+},{
+name:"Cube",
+translation:"",
+category:"Maths"
+},{
+name:"Cube Root",
+translation:"",
+category:"Maths"
+},{
+name:"Power of 10",
+translation:"",
+category:"Maths"
+},{
+name:"Power of 2",
+translation:"",
+category:"Maths"
+},{
+name:"One Over X",
+translation:"",
+category:"Maths"
+},{
+name:"Power of E",
+translation:"",
+category:"Maths"
+},{
+name:"Log N",
+translation:"",
+category:"Maths"
+},{
+name:"Logarithm",
+translation:"",
+category:"Maths"
+},{
+name:"Natural logarithm",
+translation:"",
+category:"Maths"
+},{
+name:"Evaluate",
+translation:"",
+category:"Maths"
+},{
+name:"Expression",
+translation:"",
+category:"Maths"
+},{
+name:"C# Script",
+translation:"",
+category:"Maths"
+},{
+name:"GhPython Script",
+translation:"",
+category:"Maths"
+},{
+name:"VB Script",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Date",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Time",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Exotic Date",
+translation:"",
+category:"Maths"
+},{
+name:"Construct Smooth Time",
+translation:"",
+category:"Maths"
+},{
+name:"Deconstruct Date",
+translation:"",
+category:"Maths"
+},{
+name:"Combine Date & Time",
+translation:"",
+category:"Maths"
+},{
+name:"Date Range",
+translation:"",
+category:"Maths"
+},{
+name:"Interpolate Date",
+translation:"",
+category:"Maths"
+},{
+name:"Cosine",
+translation:"",
+category:"Maths"
+},{
+name:"Sine",
+translation:"",
+category:"Maths"
+},{
+name:"Sinc",
+translation:"",
+category:"Maths"
+},{
+name:"Tangent",
+translation:"",
+category:"Maths"
+},{
+name:"ArcCosine",
+translation:"",
+category:"Maths"
+},{
+name:"ArcSine",
+translation:"",
+category:"Maths"
+},{
+name:"ArcTangent",
+translation:"",
+category:"Maths"
+},{
+name:"CoSecant",
+translation:"",
+category:"Maths"
+},{
+name:"CoTangent",
+translation:"",
+category:"Maths"
+},{
+name:"Secant",
+translation:"",
+category:"Maths"
+},{
+name:"Degrees",
+translation:"",
+category:"Maths"
+},{
+name:"Radians",
+translation:"",
+category:"Maths"
+},{
+name:"Right Trigonometry",
+translation:"",
+category:"Maths"
+},{
+name:"Triangle Trigonometry",
+translation:"",
+category:"Maths"
+},{
+name:"Centroid",
+translation:"",
+category:"Maths"
+},{
+name:"Circumcentre",
+translation:"",
+category:"Maths"
+},{
+name:"Incentre",
+translation:"",
+category:"Maths"
+},{
+name:"Orthocentre",
+translation:"",
+category:"Maths"
+},{
+name:"Epsilon",
+translation:"",
+category:"Maths"
+},{
+name:"Golden Ratio",
+translation:"",
+category:"Maths"
+},{
+name:"Natural logarithm",
+translation:"",
+category:"Maths"
+},{
+name:"Pi",
+translation:"",
+category:"Maths"
+},{
+name:"Extremes",
+translation:"",
+category:"Maths"
+},{
+name:"Maximum",
+translation:"",
+category:"Maths"
+},{
+name:"Minimum",
+translation:"",
+category:"Maths"
+},{
+name:"Round",
+translation:"",
+category:"Maths"
+},{
+name:"Average",
+translation:"",
+category:"Maths"
+},{
+name:"Interpolate data",
+translation:"",
+category:"Maths"
+},{
+name:"Blur Numbers",
+translation:"",
+category:"Maths"
+},{
+name:"Smooth Numbers",
+translation:"",
+category:"Maths"
+},{
+name:"Truncate",
+translation:"",
+category:"Maths"
+},{
+name:"Weighted Average",
+translation:"",
+category:"Maths"
+},{
+name:"Complex Argument",
+translation:"",
+category:"Maths"
+},{
+name:"Complex Components",
+translation:"",
+category:"Maths"
+},{
+name:"Complex Conjugate",
+translation:"",
+category:"Maths"
+},{
+name:"Complex Modulus",
+translation:"",
+category:"Maths"
+},{
+name:"Create Complex",
+translation:"",
+category:"Maths"
+},{
+name:"List Item",
+translation:"",
+category:"Sets"
+},{
+name:"List Length",
+translation:"",
+category:"Sets"
+},{
+name:"Sort List",
+translation:"",
+category:"Sets"
+},{
+name:"Split List",
+translation:"",
+category:"Sets"
+},{
+name:"Insert Items",
+translation:"",
+category:"Sets"
+},{
+name:"Item Index",
+translation:"",
+category:"Sets"
+},{
+name:"Partition List",
+translation:"",
+category:"Sets"
+},{
+name:"Replace Items",
+translation:"",
+category:"Sets"
+},{
+name:"Reverse List",
+translation:"",
+category:"Sets"
+},{
+name:"Shift List",
+translation:"",
+category:"Sets"
+},{
+name:"Sub List",
+translation:"",
+category:"Sets"
+},{
+name:"Dispatch",
+translation:"",
+category:"Sets"
+},{
+name:"Null Item",
+translation:"",
+category:"Sets"
+},{
+name:"Pick'n'Choose",
+translation:"",
+category:"Sets"
+},{
+name:"Replace Nulls",
+translation:"",
+category:"Sets"
+},{
+name:"Weave",
+translation:"",
+category:"Sets"
+},{
+name:"Combine Data",
+translation:"",
+category:"Sets"
+},{
+name:"Sift Pattern",
+translation:"",
+category:"Sets"
+},{
+name:"Cross Reference",
+translation:"",
+category:"Sets"
+},{
+name:"Shortest List",
+translation:"",
+category:"Sets"
+},{
+name:"Longest List",
+translation:"",
+category:"Sets"
+},{
+name:"Cull Index",
+translation:"",
+category:"Sets"
+},{
+name:"Cull Pattern",
+translation:"",
+category:"Sets"
+},{
+name:"Cull Nth",
+translation:"",
+category:"Sets"
+},{
+name:"Random Reduce",
+translation:"",
+category:"Sets"
+},{
+name:"Range",
+translation:"",
+category:"Sets"
+},{
+name:"Series",
+translation:"",
+category:"Sets"
+},{
+name:"Char Sequence",
+translation:"",
+category:"Sets"
+},{
+name:"Duplicate Data",
+translation:"",
+category:"Sets"
+},{
+name:"Fibonacci",
+translation:"",
+category:"Sets"
+},{
+name:"Repeat Data",
+translation:"",
+category:"Sets"
+},{
+name:"Sequence",
+translation:"",
+category:"Sets"
+},{
+name:"Stack Data",
+translation:"",
+category:"Sets"
+},{
+name:"Jitter",
+translation:"",
+category:"Sets"
+},{
+name:"Random",
+translation:"",
+category:"Sets"
+},{
+name:"Create Set",
+translation:"",
+category:"Sets"
+},{
+name:"Set Difference",
+translation:"",
+category:"Sets"
+},{
+name:"Set Difference (S)",
+translation:"",
+category:"Sets"
+},{
+name:"Set Intersection",
+translation:"",
+category:"Sets"
+},{
+name:"Set Majority",
+translation:"",
+category:"Sets"
+},{
+name:"Set Union",
+translation:"",
+category:"Sets"
+},{
+name:"Carthesian Product",
+translation:"",
+category:"Sets"
+},{
+name:"SubSet",
+translation:"",
+category:"Sets"
+},{
+name:"Disjoint",
+translation:"",
+category:"Sets"
+},{
+name:"Member Index",
+translation:"",
+category:"Sets"
+},{
+name:"Replace Members",
+translation:"",
+category:"Sets"
+},{
+name:"Delete Consecutive",
+translation:"",
+category:"Sets"
+},{
+name:"Find similar member",
+translation:"",
+category:"Sets"
+},{
+name:"Key/Value Search",
+translation:"",
+category:"Sets"
+},{
+name:"Text Join",
+translation:"",
+category:"Sets"
+},{
+name:"Text Split",
+translation:"",
+category:"Sets"
+},{
+name:"Characters",
+translation:"",
+category:"Sets"
+},{
+name:"Concatenate",
+translation:"",
+category:"Sets"
+},{
+name:"Text Length",
+translation:"",
+category:"Sets"
+},{
+name:"Format",
+translation:"",
+category:"Sets"
+},{
+name:"Text Case",
+translation:"",
+category:"Sets"
+},{
+name:"Text Fragment",
+translation:"",
+category:"Sets"
+},{
+name:"Text Trim",
+translation:"",
+category:"Sets"
+},{
+name:"Replace Text",
+translation:"",
+category:"Sets"
+},{
+name:"Sort Text",
+translation:"",
+category:"Sets"
+},{
+name:"Match Text",
+translation:"",
+category:"Sets"
+},{
+name:"Text Distance",
+translation:"",
+category:"Sets"
+},{
+name:"Flatten Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Graft Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Trim Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Unflatten Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Clean Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Prune Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Simplify Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Tree Statistics",
+translation:"",
+category:"Sets"
+},{
+name:"Entwine",
+translation:"",
+category:"Sets"
+},{
+name:"Explode Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Flip Matrix",
+translation:"",
+category:"Sets"
+},{
+name:"Merge",
+translation:"",
+category:"Sets"
+},{
+name:"Match Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Path Mapper",
+translation:"",
+category:"Sets"
+},{
+name:"Shift Paths",
+translation:"",
+category:"Sets"
+},{
+name:"Split Tree",
+translation:"",
+category:"Sets"
+},{
+name:"Stream Filter",
+translation:"",
+category:"Sets"
+},{
+name:"Stream Gate",
+translation:"",
+category:"Sets"
+},{
+name:"Relative Item",
+translation:"",
+category:"Sets"
+},{
+name:"Relative Items",
+translation:"",
+category:"Sets"
+},{
+name:"Tree Branch",
+translation:"",
+category:"Sets"
+},{
+name:"Tree Item",
+translation:"",
+category:"Sets"
+},{
+name:"Construct Path",
+translation:"",
+category:"Sets"
+},{
+name:"Deconstruct Path",
+translation:"",
+category:"Sets"
+},{
+name:"Path Compare",
+translation:"",
+category:"Sets"
+},{
+name:"Replace Paths",
+translation:"",
+category:"Sets"
+},{
+name:"Line Charge",
+translation:"",
+category:"Vector"
+},{
+name:"Point Charge",
+translation:"",
+category:"Vector"
+},{
+name:"Spin Force",
+translation:"",
+category:"Vector"
+},{
+name:"Vector Force",
+translation:"",
+category:"Vector"
+},{
+name:"Break Field",
+translation:"",
+category:"Vector"
+},{
+name:"Merge Fields",
+translation:"",
+category:"Vector"
+},{
+name:"Evaluate Field",
+translation:"",
+category:"Vector"
+},{
+name:"Field Line",
+translation:"",
+category:"Vector"
+},{
+name:"Direction Display",
+translation:"",
+category:"Vector"
+},{
+name:"Perpendicular Display",
+translation:"",
+category:"Vector"
+},{
+name:"Scalar Display",
+translation:"",
+category:"Vector"
+},{
+name:"Tensor Display",
+translation:"",
+category:"Vector"
+},{
+name:"Rectangular",
+translation:"",
+category:"Vector"
+},{
+name:"Square",
+translation:"",
+category:"Vector"
+},{
+name:"Hexagonal",
+translation:"",
+category:"Vector"
+},{
+name:"Radial",
+translation:"",
+category:"Vector"
+},{
+name:"Triangular",
+translation:"",
+category:"Vector"
+},{
+name:"Populate 2D",
+translation:"",
+category:"Vector"
+},{
+name:"Populate 3D",
+translation:"",
+category:"Vector"
+},{
+name:"Populate Geometry",
+translation:"",
+category:"Vector"
+},{
+name:"Deconstruct Plane",
+translation:"",
+category:"Vector"
+},{
+name:"XY Plane",
+translation:"",
+category:"Vector"
+},{
+name:"XZ Plane",
+translation:"",
+category:"Vector"
+},{
+name:"YZ Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Construct Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Normal",
+translation:"",
+category:"Vector"
+},{
+name:"Line + Line",
+translation:"",
+category:"Vector"
+},{
+name:"Line + Pt",
+translation:"",
+category:"Vector"
+},{
+name:"Plane 3Pt",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Fit",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Offset",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Origin",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Closest Point",
+translation:"",
+category:"Vector"
+},{
+name:"Rotate Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Adjust Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Align Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Align Planes",
+translation:"",
+category:"Vector"
+},{
+name:"Flip Plane",
+translation:"",
+category:"Vector"
+},{
+name:"Plane Coordinates",
+translation:"",
+category:"Vector"
+},{
+name:"Construct Point",
+translation:"",
+category:"Vector"
+},{
+name:"Deconstruct",
+translation:"",
+category:"Vector"
+},{
+name:"Numbers to Points",
+translation:"",
+category:"Vector"
+},{
+name:"Points to Numbers",
+translation:"",
+category:"Vector"
+},{
+name:"Distance",
+translation:"",
+category:"Vector"
+},{
+name:"Point Oriented",
+translation:"",
+category:"Vector"
+},{
+name:"Barycentric",
+translation:"",
+category:"Vector"
+},{
+name:"Point Cylindrical",
+translation:"",
+category:"Vector"
+},{
+name:"Point Polar",
+translation:"",
+category:"Vector"
+},{
+name:"To Polar",
+translation:"",
+category:"Vector"
+},{
+name:"Closest Point",
+translation:"",
+category:"Vector"
+},{
+name:"Pull Point",
+translation:"",
+category:"Vector"
+},{
+name:"Closest Points",
+translation:"",
+category:"Vector"
+},{
+name:"Cull Duplicates",
+translation:"",
+category:"Vector"
+},{
+name:"Point Groups",
+translation:"",
+category:"Vector"
+},{
+name:"Project Point",
+translation:"",
+category:"Vector"
+},{
+name:"Sort Along Curve",
+translation:"",
+category:"Vector"
+},{
+name:"Sort Points",
+translation:"",
+category:"Vector"
+},{
+name:"Deconstruct Vector",
+translation:"",
+category:"Vector"
+},{
+name:"Vector XYZ",
+translation:"",
+category:"Vector"
+},{
+name:"Unit Vector",
+translation:"",
+category:"Vector"
+},{
+name:"Unit X",
+translation:"",
+category:"Vector"
+},{
+name:"Unit Y",
+translation:"",
+category:"Vector"
+},{
+name:"Unit Z",
+translation:"",
+category:"Vector"
+},{
+name:"Vector 2Pt",
+translation:"",
+category:"Vector"
+},{
+name:"Vector Length",
+translation:"",
+category:"Vector"
+},{
+name:"Amplitude",
+translation:"",
+category:"Vector"
+},{
+name:"Angle",
+translation:"",
+category:"Vector"
+},{
+name:"Cross Product",
+translation:"",
+category:"Vector"
+},{
+name:"Dot Product",
+translation:"",
+category:"Vector"
+},{
+name:"Reverse",
+translation:"",
+category:"Vector"
+},{
+name:"Rotate",
+translation:"",
+category:"Vector"
+},{
+name:"Control Polygon",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Middle",
+translation:"",
+category:"Curve"
+},{
+name:"End Points",
+translation:"",
+category:"Curve"
+},{
+name:"Polygon Center",
+translation:"",
+category:"Curve"
+},{
+name:"Control Points",
+translation:"",
+category:"Curve"
+},{
+name:"Deconstruct Arc",
+translation:"",
+category:"Curve"
+},{
+name:"Deconstuct Rectangle",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Closest Point",
+translation:"",
+category:"Curve"
+},{
+name:"Discontinuity",
+translation:"",
+category:"Curve"
+},{
+name:"Closed",
+translation:"",
+category:"Curve"
+},{
+name:"Curvature Graph",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Nearest Object",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Proximity",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Side",
+translation:"",
+category:"Curve"
+},{
+name:"Extremes",
+translation:"",
+category:"Curve"
+},{
+name:"Planar",
+translation:"",
+category:"Curve"
+},{
+name:"Evaluate Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Point On Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Curvature",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Frame",
+translation:"",
+category:"Curve"
+},{
+name:"Derivatives",
+translation:"",
+category:"Curve"
+},{
+name:"Horizontal Frame",
+translation:"",
+category:"Curve"
+},{
+name:"Perp Frame",
+translation:"",
+category:"Curve"
+},{
+name:"Torsion",
+translation:"",
+category:"Curve"
+},{
+name:"Evaluate Length",
+translation:"",
+category:"Curve"
+},{
+name:"Length",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Domain",
+translation:"",
+category:"Curve"
+},{
+name:"Length Domain",
+translation:"",
+category:"Curve"
+},{
+name:"Length Parameter",
+translation:"",
+category:"Curve"
+},{
+name:"Segment Lengths",
+translation:"",
+category:"Curve"
+},{
+name:"Point In Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Point in Curves",
+translation:"",
+category:"Curve"
+},{
+name:"Divide Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Shatter",
+translation:"",
+category:"Curve"
+},{
+name:"Contour",
+translation:"",
+category:"Curve"
+},{
+name:"Contour (ex)",
+translation:"",
+category:"Curve"
+},{
+name:"Dash Pattern",
+translation:"",
+category:"Curve"
+},{
+name:"Divide Distance",
+translation:"",
+category:"Curve"
+},{
+name:"Divide Length",
+translation:"",
+category:"Curve"
+},{
+name:"Horizontal Frames",
+translation:"",
+category:"Curve"
+},{
+name:"Perp Frames",
+translation:"",
+category:"Curve"
+},{
+name:"Curve Frames",
+translation:"",
+category:"Curve"
+},{
+name:"Line",
+translation:"",
+category:"Curve"
+},{
+name:"Line SDL",
+translation:"",
+category:"Curve"
+},{
+name:"Fit Line",
+translation:"",
+category:"Curve"
+},{
+name:"Line 2Plane",
+translation:"",
+category:"Curve"
+},{
+name:"Line 4Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Tangent Lines",
+translation:"",
+category:"Curve"
+},{
+name:"Tangent Lines (Ex)",
+translation:"",
+category:"Curve"
+},{
+name:"Tangent Lines (In)",
+translation:"",
+category:"Curve"
+},{
+name:"Circle",
+translation:"",
+category:"Curve"
+},{
+name:"Circle 3Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Circle CNR",
+translation:"",
+category:"Curve"
+},{
+name:"Circle Fit",
+translation:"",
+category:"Curve"
+},{
+name:"Circle TanTan",
+translation:"",
+category:"Curve"
+},{
+name:"Circle TanTanTan",
+translation:"",
+category:"Curve"
+},{
+name:"Ellipse",
+translation:"",
+category:"Curve"
+},{
+name:"InCircle",
+translation:"",
+category:"Curve"
+},{
+name:"InEllipse",
+translation:"",
+category:"Curve"
+},{
+name:"Arc 3Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Arc SED",
+translation:"",
+category:"Curve"
+},{
+name:"Arc",
+translation:"",
+category:"Curve"
+},{
+name:"BiArc",
+translation:"",
+category:"Curve"
+},{
+name:"Modified Arc",
+translation:"",
+category:"Curve"
+},{
+name:"Tangent Arcs",
+translation:"",
+category:"Curve"
+},{
+name:"Polygon",
+translation:"",
+category:"Curve"
+},{
+name:"Polygon Edge",
+translation:"",
+category:"Curve"
+},{
+name:"Rectangle",
+translation:"",
+category:"Curve"
+},{
+name:"Rectangle 2Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Rectangle 3Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Bezier Span",
+translation:"",
+category:"Curve"
+},{
+name:"Interpolate",
+translation:"",
+category:"Curve"
+},{
+name:"Nurbs Curve",
+translation:"",
+category:"Curve"
+},{
+name:"PolyLine",
+translation:"",
+category:"Curve"
+},{
+name:"Interpolate (t)",
+translation:"",
+category:"Curve"
+},{
+name:"Kinky Curve",
+translation:"",
+category:"Curve"
+},{
+name:"PolyArc",
+translation:"",
+category:"Curve"
+},{
+name:"Tangent Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Curve On Surface",
+translation:"",
+category:"Curve"
+},{
+name:"Geodesic",
+translation:"",
+category:"Curve"
+},{
+name:"Iso Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Sub Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Tween Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Knot Vector",
+translation:"",
+category:"Curve"
+},{
+name:"Nurbs Curve PWK",
+translation:"",
+category:"Curve"
+},{
+name:"Blend Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Catenary",
+translation:"",
+category:"Curve"
+},{
+name:"Blend Curve Pt",
+translation:"",
+category:"Curve"
+},{
+name:"Connect Curves",
+translation:"",
+category:"Curve"
+},{
+name:"Explode",
+translation:"",
+category:"Curve"
+},{
+name:"Extend Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Flip Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Join Curves",
+translation:"",
+category:"Curve"
+},{
+name:"Fillet",
+translation:"",
+category:"Curve"
+},{
+name:"Offset Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Fillet",
+translation:"",
+category:"Curve"
+},{
+name:"Fillet Distance",
+translation:"",
+category:"Curve"
+},{
+name:"Offset Curve Loose",
+translation:"",
+category:"Curve"
+},{
+name:"Offset on Srf",
+translation:"",
+category:"Curve"
+},{
+name:"Project",
+translation:"",
+category:"Curve"
+},{
+name:"Pull Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Seam",
+translation:"",
+category:"Curve"
+},{
+name:"Curve To Polyline",
+translation:"",
+category:"Curve"
+},{
+name:"Fit Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Polyline Collapse",
+translation:"",
+category:"Curve"
+},{
+name:"Rebuild Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Reduce",
+translation:"",
+category:"Curve"
+},{
+name:"Simplify Curve",
+translation:"",
+category:"Curve"
+},{
+name:"Smooth Polyline",
+translation:"",
+category:"Curve"
+},{
+name:"Box Corners",
+translation:"",
+category:"Surface"
+},{
+name:"Box Properties",
+translation:"",
+category:"Surface"
+},{
+name:"Deconstruct Box",
+translation:"",
+category:"Surface"
+},{
+name:"Evaluate Box",
+translation:"",
+category:"Surface"
+},{
+name:"Brep Edges",
+translation:"",
+category:"Surface"
+},{
+name:"Deconstruct Brep",
+translation:"",
+category:"Surface"
+},{
+name:"Brep Topology",
+translation:"",
+category:"Surface"
+},{
+name:"Brep Wireframe",
+translation:"",
+category:"Surface"
+},{
+name:"Dimensions",
+translation:"",
+category:"Surface"
+},{
+name:"Is Planar",
+translation:"",
+category:"Surface"
+},{
+name:"Surface Points",
+translation:"",
+category:"Surface"
+},{
+name:"Area",
+translation:"",
+category:"Surface"
+},{
+name:"Volume",
+translation:"",
+category:"Surface"
+},{
+name:"Area Moments",
+translation:"",
+category:"Surface"
+},{
+name:"Volume Moments",
+translation:"",
+category:"Surface"
+},{
+name:"Brep Closest Point",
+translation:"",
+category:"Surface"
+},{
+name:"Surface Closest Point",
+translation:"",
+category:"Surface"
+},{
+name:"Point In Brep",
+translation:"",
+category:"Surface"
+},{
+name:"Shape In Brep",
+translation:"",
+category:"Surface"
+},{
+name:"Point In Breps",
+translation:"",
+category:"Surface"
+},{
+name:"Point In Trim",
+translation:"",
+category:"Surface"
+},{
+name:"Evaluate Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Surface Curvature",
+translation:"",
+category:"Surface"
+},{
+name:"Osculating Circles",
+translation:"",
+category:"Surface"
+},{
+name:"Principal Curvature",
+translation:"",
+category:"Surface"
+},{
+name:"4Point Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Surface From Points",
+translation:"",
+category:"Surface"
+},{
+name:"Boundary Surfaces",
+translation:"",
+category:"Surface"
+},{
+name:"Loft",
+translation:"",
+category:"Surface"
+},{
+name:"Control Point Loft",
+translation:"",
+category:"Surface"
+},{
+name:"Edge Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Fit Loft",
+translation:"",
+category:"Surface"
+},{
+name:"Loft Options",
+translation:"",
+category:"Surface"
+},{
+name:"Network Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Ruled Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Sum Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Extrude",
+translation:"",
+category:"Surface"
+},{
+name:"Extrude Along",
+translation:"",
+category:"Surface"
+},{
+name:"Extrude Linear",
+translation:"",
+category:"Surface"
+},{
+name:"Extrude Point",
+translation:"",
+category:"Surface"
+},{
+name:"Fragment Patch",
+translation:"",
+category:"Surface"
+},{
+name:"Patch",
+translation:"",
+category:"Surface"
+},{
+name:"Pipe",
+translation:"",
+category:"Surface"
+},{
+name:"Sweep1",
+translation:"",
+category:"Surface"
+},{
+name:"Pipe Variable",
+translation:"",
+category:"Surface"
+},{
+name:"Sweep2",
+translation:"",
+category:"Surface"
+},{
+name:"Rail Revolution",
+translation:"",
+category:"Surface"
+},{
+name:"Revolution",
+translation:"",
+category:"Surface"
+},{
+name:"Plane Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Plane Through Shape",
+translation:"",
+category:"Surface"
+},{
+name:"Bounding Box",
+translation:"",
+category:"Surface"
+},{
+name:"Center Box",
+translation:"",
+category:"Surface"
+},{
+name:"Box 2Pt",
+translation:"",
+category:"Surface"
+},{
+name:"Box Rectangle",
+translation:"",
+category:"Surface"
+},{
+name:"Domain Box",
+translation:"",
+category:"Surface"
+},{
+name:"Cylinder",
+translation:"",
+category:"Surface"
+},{
+name:"Sphere",
+translation:"",
+category:"Surface"
+},{
+name:"Cone",
+translation:"",
+category:"Surface"
+},{
+name:"Quad Sphere",
+translation:"",
+category:"Surface"
+},{
+name:"Sphere 4Pt",
+translation:"",
+category:"Surface"
+},{
+name:"Sphere Fit",
+translation:"",
+category:"Surface"
+},{
+name:"Mesh from SubD",
+translation:"",
+category:"Surface"
+},{
+name:"SubD from Mesh",
+translation:"",
+category:"Surface"
+},{
+name:"SubD Fuse",
+translation:"",
+category:"Surface"
+},{
+name:"SubD Control Polygon",
+translation:"",
+category:"Surface"
+},{
+name:"SubD Edges",
+translation:"",
+category:"Surface"
+},{
+name:"Divide Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Surface Frames",
+translation:"",
+category:"Surface"
+},{
+name:"Copy Trim",
+translation:"",
+category:"Surface"
+},{
+name:"Isotrim",
+translation:"",
+category:"Surface"
+},{
+name:"Retrim",
+translation:"",
+category:"Surface"
+},{
+name:"Untrim",
+translation:"",
+category:"Surface"
+},{
+name:"Brep Join",
+translation:"",
+category:"Surface"
+},{
+name:"Cap Holes",
+translation:"",
+category:"Surface"
+},{
+name:"Cap Holes Ex",
+translation:"",
+category:"Surface"
+},{
+name:"Merge Faces",
+translation:"",
+category:"Surface"
+},{
+name:"Flip",
+translation:"",
+category:"Surface"
+},{
+name:"Offset Surface",
+translation:"",
+category:"Surface"
+},{
+name:"Offset Surface Loose",
+translation:"",
+category:"Surface"
+},{
+name:"Edges from Points",
+translation:"",
+category:"Surface"
+},{
+name:"Fillet Edge",
+translation:"",
+category:"Surface"
+},{
+name:"Convex Edges",
+translation:"",
+category:"Surface"
+},{
+name:"Edges from Directions",
+translation:"",
+category:"Surface"
+},{
+name:"Edges from Faces",
+translation:"",
+category:"Surface"
+},{
+name:"Edges from Length",
+translation:"",
+category:"Surface"
+},{
+name:"Edges from Linearity",
+translation:"",
+category:"Surface"
+},{
+name:"Deconstruct Face",
+translation:"",
+category:"Mesh"
+},{
+name:"Deconstruct Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Face Normals",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Edges",
+translation:"",
+category:"Mesh"
+},{
+name:"Face Boundaries",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Inclusion",
+translation:"",
+category:"Mesh"
+},{
+name:"Face Circles",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Closest Point",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Eval",
+translation:"",
+category:"Mesh"
+},{
+name:"Construct Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Colours",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Quad",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Spray",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Triangle",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Plane",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Sphere",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Box",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Sphere Ex",
+translation:"",
+category:"Mesh"
+},{
+name:"Convex Hull",
+translation:"",
+category:"Mesh"
+},{
+name:"Delaunay Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Delaunay Edges",
+translation:"",
+category:"Mesh"
+},{
+name:"Substrate",
+translation:"",
+category:"Mesh"
+},{
+name:"Voronoi",
+translation:"",
+category:"Mesh"
+},{
+name:"Voronoi 3D",
+translation:"",
+category:"Mesh"
+},{
+name:"Facet Dome",
+translation:"",
+category:"Mesh"
+},{
+name:"Voronoi Cell",
+translation:"",
+category:"Mesh"
+},{
+name:"Voronoi Groups",
+translation:"",
+category:"Mesh"
+},{
+name:"OcTree",
+translation:"",
+category:"Mesh"
+},{
+name:"Proximity 2D",
+translation:"",
+category:"Mesh"
+},{
+name:"Proximity 3D",
+translation:"",
+category:"Mesh"
+},{
+name:"QuadTree",
+translation:"",
+category:"Mesh"
+},{
+name:"MetaBall",
+translation:"",
+category:"Mesh"
+},{
+name:"MetaBall(t)",
+translation:"",
+category:"Mesh"
+},{
+name:"MetaBall(t) Custom",
+translation:"",
+category:"Mesh"
+},{
+name:"Quad Remesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Quad Remesh Settings",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Brep",
+translation:"",
+category:"Mesh"
+},{
+name:"Settings (Custom)",
+translation:"",
+category:"Mesh"
+},{
+name:"Settings (Quality)",
+translation:"",
+category:"Mesh"
+},{
+name:"Settings (Speed)",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Surface",
+translation:"",
+category:"Mesh"
+},{
+name:"Simple Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Disjoint Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Join",
+translation:"",
+category:"Mesh"
+},{
+name:"Blur Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Cull Faces",
+translation:"",
+category:"Mesh"
+},{
+name:"Cull Vertices",
+translation:"",
+category:"Mesh"
+},{
+name:"Delete Faces",
+translation:"",
+category:"Mesh"
+},{
+name:"Delete Vertices",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Shadow",
+translation:"",
+category:"Mesh"
+},{
+name:"Mesh Split Plane",
+translation:"",
+category:"Mesh"
+},{
+name:"Smooth Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Align Vertices",
+translation:"",
+category:"Mesh"
+},{
+name:"Flip Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Quadrangulate",
+translation:"",
+category:"Mesh"
+},{
+name:"Triangulate",
+translation:"",
+category:"Mesh"
+},{
+name:"Unify Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Unweld Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Weld Mesh",
+translation:"",
+category:"Mesh"
+},{
+name:"Exposure",
+translation:"",
+category:"Mesh"
+},{
+name:"Occlusion",
+translation:"",
+category:"Mesh"
+},{
+name:"Brep | Line",
+translation:"",
+category:"Intersect"
+},{
+name:"Curve | Line",
+translation:"",
+category:"Intersect"
+},{
+name:"Line | Line",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh | Ray",
+translation:"",
+category:"Intersect"
+},{
+name:"Surface | Line",
+translation:"",
+category:"Intersect"
+},{
+name:"Brep | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Curve | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Plane | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Plane | Plane | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Contour",
+translation:"",
+category:"Intersect"
+},{
+name:"Contour (ex)",
+translation:"",
+category:"Intersect"
+},{
+name:"Plane Region",
+translation:"",
+category:"Intersect"
+},{
+name:"IsoVist",
+translation:"",
+category:"Intersect"
+},{
+name:"IsoVist Ray",
+translation:"",
+category:"Intersect"
+},{
+name:"Line | Plane",
+translation:"",
+category:"Intersect"
+},{
+name:"Curve | Curve",
+translation:"",
+category:"Intersect"
+},{
+name:"Curve | Self",
+translation:"",
+category:"Intersect"
+},{
+name:"Multiple Curves",
+translation:"",
+category:"Intersect"
+},{
+name:"Brep | Brep",
+translation:"",
+category:"Intersect"
+},{
+name:"Brep | Curve",
+translation:"",
+category:"Intersect"
+},{
+name:"Surface | Curve",
+translation:"",
+category:"Intersect"
+},{
+name:"Surface Split",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh | Curve",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh | Mesh",
+translation:"",
+category:"Intersect"
+},{
+name:"Clash",
+translation:"",
+category:"Intersect"
+},{
+name:"Collision Many|Many",
+translation:"",
+category:"Intersect"
+},{
+name:"Collision One|Many",
+translation:"",
+category:"Intersect"
+},{
+name:"Trim with Brep",
+translation:"",
+category:"Intersect"
+},{
+name:"Trim with Breps",
+translation:"",
+category:"Intersect"
+},{
+name:"Trim with Region",
+translation:"",
+category:"Intersect"
+},{
+name:"Trim with Regions",
+translation:"",
+category:"Intersect"
+},{
+name:"Split with Brep",
+translation:"",
+category:"Intersect"
+},{
+name:"Split with Breps",
+translation:"",
+category:"Intersect"
+},{
+name:"Solid Difference",
+translation:"",
+category:"Intersect"
+},{
+name:"Solid Intersection",
+translation:"",
+category:"Intersect"
+},{
+name:"Solid Union",
+translation:"",
+category:"Intersect"
+},{
+name:"Trim Solid",
+translation:"",
+category:"Intersect"
+},{
+name:"Boundary Volume",
+translation:"",
+category:"Intersect"
+},{
+name:"Split Brep",
+translation:"",
+category:"Intersect"
+},{
+name:"Split Brep Multiple",
+translation:"",
+category:"Intersect"
+},{
+name:"Region Difference",
+translation:"",
+category:"Intersect"
+},{
+name:"Region Intersection",
+translation:"",
+category:"Intersect"
+},{
+name:"Region Union",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh Difference",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh Split",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh Intersection",
+translation:"",
+category:"Intersect"
+},{
+name:"Mesh Union",
+translation:"",
+category:"Intersect"
+},{
+name:"Box Slits",
+translation:"",
+category:"Intersect"
+},{
+name:"Region Slits",
+translation:"",
+category:"Intersect"
+},{
+name:"Scale",
+translation:"",
+category:"Transform"
+},{
+name:"Scale NU",
+translation:"",
+category:"Transform"
+},{
+name:"Shear",
+translation:"",
+category:"Transform"
+},{
+name:"Shear Angle",
+translation:"",
+category:"Transform"
+},{
+name:"Camera Obscura",
+translation:"",
+category:"Transform"
+},{
+name:"Orient Direction",
+translation:"",
+category:"Transform"
+},{
+name:"Project",
+translation:"",
+category:"Transform"
+},{
+name:"Box Mapping",
+translation:"",
+category:"Transform"
+},{
+name:"Project Along",
+translation:"",
+category:"Transform"
+},{
+name:"Rectangle Mapping",
+translation:"",
+category:"Transform"
+},{
+name:"Triangle Mapping",
+translation:"",
+category:"Transform"
+},{
+name:"Curve Array",
+translation:"",
+category:"Transform"
+},{
+name:"Linear Array",
+translation:"",
+category:"Transform"
+},{
+name:"Polar Array",
+translation:"",
+category:"Transform"
+},{
+name:"Rectangular Array",
+translation:"",
+category:"Transform"
+},{
+name:"Box Array",
+translation:"",
+category:"Transform"
+},{
+name:"Kaleidoscope",
+translation:"",
+category:"Transform"
+},{
+name:"Mirror",
+translation:"",
+category:"Transform"
+},{
+name:"Move",
+translation:"",
+category:"Transform"
+},{
+name:"Orient",
+translation:"",
+category:"Transform"
+},{
+name:"Rotate",
+translation:"",
+category:"Transform"
+},{
+name:"Rotate 3D",
+translation:"",
+category:"Transform"
+},{
+name:"Rotate Axis",
+translation:"",
+category:"Transform"
+},{
+name:"Move Away From",
+translation:"",
+category:"Transform"
+},{
+name:"Move To Plane",
+translation:"",
+category:"Transform"
+},{
+name:"Rotate Direction",
+translation:"",
+category:"Transform"
+},{
+name:"Blend Box",
+translation:"",
+category:"Transform"
+},{
+name:"Box Morph",
+translation:"",
+category:"Transform"
+},{
+name:"Surface Box",
+translation:"",
+category:"Transform"
+},{
+name:"Twisted Box",
+translation:"",
+category:"Transform"
+},{
+name:"Bend Deform",
+translation:"",
+category:"Transform"
+},{
+name:"Flow",
+translation:"",
+category:"Transform"
+},{
+name:"Stretch",
+translation:"",
+category:"Transform"
+},{
+name:"Twist",
+translation:"",
+category:"Transform"
+},{
+name:"Maelstrom",
+translation:"",
+category:"Transform"
+},{
+name:"Mirror Curve",
+translation:"",
+category:"Transform"
+},{
+name:"Mirror Surface",
+translation:"",
+category:"Transform"
+},{
+name:"Splop",
+translation:"",
+category:"Transform"
+},{
+name:"Sporph",
+translation:"",
+category:"Transform"
+},{
+name:"Surface Morph",
+translation:"",
+category:"Transform"
+},{
+name:"Taper",
+translation:"",
+category:"Transform"
+},{
+name:"Map to Surface",
+translation:"",
+category:"Transform"
+},{
+name:"Point Deform",
+translation:"",
+category:"Transform"
+},{
+name:"Spatial Deform",
+translation:"",
+category:"Transform"
+},{
+name:"Spatial Deform (custom)",
+translation:"",
+category:"Transform"
+},{
+name:"Compound",
+translation:"",
+category:"Transform"
+},{
+name:"Split",
+translation:"",
+category:"Transform"
+},{
+name:"Inverse Transform",
+translation:"",
+category:"Transform"
+},{
+name:"Transform",
+translation:"",
+category:"Transform"
+},{
+name:"Transform Matrix",
+translation:"",
+category:"Transform"
+},{
+name:"Group",
+translation:"",
+category:"Transform"
+},{
+name:"Ungroup",
+translation:"",
+category:"Transform"
+},{
+name:"Merge Group",
+translation:"",
+category:"Transform"
+},{
+name:"Split Group",
+translation:"",
+category:"Transform"
+},{
+name:"Colour CMYK",
+translation:"",
+category:"Display"
+},{
+name:"Colour HSL",
+translation:"",
+category:"Display"
+},{
+name:"Colour HSV",
+translation:"",
+category:"Display"
+},{
+name:"Colour RGB",
+translation:"",
+category:"Display"
+},{
+name:"Colour RGB (f)",
+translation:"",
+category:"Display"
+},{
+name:"Colourful",
+translation:"",
+category:"Params"
+},{
+name:"Colour L*ab",
+translation:"",
+category:"Display"
+},{
+name:"Colour LCH",
+translation:"",
+category:"Display"
+},{
+name:"Colour XYZ",
+translation:"",
+category:"Display"
+},{
+name:"Split AHSL",
+translation:"",
+category:"Display"
+},{
+name:"Split AHSV",
+translation:"",
+category:"Display"
+},{
+name:"Split ARGB",
+translation:"",
+category:"Display"
+},{
+name:"Text Tag",
+translation:"",
+category:"Display"
+},{
+name:"Text Tag 3D",
+translation:"",
+category:"Display"
+},{
+name:"Gradient Hatch",
+translation:"",
+category:"Display"
+},{
+name:"Pattern Hatch",
+translation:"",
+category:"Display"
+},{
+name:"Aligned Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Line Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Linear Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Marker Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Serial Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Angular Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Arc Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Angular Dimensions (Mesh)",
+translation:"",
+category:"Display"
+},{
+name:"Circular Dimension",
+translation:"",
+category:"Display"
+},{
+name:"Make2D",
+translation:"",
+category:"Display"
+},{
+name:"Make2D Parallel View",
+translation:"",
+category:"Display"
+},{
+name:"Make2D Perspective View",
+translation:"",
+category:"Display"
+},{
+name:"Make2D Rhino View",
+translation:"",
+category:"Display"
+},{
+name:"Bar Graph",
+translation:"",
+category:"Display"
+},{
+name:"Legend",
+translation:"",
+category:"Display"
+},{
+name:"Pie Chart",
+translation:"",
+category:"Display"
+},{
+name:"Quick Graph",
+translation:"",
+category:"Display"
+},{
+name:"Image Gallery",
+translation:"",
+category:"Display"
+},{
+name:"Value Tracker",
+translation:"",
+category:"Display"
+},{
+name:"Create Material",
+translation:"",
+category:"Display"
+},{
+name:"Custom Preview",
+translation:"",
+category:"Display"
+},{
+name:"Cloud Display",
+translation:"",
+category:"Display"
+},{
+name:"Dot Display",
+translation:"",
+category:"Display"
+},{
+name:"Symbol (Advanced)",
+translation:"",
+category:"Display"
+},{
+name:"Symbol (Simple)",
+translation:"",
+category:"Display"
+},{
+name:"Symbol Display",
+translation:"",
+category:"Display"
+},{
+name:"Point List",
+translation:"",
+category:"Display"
+},{
+name:"Point Order",
+translation:"",
+category:"Display"
+},{
+name:"Vector Display",
+translation:"",
+category:"Display"
+},{
+name:"Vector Display Ex",
+translation:"",
+category:"Display"
+},{
+name:"AlignFaces",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Beam",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Concentric",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"RigidBody",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"RigidPointSet",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SolidCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SolidPlaneCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Support",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Angle",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"AngleSnap",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ClampAngle",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"EqualAngle",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"G2",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Rod",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CoCircular",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CoLinear",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CoPlanar",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CoSpherical",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Collider",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CurveCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CurvePointCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ImageCircles",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SolidPointCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SphereCollide",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ClampLength",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ConstantTension",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Direction",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"DynamicWeight1d",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"EqualLength",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Length(Line)",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"LengthRatio",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"LengthSnap",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"PlasticLength",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Conicalize",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"CyclicQuad",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Developablize",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"EdgeLengths",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Hinge",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Isothermic",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"LiveSoap",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"NoFoldThrough",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Planarize",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"PlasticHinge",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"PolygonArea",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Pressure",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Smooth",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SoapFilm",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"TangentialSmooth",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"TangentIncircles",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"VertexLoads",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Volume",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Wind",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"OnCurve",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"OnMesh",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"OnPlane",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Anchor",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"AnchorXYZ",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Bomb",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Coincident",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Floor",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Load",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"MagnetSnap",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"PlasticAnchor",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Transform",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"BouncySolver",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Grab",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Show",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Soft & Hard Solver",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Solver",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"StepSolver",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ZombieSolver",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"ByParent",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Checkerboard",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Combine&Clean",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Diagonalize",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"FaceFaceOffset",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"FoldAngle",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"HingePoints",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"MeshCorners",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"MeshDirection",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"MeshMap",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"MeshTurn",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"NakedVertices",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Refine",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"RefineStrips",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"RemeshByColour",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SimpleRemesh",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Stripper",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"TangentCircles",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Unroller",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"VertexNeighbours",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"WarpWeft",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"DotDisplay",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"interconnectPoints",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"Möbius Transformation",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"removeDuplicateLines",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"removeDuplicatePts",
+translation:"",
+category:"Kangaroo2"
+},{
+name:"SplitAtCorners",
+translation:"",
+category:"Kangaroo2"
+}]
