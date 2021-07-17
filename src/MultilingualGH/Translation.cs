@@ -57,33 +57,20 @@ namespace MultilingualGH
                         }
                     }
                 }
-            }
-            else
-                noRoot = true;
-            if (Directory.Exists(Path.Combine(folder, "Extras")))
-            {
-                string[] inFolder = Directory.GetFiles(Path.Combine(folder, "Extras"));
-                foreach (var file in inFolder)
+                if (Directory.Exists(Path.Combine(folder, "Extras")))
                 {
-                    var translationDictionary = new Dictionary<string, string>();
-                    string nameOnly = Path.GetFileNameWithoutExtension(file);
-                    extraFiles.Add(nameOnly);
-                    ParseFile(file, ref translationDictionary);
-                    extraTranslations.Add(nameOnly.Split('_')[0], translationDictionary);
+                    inFolder = Directory.GetFiles(Path.Combine(folder, "Extras"));
+                    foreach (var file in inFolder)
+                    {
+                        var translationDictionary = new Dictionary<string, string>();
+                        string nameOnly = Path.GetFileNameWithoutExtension(file);
+                        extraFiles.Add(nameOnly);
+                        ParseFile(file, ref translationDictionary);
+                        extraTranslations.Add(nameOnly.Split('_')[0], translationDictionary);
+                    }
                 }
             }
-            /*if (Directory.Exists(Path.Combine(folder, "UILang")))
-            {
-                string[] inFolder = Directory.GetFiles(Path.Combine(folder, "UILang"));
-                foreach (var file in inFolder)
-                {
-                    var translationDictionary = new Dictionary<string, string>();
-                    string nameOnly = Path.GetFileNameWithoutExtension(file);
-                    uiFiles.Add(nameOnly);
-                    ParseFile(file, ref translationDictionary);
-                    uiTranslations.Add(nameOnly, translationDictionary);
-                }
-            }*/
+            else noRoot = true;
         }
         static private void ParseFile(string file, ref Dictionary<string, string> translationDictionary)
         {

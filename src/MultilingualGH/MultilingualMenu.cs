@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using Grasshopper.GUI;
@@ -215,11 +216,13 @@ namespace MultilingualGH
                 };
                 help.Click += (s, e) =>
                 {
-                    MessageBox.Show($"To add translation languages, copy translations files to\r\n{Translation.folder}\r\nIf the folder does not exisit, create it\r\n\r\n*Restarting Rhino is required to load new files", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"To add translation languages, copy translations files to\r\n{Translation.folder}\r\n\r\n*Restart Rhino to load new files", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     string target = "https://github.com/v-xup6/MultilingualGH/tree/main/Languages";
                     try
                     {
-                        System.Diagnostics.Process.Start(target);
+                        Process.Start(target);
+                        System.IO.Directory.CreateDirectory(Translation.folder);
+                        Process.Start(Translation.folder);
                     }
                     catch { }
                 };
