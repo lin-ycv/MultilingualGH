@@ -5,7 +5,7 @@ This is developed as an educational tool. This plugin aims to help users underst
 - Download the [latest version](https://github.com/v-xup6/MultilingualGH/releases)
 - Download a [translation file](https://github.com/v-xup6/MultilingualGH/tree/main/Languages)
 - Read [Wiki](https://github.com/v-xup6/MultilingualGH/wiki) for further details
-- [Contribute](https://github.com/v-xup6/MultilingualGH/wiki/Contribute), help make this plugin better!
+- [Contribute](https://github.com/v-xup6/MultilingualGH/wiki/Translators), help make this plugin more useful!
 
 ---
 
@@ -15,4 +15,4 @@ This is developed as an educational tool. This plugin aims to help users underst
 - 下載[最新版本](https://github.com/v-xup6/MultilingualGH/releases)
 - 下載[翻譯檔](https://github.com/v-xup6/MultilingualGH/tree/main/Languages)
 - 閱讀[使用教學](https://github.com/v-xup6/MultilingualGH/wiki/首頁)
-- [協助開發](https://github.com/v-xup6/MultilingualGH/wiki/協助開發)
+- [協助進行翻譯](https://github.com/v-xup6/MultilingualGH/wiki/翻譯者)
