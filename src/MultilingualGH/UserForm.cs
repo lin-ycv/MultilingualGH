@@ -1,25 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultilingualGH
 {
     public partial class UserForm : Form
     {
-        readonly MultilingualInstance mgh;
         public UserForm()
         {
             InitializeComponent();
-            MultilingualInstance.documents.TryGetValue(Grasshopper.Instances.ActiveCanvas.Document.DocumentID, out mgh);
-            textBox.Text = mgh.excludeUser;
-            FormClosing += SubmitButton_Click;
+            textBox1.Text = MGH.ExcludeUser;
+            FormClosing += (s, e) => MGH.ExcludeUser = textBox1.Text;
         }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
+        private void UserForm_Load(object sender, EventArgs e)
         {
-            FormClosing -= SubmitButton_Click;
-            mgh.excludeUser = textBox.Text;
-            MultilingualInstance.EventHandler(Grasshopper.Instances.ActiveCanvas, mgh);
-            Close();
+
         }
     }
 }

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualGH", "MultilingualGH\MultilingualGH.csproj", "{63F84BE7-D54A-47C9-8360-1E44AFE007EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilingualGH", "MultilingualGH\MultilingualGH.csproj", "{1EF1842B-8C72-40F2-9C2F-80452DE78AC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63F84BE7-D54A-47C9-8360-1E44AFE007EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63F84BE7-D54A-47C9-8360-1E44AFE007EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63F84BE7-D54A-47C9-8360-1E44AFE007EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63F84BE7-D54A-47C9-8360-1E44AFE007EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF1842B-8C72-40F2-9C2F-80452DE78AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF1842B-8C72-40F2-9C2F-80452DE78AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF1842B-8C72-40F2-9C2F-80452DE78AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF1842B-8C72-40F2-9C2F-80452DE78AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EBC6C326-A442-4D6B-AA78-290BC48DEA4C}
+		SolutionGuid = {C72BE2C4-9AB1-4F58-9F22-5E7B655DE59E}
 	EndGlobalSection
 EndGlobal

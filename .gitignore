@@ -1,3 +1,7 @@
 src/MultilingualGH/bin/
 src/MultilingualGH/obj/
-/Translation Contributions.gsheet
+.vs/
+
+*.gsheet
+*.suo
+*.user

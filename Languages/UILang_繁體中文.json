@@ -1,0 +1,78 @@
+[
+    {
+        "Name": "Version",
+        "Translation": "版本"
+    },
+    {
+        "Name": "TipEnable",
+        "Translation": "開啟/關閉"
+    },
+    {
+        "Name": "LanguageUI",
+        "Translation": "介面語言"
+    },
+    {
+        "Name": "Methods",
+        "Translation": "翻譯顯示方式"
+    },
+    {
+        "Name": "MBubble",
+        "Translation": "泡泡翻譯"
+    },
+    {
+        "Name": "MText",
+        "Translation": "文字翻譯"
+    },
+    {
+        "Name": "TextSize",
+        "Translation": "文字大小"
+    },
+    {
+        "Name": "Save",
+        "Translation": "儲存設定為預設"
+    },
+    {
+        "Name": "ExcludeDefault",
+        "Translation": "使用預設排除"
+    },
+    {
+        "Name": "ExcludeUser",
+        "Translation": "自訂排除"
+    },
+    {
+        "Name": "Keep",
+        "Translation": "保留翻譯"
+    },
+    {
+        "Name": "ShowEng",
+        "Translation": "顯示英文名稱"
+    },
+    {
+        "Name": "DisplayName",
+        "Translation": "名稱顯示方式"
+    },
+    {
+        "Name": "DFull",
+        "Translation": "顯示全名"
+    },
+    {
+        "Name": "DNick",
+        "Translation": "顯示縮寫"
+    },
+    {
+        "Name": "DCustom",
+        "Translation": "只顯示自訂名稱"
+    },
+    {
+        "Name": "DCustomFull",
+        "Translation": "顯示自訂或全名"
+    },
+    {
+        "Name": "DCustomNick",
+        "Translation": "顯示自訂或縮寫"
+    },
+    {
+        "Name": "*Translator*",
+        "Translation": "林裕傑 (Victor Lin)"
+    }
+]
