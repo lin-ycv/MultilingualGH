@@ -1,7 +1,7 @@
 src/MultilingualGH/bin/
 src/MultilingualGH/obj/
-.vs/
+src/.vs/
 
 *.gsheet
-*.suo
-*.user
+*/*.suo
+*/*.user
