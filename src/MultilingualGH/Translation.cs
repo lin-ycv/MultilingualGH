@@ -7,10 +7,8 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text.Json;
 using System.Text.RegularExpressions;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,7 +20,7 @@ namespace MultilingualGH
         public string Translation { get; set; }
         public string Category { get; set; }
     }
-    class Translation
+    static class Translation
     {
         // Path to translations, Win: Documents/GHLanguage, Mac: User/GHLanguage
         static internal readonly string folder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "GHLanguage");
@@ -35,6 +33,7 @@ namespace MultilingualGH
         static byte temp;
         static private readonly JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         static private readonly GH_ComponentServer CompServer = Grasshopper.Instances.ComponentServer;
+        static internal GH_Canvas Canvas = Grasshopper.Instances.ActiveCanvas;
 
         static internal void GetFiles()
         {
@@ -92,8 +91,11 @@ namespace MultilingualGH
                 }
                 return true;
             }
-            catch
+            catch (Exception e)
             {
+#if(DEBUG)
+                MessageBox.Show(e.ToString());
+#endif
                 return false;
             }
         }
@@ -114,14 +116,11 @@ namespace MultilingualGH
                     if (lang.Name != ((ToolStripMenuItem)sender).Name)
                         lang.Checked = false;
                 }
-                if (Menu.Canvas.Document == null) return;
-                Menu.Canvas.Document.DefineConstant("MGH_LangAnno", new GH_Variant(MGH.LangAnno));
-                if (MGH.Enabled && !MGH.TextDisplay && (Menu.Canvas.Document.ConstantServer["MGH_LangAnnoPrev"] != Menu.Canvas.Document.ConstantServer["MGH_LangAnno"]))
-                {
-                    Clear(Menu.Canvas.Document);
-                    Menu.Canvas.Document.DefineConstant("MGH_LangAnnoPrev", new GH_Variant(MGH.LangAnno));
-                }
-                MGH.EventHandler(Menu.Canvas);
+                if (Canvas.Document == null) return;
+                if (MGH.Enabled && !MGH.TextDisplay && MGH.LangAnno != Canvas.Document.ConstantServer["MGH_" + nameof(MGH.LangAnno)]._String)
+                    Clear(Canvas.Document);
+                Canvas.Document.DefineConstant("MGH_" + nameof(MGH.LangAnno), new GH_Variant(MGH.LangAnno));
+                MGH.EventHandler(Canvas);
             }
             else
             {
@@ -147,7 +146,7 @@ namespace MultilingualGH
                     }
                     extraTranslations.Add(plugin, translationDictionary);
                     ((ToolStripMenuItem)sender).Checked = true;
-                    if (Menu.Canvas.Document != null) MGH.EventHandler(Menu.Canvas);
+                    if (Canvas.Document != null) MGH.EventHandler(Canvas);
                     MGH.Extras += $"*{sender}*";
                 }
                 else
@@ -160,7 +159,7 @@ namespace MultilingualGH
                 extraTranslations.Remove(plugin);
                 MGH.Extras = MGH.Extras.Replace($"*{sender}*", "");
                 ((ToolStripMenuItem)sender).Checked = false;
-                if (Menu.Canvas.Document != null) MGH.EventHandler(Menu.Canvas);
+                if (Canvas.Document != null) MGH.EventHandler(Canvas);
             }
         }
         static internal void Reload(object sender, EventArgs e)

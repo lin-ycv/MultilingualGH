@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Grasshopper.GUI.Canvas;
 using Grasshopper.Kernel;
 
@@ -11,32 +7,32 @@ namespace MultilingualGH
     static internal class MGH
     {
         internal enum DisplayType { full, customFull, nickname, custom, customNick };
-        static internal GH_SettingsServer Settings = new GH_SettingsServer("MultilingualGH", true);
-
-        static internal bool Enabled { get; set; } = Settings.GetValue("Enable", true);
-        static internal bool TextDisplay { get; set; } = Settings.GetValue("Method", true);
-        static internal bool ExcludeDefault { get; set; } = Settings.GetValue("UseDe", true);
-        static internal string ExcludeUser { get; set; } = Settings.GetValue("UseUe", string.Empty);
-        static internal bool ShowEng { get; set; } = Settings.GetValue("ShowEng", true);
-        static internal DisplayType DisplayName { get; set; } = (DisplayType)Settings.GetValue("Name", (int)DisplayType.full);
-        static internal string LangAnno { get; set; } = Settings.GetValue("LangAnno", "English");
-        static internal string Extras { get; set; } = Settings.GetValue("Extras", string.Empty);
-        static internal double Size { get; set; } = Settings.GetValue("TextSize", 8.0);
-        static internal string LangUI { get; set; } = Settings.GetValue("LangUI", "English");
-
+        static internal GH_SettingsServer Settings = new GH_SettingsServer(nameof(MultilingualGH), true);
         // File > Special Folders > Settings Folder > MultilingualGH.xml
+
+        static internal bool Enabled { get; set; } = Settings.GetValue(nameof(Enabled), true);
+        static internal bool TextDisplay { get; set; } = Settings.GetValue(nameof(TextDisplay), true);
+        static internal bool ExcludeDefault { get; set; } = Settings.GetValue(nameof(ExcludeDefault), true);
+        static internal string ExcludeUser { get; set; } = Settings.GetValue(nameof(ExcludeUser), string.Empty);
+        static internal bool ShowEng { get; set; } = Settings.GetValue(nameof(ShowEng), true);
+        static internal DisplayType DisplayName { get; set; } = (DisplayType)Settings.GetValue(nameof(DisplayName), (int)DisplayType.full);
+        static internal string LangAnno { get; set; } = Settings.GetValue(nameof(LangAnno), "English");
+        static internal string Extras { get; set; } = Settings.GetValue(nameof(Extras), string.Empty);
+        static internal double Size { get; set; } = Settings.GetValue(nameof(Size), 8.0);
+        static internal string LangUI { get; set; } = Settings.GetValue(nameof(LangUI), "English");
+
         static internal void SaveSettings()
         {
-            Settings.SetValue("Enable", Enabled);
-            Settings.SetValue("Method", TextDisplay);
-            Settings.SetValue("UseDe", ExcludeDefault);
-            Settings.SetValue("UseUe", ExcludeUser);
-            Settings.SetValue("ShowEng", ShowEng);
-            Settings.SetValue("Name", (int)DisplayName);
-            Settings.SetValue("LangUI", LangUI);
-            Settings.SetValue("LangAnno", LangAnno);
-            Settings.SetValue("Extras", Extras);
-            Settings.SetValue("TextSize", Size);
+            Settings.SetValue(nameof(Enabled), Enabled);
+            Settings.SetValue(nameof(TextDisplay), TextDisplay);
+            Settings.SetValue(nameof(ExcludeDefault), ExcludeDefault);
+            Settings.SetValue(nameof(ExcludeUser), ExcludeUser);
+            Settings.SetValue(nameof(ShowEng), ShowEng);
+            Settings.SetValue(nameof(DisplayName), (int)DisplayName);
+            Settings.SetValue(nameof(LangUI), LangUI);
+            Settings.SetValue(nameof(LangAnno), LangAnno);
+            Settings.SetValue(nameof(Extras), Extras);
+            Settings.SetValue(nameof(Size), Size);
             Settings.WritePersistentSettings();
             SoundOK();
         }
@@ -70,11 +66,11 @@ namespace MultilingualGH
             {
                 using (Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"AppEvents\Schemes\Apps\.Default\Notification.Proximity\.Default"))
                 {
-                    System.Media.SoundPlayer alert = new System.Media.SoundPlayer((String)key.GetValue(null));
+                    System.Media.SoundPlayer alert = new System.Media.SoundPlayer((string)key.GetValue(null));
                     alert.Play();
                 }
             }
-            catch { System.Windows.Forms.MessageBox.Show("OK!"); }
+            catch {/*No sound on MacOS*/}
         }
     }
 }

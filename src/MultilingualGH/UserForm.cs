@@ -15,8 +15,16 @@ namespace MultilingualGH
         public UserForm()
         {
             InitializeComponent();
+            TopMost = true;
             textBox1.Text = MGH.ExcludeUser;
-            FormClosing += (s, e) => MGH.ExcludeUser = textBox1.Text;
+            FormClosing += (s, e) =>
+            {
+                if (textBox1.Text != MGH.ExcludeUser)
+                {
+                    MGH.ExcludeUser = textBox1.Text;
+                    DialogResult = DialogResult.OK;
+                }
+            };
         }
 
         private void UserForm_Load(object sender, EventArgs e)

@@ -5,9 +5,6 @@ using Grasshopper.Kernel.Expressions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MultilingualGH
@@ -17,28 +14,28 @@ namespace MultilingualGH
 #pragma warning disable IDE0044
         static internal string EN = "English";
         static internal ToolStripMenuItem MGHMenu = new ToolStripMenuItem();
-        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = "Version", Text = UI.Version + MultilingualGHInfo.Ver, ToolTipText = UI.TipEnable, Checked = MGH.Enabled };
-        static internal ToolStripMenuItem languageUI = new ToolStripMenuItem { Name = "LanguageUI", Text = UI.LanguageUI };
+        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = nameof(UI.Version), Text = UI.Version + MultilingualGHInfo.Ver, ToolTipText = UI.TipEnable, Checked = MGH.Enabled };
+        static internal ToolStripMenuItem languageUI = new ToolStripMenuItem { Name = nameof(UI.LanguageUI), Text = UI.LanguageUI };
         static internal ToolStripMenuItem langUIEng = new ToolStripMenuItem { Name = EN, Text = EN, Checked = MGH.LangUI == EN };
-        static internal ToolStripMenuItem method = new ToolStripMenuItem { Name = "Methods", Text = UI.Methods };
-        static internal ToolStripMenuItem methodBubble = new ToolStripMenuItem { Name = "MBubble", Text = UI.MBubble, Checked = !MGH.TextDisplay };
-        static internal ToolStripMenuItem methodText = new ToolStripMenuItem { Name = "MText", Text = UI.MText, Checked = MGH.TextDisplay };
-        static internal ToolStripMenuItem textSize = new ToolStripMenuItem { Name = "TextSize", Text = UI.TextSize, Visible = MGH.TextDisplay };
+        static internal ToolStripMenuItem method = new ToolStripMenuItem { Name = nameof(UI.Methods), Text = UI.Methods };
+        static internal ToolStripMenuItem methodBubble = new ToolStripMenuItem { Name = nameof(UI.MBubble), Text = UI.MBubble, Checked = !MGH.TextDisplay };
+        static internal ToolStripMenuItem methodText = new ToolStripMenuItem { Name = nameof(UI.MText), Text = UI.MText, Checked = MGH.TextDisplay };
+        static internal ToolStripMenuItem textSize = new ToolStripMenuItem { Name = nameof(UI.TextSize), Text = UI.TextSize, Visible = MGH.TextDisplay };
         static internal ToolStripTextBox tSizeInput = new ToolStripTextBox { Text = MGH.Size.ToString() };
-        static internal ToolStripMenuItem save = new ToolStripMenuItem { Name = "Save", Text = UI.Save };
-        static internal ToolStripMenuItem reload = new ToolStripMenuItem { Name = "Reload", Text = UI.Reload };
-        static internal ToolStripMenuItem displayName = new ToolStripMenuItem { Name = "DisplayName", Text = UI.DisplayName };
-        static internal ToolStripMenuItem disFullName = new ToolStripMenuItem { Name = "DFull", ToolTipText = ((int)MGH.DisplayType.full).ToString(), Text = UI.DFull, Checked = MGH.DisplayName == MGH.DisplayType.full };
-        static internal ToolStripMenuItem disNickname = new ToolStripMenuItem { Name = "DNick", ToolTipText = ((int)MGH.DisplayType.nickname).ToString(), Text = UI.DNick, Checked = MGH.DisplayName == MGH.DisplayType.nickname };
-        static internal ToolStripMenuItem disCustom = new ToolStripMenuItem { Name = "DCustom", ToolTipText = ((int)MGH.DisplayType.custom).ToString(), Text = UI.DCustom, Checked = MGH.DisplayName == MGH.DisplayType.custom };
-        static internal ToolStripMenuItem disCustFull = new ToolStripMenuItem { Name = "DCustomFull", ToolTipText = ((int)MGH.DisplayType.customFull).ToString(), Text = UI.DCustomFull, Checked = MGH.DisplayName == MGH.DisplayType.customFull };
-        static internal ToolStripMenuItem disCustNick = new ToolStripMenuItem { Name = "DCustomNick", ToolTipText = ((int)MGH.DisplayType.customNick).ToString(), Text = UI.DCustomNick, Checked = MGH.DisplayName == MGH.DisplayType.customNick };
-        static internal ToolStripMenuItem excludeDe = new ToolStripMenuItem { Name = "ExcludeDefault", Text = UI.ExcludeDefault, Checked = MGH.ExcludeDefault };
-        static internal ToolStripMenuItem excludeUs = new ToolStripMenuItem { Name = "ExcludeUser", Text = UI.ExcludeUser, Checked = MGH.ExcludeUser.Length != 0 };
-        static internal ToolStripMenuItem showEng = new ToolStripMenuItem { Name = "ShowEng", Text = UI.ShowEng, Checked = MGH.ShowEng, Visible = MGH.LangAnno != EN };
-        static internal ToolStripMenuItem language = new ToolStripMenuItem { Name = "EndOfDefaultMenu", Text = MGH.LangAnno };
+        static internal ToolStripMenuItem reAnnotate = new ToolStripMenuItem { Name = nameof(UI.ReAnnotate), Text = UI.ReAnnotate, Visible = !MGH.TextDisplay };
+        static internal ToolStripMenuItem save = new ToolStripMenuItem { Name = nameof(UI.Save), Text = UI.Save };
+        static internal ToolStripMenuItem reload = new ToolStripMenuItem { Name = nameof(UI.Reload), Text = UI.Reload };
+        static internal ToolStripMenuItem displayName = new ToolStripMenuItem { Name = nameof(UI.DisplayName), Text = UI.DisplayName };
+        static internal ToolStripMenuItem disFullName = new ToolStripMenuItem { Name = nameof(UI.DFull), ToolTipText = ((int)MGH.DisplayType.full).ToString(), Text = UI.DFull, Checked = MGH.DisplayName == MGH.DisplayType.full };
+        static internal ToolStripMenuItem disNickname = new ToolStripMenuItem { Name = nameof(UI.DNick), ToolTipText = ((int)MGH.DisplayType.nickname).ToString(), Text = UI.DNick, Checked = MGH.DisplayName == MGH.DisplayType.nickname };
+        static internal ToolStripMenuItem disCustom = new ToolStripMenuItem { Name = nameof(UI.DCustom), ToolTipText = ((int)MGH.DisplayType.custom).ToString(), Text = UI.DCustom, Checked = MGH.DisplayName == MGH.DisplayType.custom };
+        static internal ToolStripMenuItem disCustFull = new ToolStripMenuItem { Name = nameof(UI.DCustomFull), ToolTipText = ((int)MGH.DisplayType.customFull).ToString(), Text = UI.DCustomFull, Checked = MGH.DisplayName == MGH.DisplayType.customFull };
+        static internal ToolStripMenuItem disCustNick = new ToolStripMenuItem { Name = nameof(UI.DCustomNick), ToolTipText = ((int)MGH.DisplayType.customNick).ToString(), Text = UI.DCustomNick, Checked = MGH.DisplayName == MGH.DisplayType.customNick };
+        static internal ToolStripMenuItem excludeDe = new ToolStripMenuItem { Name = nameof(UI.ExcludeDefault), Text = UI.ExcludeDefault, Checked = MGH.ExcludeDefault };
+        static internal ToolStripMenuItem excludeUs = new ToolStripMenuItem { Name = nameof(UI.ExcludeUser), Text = UI.ExcludeUser, Checked = MGH.ExcludeUser.Length != 0 };
+        static internal ToolStripMenuItem showEng = new ToolStripMenuItem { Name = nameof(UI.ShowEng), Text = UI.ShowEng, Checked = MGH.ShowEng, Visible = MGH.LangAnno != EN };
+        static internal ToolStripMenuItem language = new ToolStripMenuItem { Name = "EndofDefaultMenu", Text = MGH.LangAnno };
         static internal ToolStripMenuItem langEng = new ToolStripMenuItem { Name = EN, Text = EN, Checked = MGH.LangAnno == EN };
-        static internal GH_Canvas Canvas;
 #pragma warning restore IDE0044
 
 
@@ -62,27 +59,25 @@ namespace MultilingualGH
                 var ghDoc = s.Document;
                 if (ghDoc == null) return;
 
-                if (!(ghDoc.ConstantServer.ContainsKey("MGH_Enabled") && MGH.Enabled == canvas.Document.ConstantServer["MGH_Enabled"]._Bool &&
-                    MGH.TextDisplay == canvas.Document.ConstantServer["MGH_TextDisplay"]._Bool && MGH.Size == canvas.Document.ConstantServer["MGH_Size"]._Int &&
-                    MGH.DisplayName == (MGH.DisplayType)canvas.Document.ConstantServer["MGH_DisplayName"]._Int &&
-                    MGH.ExcludeDefault == canvas.Document.ConstantServer["MGH_ExcludeDefault"]._Bool &&
-                    MGH.ExcludeUser == canvas.Document.ConstantServer["MGH_ExcludeUser"]._String && MGH.ShowEng == canvas.Document.ConstantServer["MGH_ShowEng"]._Bool &&
-                    MGH.LangAnno == canvas.Document.ConstantServer["MGH_LangAnno"]._String))
+                if (!(ghDoc.ConstantServer.ContainsKey("MGH_" + nameof(MGH.Enabled)) && MGH.Enabled == canvas.Document.ConstantServer["MGH_" + nameof(MGH.Enabled)]._Bool &&
+                    MGH.TextDisplay == canvas.Document.ConstantServer["MGH_" + nameof(MGH.TextDisplay)]._Bool && MGH.Size == canvas.Document.ConstantServer["MGH_" + nameof(MGH.Size)]._Int &&
+                    MGH.DisplayName == (MGH.DisplayType)canvas.Document.ConstantServer["MGH_" + nameof(MGH.DisplayName)]._Int &&
+                    MGH.ExcludeDefault == canvas.Document.ConstantServer["MGH_" + nameof(MGH.ExcludeDefault)]._Bool &&
+                    MGH.ExcludeUser == canvas.Document.ConstantServer["MGH_" + nameof(MGH.ExcludeUser)]._String && MGH.ShowEng == canvas.Document.ConstantServer["MGH_" + nameof(MGH.ShowEng)]._Bool &&
+                    MGH.LangAnno == canvas.Document.ConstantServer["MGH_" + nameof(MGH.LangAnno)]._String))
                 {
-                    ghDoc.DefineConstant("MGH_Enabled", new GH_Variant(MGH.Enabled));
-                    ghDoc.DefineConstant("MGH_TextDisplay", new GH_Variant(MGH.TextDisplay));
-                    ghDoc.DefineConstant("MGH_Size", new GH_Variant(MGH.Size));
-                    ghDoc.DefineConstant("MGH_DisplayName", new GH_Variant((int)MGH.DisplayName));
-                    ghDoc.DefineConstant("MGH_ExcludeDefault", new GH_Variant(MGH.ExcludeDefault));
-                    ghDoc.DefineConstant("MGH_ExcludeUser", new GH_Variant(MGH.ExcludeUser));
-                    ghDoc.DefineConstant("MGH_ShowEng", new GH_Variant(MGH.ShowEng));
-                    ghDoc.DefineConstant("MGH_LangAnno", new GH_Variant(MGH.LangAnno));
-                    ghDoc.DefineConstant("MGH_LangAnnoPrev", new GH_Variant());
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.Enabled), new GH_Variant(MGH.Enabled));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.TextDisplay), new GH_Variant(MGH.TextDisplay));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.Size), new GH_Variant(MGH.Size));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.DisplayName), new GH_Variant((int)MGH.DisplayName));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.ExcludeDefault), new GH_Variant(MGH.ExcludeDefault));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.ExcludeUser), new GH_Variant(MGH.ExcludeUser));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.ShowEng), new GH_Variant(MGH.ShowEng));
+                    ghDoc.DefineConstant("MGH_" + nameof(MGH.LangAnno), new GH_Variant(MGH.LangAnno));
                     if (!MGH.TextDisplay) Translation.Clear(ghDoc);
                     MGH.EventHandler(canvas);
                 }
             };
-            Canvas = canvas;
         }
         static void CreateMenu(GH_DocumentEditor docEditor)
         {
@@ -95,13 +90,14 @@ namespace MultilingualGH
         }
         static void SetupMenu()
         {
-            var canvas = Grasshopper.Instances.ActiveCanvas;
+            var Canvas = Grasshopper.Instances.ActiveCanvas;
 
             MGHMenu.DropDownItems.AddRange((new List<ToolStripItem> {
                 Version,
                 languageUI,
                 method,
                 textSize,
+                reAnnotate,
                 new ToolStripSeparator(),
                 save,
                 reload,
@@ -118,14 +114,14 @@ namespace MultilingualGH
             {
                 MGH.Enabled = !MGH.Enabled;
                 ((ToolStripMenuItem)s).Checked = MGH.Enabled;
-                if (canvas.Document == null) return;
-                canvas.Document.DefineConstant("MGH_Enabled", new GH_Variant(MGH.Enabled));
-                if (MGH.Enabled && !MGH.TextDisplay && MGH.LangAnno != canvas.Document.ConstantServer["MGH_LangAnno"]._String)
+                if (Canvas.Document == null) return;
+                Canvas.Document.DefineConstant("MGH_" + nameof(MGH.Enabled), new GH_Variant(MGH.Enabled));
+                if (MGH.Enabled && !MGH.TextDisplay && MGH.LangAnno != Canvas.Document.ConstantServer["MGH_" + nameof(MGH.LangAnno)]._String)
                 {
                     Translation.Clear(Grasshopper.Instances.ActiveCanvas.Document);
-                    canvas.Document.DefineConstant("MGH_LangAnno", new GH_Variant(MGH.LangAnno));
+                    Canvas.Document.DefineConstant("MGH_" + nameof(MGH.LangAnno), new GH_Variant(MGH.LangAnno));
                 }
-                MGH.EventHandler(canvas);
+                MGH.EventHandler(Canvas);
             };
 
             langUIEng.Click += UI.Update;
@@ -140,27 +136,42 @@ namespace MultilingualGH
             methodText.Click += MethodSwitch;
             void MethodSwitch(object sender, EventArgs e)
             {
-                MGH.TextDisplay = ((ToolStripMenuItem)sender).Name == "MText";
+                MGH.TextDisplay = ((ToolStripMenuItem)sender).Name == nameof(UI.MText);
                 methodBubble.Checked = !MGH.TextDisplay;
                 methodText.Checked = MGH.TextDisplay;
-                if (MGH.TextDisplay) textSize.Visible = true;
-                else textSize.Visible = false;
-                if (canvas.Document == null) return;
-                canvas.Document.DefineConstant("MGH_TextDisplay", new GH_Variant(MGH.TextDisplay));
-                MGH.EventHandler(canvas);
+                if (MGH.TextDisplay)
+                {
+                    textSize.Visible = true;
+                    reAnnotate.Visible = false;
+                }
+                else
+                {
+                    textSize.Visible = false;
+                    reAnnotate.Visible = true;
+                }
+                if (Canvas.Document == null) return;
+                Canvas.Document.DefineConstant("MGH_" + nameof(MGH.TextDisplay), new GH_Variant(MGH.TextDisplay));
+                MGH.EventHandler(Canvas);
             }
 
             textSize.DropDownItems.Add(tSizeInput);
+            textSize.MouseHover += (s, e) => tSizeInput.Text = MGH.Size.ToString();
             tSizeInput.TextChanged += (s, e) =>
             {
                 if (double.TryParse(((ToolStripTextBox)s).Text, out double input))
                 {
                     double size = Math.Round(input, 3);
-                    if (canvas.Document == null || size <= 0) return;
+                    if (Canvas.Document == null || size <= 0) return;
                     MGH.Size = size;
-                    canvas.Document.DefineConstant("MGH_Size", new GH_Variant(MGH.Size));
-                    MGH.EventHandler(canvas);
+                    Canvas.Document.DefineConstant("MGH_" + nameof(MGH.Size), new GH_Variant(MGH.Size));
+                    MGH.EventHandler(Canvas);
                 }
+            };
+
+            reAnnotate.Click += (s, e) =>
+            {
+                Translation.Clear(Canvas.Document);
+                MGH.EventHandler(Canvas);
             };
 
             save.Click += (s, e) => MGH.SaveSettings();
@@ -186,41 +197,42 @@ namespace MultilingualGH
                     if ((MGH.DisplayType)int.Parse(i.ToolTipText) == MGH.DisplayName) i.Checked = true;
                     else i.Checked = false;
                 }
-                if (canvas.Document == null) return;
-                if (!MGH.TextDisplay) Translation.Clear(canvas.Document);
-                canvas.Document.DefineConstant("MGH_DisplayName", new GH_Variant((int)MGH.DisplayName));
-                MGH.EventHandler(canvas);
+                if (Canvas.Document == null) return;
+                if (!MGH.TextDisplay) Translation.Clear(Canvas.Document);
+                Canvas.Document.DefineConstant("MGH_" + nameof(MGH.DisplayName), new GH_Variant((int)MGH.DisplayName));
+                MGH.EventHandler(Canvas);
             }
 
             excludeDe.Click += (s, e) =>
             {
                 MGH.ExcludeDefault = !MGH.ExcludeDefault;
                 excludeDe.Checked = MGH.ExcludeDefault;
-                if (canvas.Document == null) return;
-                canvas.Document.DefineConstant("MGH_ExcludeDefault", new GH_Variant(MGH.ExcludeDefault));
-                MGH.EventHandler(canvas);
+                if (Canvas.Document == null) return;
+                Canvas.Document.DefineConstant("MGH_" + nameof(MGH.ExcludeDefault), new GH_Variant(MGH.ExcludeDefault));
+                MGH.EventHandler(Canvas);
             };
 
             excludeUs.Click += (s, e) =>
             {
                 UserForm form = new UserForm();
                 form.ShowDialog();
-                if (canvas.Document != null && form.DialogResult == DialogResult.OK)
+                if (Canvas.Document != null && form.DialogResult == DialogResult.OK)
                 {
-                    canvas.Document.DefineConstant("MGH_ExcludeUser", new GH_Variant(MGH.ExcludeUser));
-                    MGH.EventHandler(canvas);
+                    Canvas.Document.DefineConstant("MGH_" + nameof(MGH.ExcludeUser), new GH_Variant(MGH.ExcludeUser));
+                    MGH.EventHandler(Canvas);
+                    excludeUs.Checked = MGH.ExcludeUser.Length != 0;
                 }
-                excludeUs.Checked = MGH.ExcludeUser.Length != 0;
             };
 
             showEng.Click += (s, e) =>
             {
                 MGH.ShowEng = !MGH.ShowEng;
                 showEng.Checked = MGH.ShowEng;
-                if (canvas.Document != null)
+                if (Canvas.Document != null)
                 {
-                    canvas.Document.DefineConstant("MGH_ShowEng", new GH_Variant(MGH.ShowEng));
-                    MGH.EventHandler(canvas);
+                    Canvas.Document.DefineConstant("MGH_" + nameof(MGH.ShowEng), new GH_Variant(MGH.ShowEng));
+                    if (!MGH.TextDisplay) Translation.Clear(Canvas.Document);
+                    MGH.EventHandler(Canvas);
                 }
             };
 
@@ -237,7 +249,7 @@ namespace MultilingualGH
                     help.Click += (s, e) =>
                     {
                         MessageBox.Show($"To add translation languages, copy translations files to\r\n{Translation.folder}\r\nand press Reload", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        string target = "https://github.com/v-xup6/MultilingualGH/tree/main/Languages";
+                        string target = "https://github.com/v-xup6/MultilingualGH/wiki";
                         try
                         {
                             Process.Start(target);
@@ -257,7 +269,7 @@ namespace MultilingualGH
         }
         static internal void RemoveInvalid(object sender, ToolStripMenuItem menu)
         {
-            MessageBox.Show($"{sender} is missing or is invalid");
+            MessageBox.Show($"{sender} {UI.Missing}");
             Translation.files.Remove(sender.ToString());
             menu.DropDownItems.RemoveByKey(sender.ToString());
         }

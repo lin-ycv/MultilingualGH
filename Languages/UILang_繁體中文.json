@@ -28,8 +28,16 @@
         "Translation": "文字大小"
     },
     {
+        "Name": "ReAnnotate",
+        "Translation": "手動更新翻譯"
+    },
+    {
         "Name": "Save",
         "Translation": "儲存設定為預設"
+    },
+    {
+        "Name": "Reload",
+        "Translation": "重新讀取檔案"
     },
     {
         "Name": "ExcludeDefault",
@@ -38,10 +46,6 @@
     {
         "Name": "ExcludeUser",
         "Translation": "自訂排除"
-    },
-    {
-        "Name": "Keep",
-        "Translation": "保留翻譯"
     },
     {
         "Name": "ShowEng",
@@ -70,6 +74,10 @@
     {
         "Name": "DCustomNick",
         "Translation": "顯示自訂或縮寫"
+    },
+    {
+        "Name": "Missing",
+        "Translation": "不存在或非有效的JSON檔案"
     },
     {
         "Name": "*Translator*",
