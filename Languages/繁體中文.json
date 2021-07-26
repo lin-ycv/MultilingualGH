@@ -1,1922 +1,2563 @@
-[{
-"name":"Point",
-"translation":"點"
-},{
-"name":"Vector",
-"translation":"向量"
-},{
-"name":"Circle",
-"translation":"圓容器",
-"category":"Params"
-},{
-"name":"Circle",
-"translation":"創圓"
-},{
-"name":"Curve",
-"translation":"線條"
-},{
-"name":"Plane",
-"translation":"平面"
-},{
-"name":"Circular Arc",
-"translation":"圓弧"
-},{
-"name":"Line",
-"translation":"直線"
-},{
-"name":"Rectangle",
-"translation":"矩形"
-},{
-"name":"Box",
-"translation":"立方體"
-},{
-"name":"Mesh",
-"translation":"網格"
-},{
-"name":"Surface",
-"translation":"面"
-},{
-"name":"Brep",
-"translation":"邊界表示幾何"
-},{
-"name":"Mesh Face",
-"translation":"網格面"
-},{
-"name":"Twisted Box",
-"translation":"扭曲立方體"
-},{
-"name":"Field",
-"translation":"向量場"
-},{
-"name":"Geometry Cache",
-"translation":"幾何快取"
-},{
-"name":"Group",
-"translation":"群組"
-},{
-"name":"Geometry",
-"translation":"幾何"
-},{
-"name":"Geometry Pipeline",
-"translation":"幾何連結"
-},{
-"name":"Transform",
-"translation":"移動"
-},{
-"name":"Boolean",
-"translation":"布林"
-},{
-"name":"Number",
-"translation":"數字"
-},{
-"name":"Integer",
-"translation":"整數"
-},{
-"name":"Text",
-"translation":"文字"
-},{
-"name":"Colour",
-"translation":"顏色"
-},{
-"name":"Culture",
-"translation":"文化特性"
-},{
-"name":"Domain2",
-"translation":"區間2"
-},{
-"name":"Matrix",
-"translation":"矩陣"
-},{
-"name":"Complex",
-"translation":"複數"
-},{
-"name":"Domain",
-"translation":"區間"
-},{
-"name":"Guid",
-"translation":"識別碼"
-},{
-"name":"Time",
-"translation":"時間"
-},{
-"name":"Data",
-"translation":"資訊"
-},{
-"name":"File Path",
-"translation":"文件路徑"
-},{
-"name":"Data Path",
-"translation":"資料層路徑"
-},{
-"name":"Shader",
-"translation":"著色器"
-},{
-"name":"Control Knob",
-"translation":"數值旋鈕"
-},{
-"name":"Value List",
-"translation":"清單"
-},{
-"name":"Calendar",
-"translation":"日曆"
-},{
-"name":"Colour Picker",
-"translation":"調色"
-},{
-"name":"Colour Wheel",
-"translation":"色環"
-},{
-"name":"Graph Mapper",
-"translation":"圖表映射"
-},{
-"name":"Clock",
-"translation":"時鐘"
-},{
-"name":"Colour Swatch",
-"translation":"色板"
-},{
-"name":"Gradient",
-"translation":"漸層"
-},{
-"name":"Image Sampler",
-"translation":"影像取樣"
-},{
-"name":"Import Coordinates",
-"translation":"匯入坐標"
-},{
-"name":"Import PDB",
-"translation":"匯入PDB"
-},{
-"name":"Object Details",
-"translation":"物件細節"
-},{
-"name":"Import 3DM",
-"translation":"匯入3DM"
-},{
-"name":"Import Image",
-"translation":"匯入圖片"
-},{
-"name":"Import SHP",
-"translation":"匯入SHP"
-},{
-"name":"Read File",
-"translation":"讀取檔案"
-},{
-"name":"Cherry Picker",
-"translation":"完美單選"
-},{
-"name":"Param Viewer",
-"translation":"顯示資料結構"
-},{
-"name":"Jump",
-"translation":"跳至"
-},{
-"name":"Data Dam",
-"translation":"數據大壩"
-},{
-"name":"Relay",
-"translation":"節點"
-},{
-"name":"Timer",
-"translation":"計時器"
-},{
-"name":"Trigger",
-"translation":"計時器"
-},{
-"name":"Data Recorder",
-"translation":"黑盒子"
-},{
-"name":"Suirify",
-"translation":"資料結構最簡化"
-},{
-"name":"Cluster Input",
-"translation":"打包輸入"
-},{
-"name":"Data Input",
-"translation":"資訊輸入"
-},{
-"name":"Cluster Output",
-"translation":"打包輸出"
-},{
-"name":"Data Output",
-"translation":"資訊輸出"
-},{
-"name":"Fitness Landscape",
-"translation":"適應度景觀"
-},{
-"name":"Gene Pool",
-"translation":"基因庫"
-},{
-"name":"Galapagos",
-"translation":"反覆試驗"
-},{
-"name":"Construct Domain",
-"translation":"創造區間"
-},{
-"name":"Deconstruct Domain",
-"translation":"區間界限"
-},{
-"name":"Bounds",
-"translation":"界限"
-},{
-"name":"Consecutive Domains",
-"translation":"連續區間"
-},{
-"name":"Divide Domain",
-"translation":"區間分割"
-},{
-"name":"Find Domain",
-"translation":"區間查詢"
-},{
-"name":"Includes",
-"translation":"包含"
-},{
-"name":"Remap Numbers",
-"translation":"映射數字"
-},{
-"name":"Construct Domain2",
-"translation":"創造區間²"
-},{
-"name":"Deconstruct Domain2",
-"translation":"區間²界限"
-},{
-"name":"Bounds 2D",
-"translation":"界限2D"
-},{
-"name":"Divide Domain2",
-"translation":"分割區間²"
-},{
-"name":"Construct Matrix",
-"translation":"建立矩陣"
-},{
-"name":"Deconstruct Matrix",
-"translation":"拆解矩陣"
-},{
-"name":"Display Matrix",
-"translation":"顯示矩陣"
-},{
-"name":"Invert Matrix",
-"translation":"反矩陣"
-},{
-"name":"Transpose Matrix",
-"translation":"轉置矩陣"
-},{
-"name":"Swap Columns",
-"translation":"交換列"
-},{
-"name":"Swap Rows",
-"translation":"交換行"
-},{
-"name":"Addition",
-"translation":"加法"
-},{
-"name":"Multiplication",
-"translation":"乘法"
-},{
-"name":"Power",
-"translation":"次方"
-},{
-"name":"Division",
-"translation":"除法"
-},{
-"name":"Negative",
-"translation":"相反數"
-},{
-"name":"Subtraction",
-"translation":"減法"
-},{
-"name":"Absolute",
-"translation":"絕對值"
-},{
-"name":"Factorial",
-"translation":"階乘"
-},{
-"name":"Interger Division",
-"translation":"整除"
-},{
-"name":"Modulus",
-"translation":"模除"
-},{
-"name":"Mass Addition",
-"translation":"累加"
-},{
-"name":"Relative Differences",
-"translation":"相對差異"
-},{
-"name":"Mass Multiplication",
-"translation":"累乘"
-},{
-"name":"Equality",
-"translation":"相等"
-},{
-"name":"Similarity",
-"translation":"相似"
-},{
-"name":"Larger Than",
-"translation":"大於"
-},{
-"name":"Smaller Than",
-"translation":"小於"
-},{
-"name":"Gate And",
-"translation":"及閘"
-},{
-"name":"Gate Or",
-"translation":"或閘"
-},{
-"name":"Gate Not",
-"translation":"反閘"
-},{
-"name":"Gate Xor",
-"translation":"互斥或閘"
-},{
-"name":"Gate Majority",
-"translation":"多數閘"
-},{
-"name":"Gate Nor",
-"translation":"反或閘"
-},{
-"name":"Gate Nand",
-"translation":"反及閘"
-},{
-"name":"Gate Xnor",
-"translation":"互斥反或閘"
-},{
-"name":"Cube",
-"translation":"立方"
-},{
-"name":"Cube Root",
-"translation":"立方根"
-},{
-"name":"Square",
-"translation":"平方"
-},{
-"name":"Square Root",
-"translation":"平方根"
-},{
-"name":"One Over X",
-"translation":"X分之一"
-},{
-"name":"Power of 10",
-"translation":"10次方"
-},{
-"name":"Power of 2",
-"translation":"2次方"
-},{
-"name":"Power of E",
-"translation":"E次方"
-},{
-"name":"Logarithm",
-"translation":"對數"
-},{
-"name":"Natural Logarithm",
-"translation":"自然對數"
-},{
-"name":"Evaluate",
-"translation":"公式計算"
-},{
-"name":"Expression",
-"translation":"公式"
-},{
-"name":"C# Script",
-"translation":"C#程式"
-},{
-"name":"GhPython Script",
-"translation":"GhPython程式"
-},{
-"name":"VB Script",
-"translation":"VB程式"
-},{
-"name":"Construct Date",
-"translation":"日期"
-},{
-"name":"Construct Exotic Date",
-"translation":"曆法日期"
-},{
-"name":"Construct Time",
-"translation":"時間"
-},{
-"name":"Deconstruct Date",
-"translation":"拆解日期"
-},{
-"name":"Combine Date & Time",
-"translation":"合併日期時間"
-},{
-"name":"Date Range",
-"translation":"時段"
-},{
-"name":"Tangent",
-"translation":"切線"
-},{
-"name":"Degrees",
-"translation":"度"
-},{
-"name":"Radians",
-"translation":"弧度"
-},{
-"name":"Golden Ratio",
-"translation":"黃金比例"
-},{
-"name":"Extremes",
-"translation":"極端"
-},{
-"name":"Minimum",
-"translation":"最小值"
-},{
-"name":"Maximum",
-"translation":"最大值"
-},{
-"name":"Round",
-"translation":"四捨五入"
-},{
-"name":"Average",
-"translation":"平均"
-},{
-"name":"Truncate",
-"translation":"截尾"
-},{
-"name":"Weighted Average",
-"translation":"加權平均"
-},{
-"name":"Insert Items",
-"translation":"插入清單"
-},{
-"name":"List Item",
-"translation":"索引挑選"
-},{
-"name":"Partition List",
-"translation":"分割清單"
-},{
-"name":"Reverse List",
-"translation":"反轉清單"
-},{
-"name":"Sort List",
-"translation":"排序清單"
-},{
-"name":"Sub List",
-"translation":"子清單"
-},{
-"name":"Item Index",
-"translation":"項目索引"
-},{
-"name":"List Length",
-"translation":"清單長度"
-},{
-"name":"Replace Items",
-"translation":"更換項目"
-},{
-"name":"Shift List",
-"translation":"清單平移"
-},{
-"name":"Split List",
-"translation":"切割清單"
-},{
-"name":"Dispatch",
-"translation":"分配"
-},{
-"name":"Pick'n'Choose",
-"translation":"挑選"
-},{
-"name":"Weave",
-"translation":"編織"
-},{
-"name":"Null Item",
-"translation":"無效檢驗"
-},{
-"name":"Replace Nulls",
-"translation":"更換無效"
-},{
-"name":"Combine Data",
-"translation":"合併資料"
-},{
-"name":"Sift Pattern",
-"translation":"資料分流"
-},{
-"name":"Cross Reference",
-"translation":"交叉參考"
-},{
-"name":"Shortest List",
-"translation":"最短清單"
-},{
-"name":"Longest List",
-"translation":"最長清單"
-},{
-"name":"Cull Index",
-"translation":"剔除"
-},{
-"name":"Cull Nth",
-"translation":"剔除第N個"
-},{
-"name":"Cull Pattern",
-"translation":"剔除樣式"
-},{
-"name":"Random Reduce",
-"translation":"隨機減少"
-},{
-"name":"Char Sequence",
-"translation":"字符序列"
-},{
-"name":"Duplicate Data",
-"translation":"資料複製"
-},{
-"name":"Range",
-"translation":"範圍"
-},{
-"name":"Repeat Data",
-"translation":"重複資料"
-},{
-"name":"Series",
-"translation":"數字系列"
-},{
-"name":"Stack Data",
-"translation":"資料堆疊"
-},{
-"name":"Jitter",
-"translation":"打散"
-},{
-"name":"Random",
-"translation":"隨機"
-},{
-"name":"Create Set",
-"translation":"創造字典"
-},{
-"name":"Set Difference",
-"translation":"字典去除"
-},{
-"name":"Set Difference(S)",
-"translation":"字典去除差異"
-},{
-"name":"Set Intersection",
-"translation":"字典相交"
-},{
-"name":"Set Majority",
-"translation":"字典多數"
-},{
-"name":"Set Union",
-"translation":"字典相加"
-},{
-"name":"Carthesian Product",
-"translation":"配對"
-},{
-"name":"Member Index",
-"translation":"單字索引"
-},{
-"name":"Replace Members",
-"translation":"更換單字"
-},{
-"name":"SubSet",
-"translation":"子集"
-},{
-"name":"Delete Consecutive",
-"translation":"刪除連續"
-},{
-"name":"Find Similar member",
-"translation":"尋找相似單字"
-},{
-"name":"Key/Value Search",
-"translation":"關鍵字值搜索"
-},{
-"name":"Characters",
-"translation":"字元"
-},{
-"name":"Concatenate",
-"translation":"字串合併"
-},{
-"name":"Text Join",
-"translation":"字串連接"
-},{
-"name":"Text Length",
-"translation":"字串長度"
-},{
-"name":"Text Split",
-"translation":"切割字串"
-},{
-"name":"Format",
-"translation":"格式"
-},{
-"name":"Text Case",
-"translation":"大小寫"
-},{
-"name":"Text Fragment",
-"translation":"字串片段"
-},{
-"name":"Text Trim",
-"translation":"文字修飾"
-},{
-"name":"Match Text",
-"translation":"正規表達式"
-},{
-"name":"Replace Text",
-"translation":"更換字串"
-},{
-"name":"Sort Text",
-"translation":"字串排序"
-},{
-"name":"Text Distance",
-"translation":"字串距離"
-},{
-"name":"Clean Tree",
-"translation":"清理資料結構"
-},{
-"name":"Graft Tree",
-"translation":"增層"
-},{
-"name":"Simplify Tree",
-"translation":"資料結構簡化"
-},{
-"name":"Trim Tree",
-"translation":"回推資料結構層"
-},{
-"name":"Flatten Tree",
-"translation":"壓平資料結構"
-},{
-"name":"Prune Tree",
-"translation":"修剪資料結構"
-},{
-"name":"Tree Statistics",
-"translation":"資料結構資訊"
-},{
-"name":"Unflatten Tree",
-"translation":"重創資料結構"
-},{
-"name":"Entwine",
-"translation":"壓平編層"
-},{
-"name":"Flip Matrix",
-"translation":"層次轉置"
-},{
-"name":"Explode Tree",
-"translation":"層次爆炸"
-},{
-"name":"Merge",
-"translation":"合併"
-},{
-"name":"Match Tree",
-"translation":"層次相配"
-},{
-"name":"Shift Paths",
-"translation":"剔除資料結構層"
-},{
-"name":"Path Mapper",
-"translation":"編層"
-},{
-"name":"Split Tree",
-"translation":"資料結構層篩選"
-},{
-"name":"Stream Filter",
-"translation":"選取資料流"
-},{
-"name":"Stream Gate",
-"translation":"分流閘"
-},{
-"name":"Relative Item",
-"translation":"相對選取"
-},{
-"name":"Tree Branch",
-"translation":"資料結構層選取"
-},{
-"name":"Relative Items",
-"translation":"相對流選取"
-},{
-"name":"Tree Item",
-"translation":"挑選"
-},{
-"name":"Construct Path",
-"translation":"創層次字串"
-},{
-"name":"Deconstruct Path",
-"translation":"拆解層次字串"
-},{
-"name":"Replace Paths",
-"translation":"更換層次標號"
-},{
-"name":"Hexagonal",
-"translation":"六角型陣列"
-},{
-"name":"Radial",
-"translation":"放射型陣列"
-},{
-"name":"Rectangular",
-"translation":"矩形陣列"
-},{
-"name":"Square",
-"translation":"正方形陣列"
-},{
-"name":"Triangular",
-"translation":"三角形陣列"
-},{
-"name":"Populate 2D",
-"translation":"隨機創點2D"
-},{
-"name":"Populate 3D",
-"translation":"隨機創點3D"
-},{
-"name":"Populate Geometry",
-"translation":"形內隨機創點"
-},{
-"name":"Deconstruct Plane",
-"translation":"拆解平面"
-},{
-"name":"XZ Plane",
-"translation":"XZ平面"
-},{
-"name":"XY Plane",
-"translation":"XY平面"
-},{
-"name":"YZ Plane",
-"translation":"YZ平面"
-},{
-"name":"Construct Plane",
-"translation":"創造平面"
-},{
-"name":"Line + Pt",
-"translation":"線點創平面"
-},{
-"name":"Plane Fit",
-"translation":"平面切合點"
-},{
-"name":"Plane Offset",
-"translation":"平面偏移"
-},{
-"name":"Line + Line",
-"translation":"線線創平面"
-},{
-"name":"Plane 3Pt",
-"translation":"3點創平面"
-},{
-"name":"Plane Normal",
-"translation":"法線創平面"
-},{
-"name":"Plane Origin",
-"translation":"平面移原點"
-},{
-"name":"Adjust Plane",
-"translation":"對齊平面法線"
-},{
-"name":"Align Planes",
-"translation":"平面對齊平面"
-},{
-"name":"Plane Closest Point",
-"translation":"平面最點"
-},{
-"name":"Rotate Plane",
-"translation":"旋轉平面"
-},{
-"name":"Align Plane",
-"translation":"對齊平面"
-},{
-"name":"Flip Plane",
-"translation":"翻轉平面"
-},{
-"name":"Plane Coordinates",
-"translation":"新座標系統"
-},{
-"name":"Construct Point",
-"translation":"創點"
-},{
-"name":"Numbers to Points",
-"translation":"座標創點"
-},{
-"name":"Deconstruct",
-"translation":"拆解點"
-},{
-"name":"Points to Numbers",
-"translation":"點座標"
-},{
-"name":"Point Cylindrical",
-"translation":"圓柱座標系點"
-},{
-"name":"Point Polar",
-"translation":"極座標系點"
-},{
-"name":"Distance",
-"translation":"距離"
-},{
-"name":"Point Oriented",
-"translation":"平面座標點"
-},{
-"name":"To Polar",
-"translation":"極座標系"
-},{
-"name":"Closest Point",
-"translation":"最近點"
-},{
-"name":"Cull Duplicates",
-"translation":"剔除重複點"
-},{
-"name":"Project Point",
-"translation":"投影點"
-},{
-"name":"Sort Along Curve",
-"translation":"沿曲線排序"
-},{
-"name":"Closest Points",
-"translation":"最近點"
-},{
-"name":"Point Groups",
-"translation":"點群組"
-},{
-"name":"Pull Point",
-"translation":"拉點"
-},{
-"name":"Sort Points",
-"translation":"排序點"
-},{
-"name":"Deconstruct Vector",
-"translation":"拆解向量"
-},{
-"name":"Vector XYZ",
-"translation":"向量XYZ"
-},{
-"name":"Unit Vector",
-"translation":"單位向量"
-},{
-"name":"Unit X",
-"translation":"X向量"
-},{
-"name":"Unit Y",
-"translation":"Y向量"
-},{
-"name":"Unit Z",
-"translation":"Z向量"
-},{
-"name":"Amplitude",
-"translation":"向量幅度"
-},{
-"name":"Angle",
-"translation":"角度"
-},{
-"name":"Cross Product",
-"translation":"向量積"
-},{
-"name":"Dot Product",
-"translation":"內積"
-},{
-"name":"Reverse",
-"translation":"逆向向量"
-},{
-"name":"Vector 2Pt",
-"translation":"2點向量"
-},{
-"name":"Vector Length",
-"translation":"向量長度"
-},{
-"name":"Control Points",
-"translation":"控制點"
-},{
-"name":"Curve Middle",
-"translation":"線中點"
-},{
-"name":"Deconstruct Rectangle",
-"translation":"拆解矩形"
-},{
-"name":"Polygon Center",
-"translation":"多邊形中心"
-},{
-"name":"Control Polygon",
-"translation":"多邊形控制點"
-},{
-"name":"Deconstruct Arc",
-"translation":"拆解弧"
-},{
-"name":"End Points",
-"translation":"終點"
-},{
-"name":"Closed",
-"translation":"是封閉"
-},{
-"name":"Deconstruct Rectangle",
-"translation":"拆解長方形"
-},{
-"name":"Curve Closest Point",
-"translation":"線最近點"
-},{
-"name":"Curve Proximity",
-"translation":"線最近處"
-},{
-"name":"Discontinuity",
-"translation":"不連續性處"
-},{
-"name":"Planar",
-"translation":"是平面"
-},{
-"name":"Curvature Graph",
-"translation":"曲率梳"
-},{
-"name":"Curve Nearest Object",
-"translation":"線最近物"
-},{
-"name":"Curve Side",
-"translation":"線左右"
-},{
-"name":"Curvature",
-"translation":"曲率"
-},{
-"name":"Derivatives",
-"translation":"導數"
-},{
-"name":"Horizontal Frame",
-"translation":"水平平面"
-},{
-"name":"Horizontal Frames",
-"translation":"水平平面"
-},{
-"name":"Point On Curve",
-"translation":"線上點"
-},{
-"name":"Curve Frame",
-"translation":"線條平面"
-},{
-"name":"Curve Frames",
-"translation":"線條平面"
-},{
-"name":"Evaluate Curve",
-"translation":"評估線"
-},{
-"name":"Perp Frame",
-"translation":"垂直平面"
-},{
-"name":"Perp Frames",
-"translation":"垂直平面"
-},{
-"name":"Torsion",
-"translation":"扭轉"
-},{
-"name":"Curve Domain",
-"translation":"映射線條區間"
-},{
-"name":"Length",
-"translation":"長度"
-},{
-"name":"Length Parameter",
-"translation":"參數長度"
-},{
-"name":"Evaluate Length",
-"translation":"評估長度"
-},{
-"name":"Length Domain",
-"translation":"區間長度"
-},{
-"name":"Segment Lengths",
-"translation":"線段最長短"
-},{
-"name":"Point In Curve",
-"translation":"線內點"
-},{
-"name":"Point in Curves",
-"translation":"線內點"
-},{
-"name":"Contour",
-"translation":"等高線"
-},{
-"name":"Contour (ex)",
-"translation":"等高線(進階)"
-},{
-"name":"Dash Pattern",
-"translation":"虛線"
-},{
-"name":"Divide Curve",
-"translation":"等長分割"
-},{
-"name":"Divide Distance",
-"translation":"等距分割"
-},{
-"name":"Divide Length",
-"translation":"長度分割"
-},{
-"name":"Shatter",
-"translation":"打碎"
-},{
-"name":"Fit Line",
-"translation":"線切合點"
-},{
-"name":"Line 2Plane",
-"translation":"平面連接線"
-},{
-"name":"Line SDL",
-"translation":"線始向長"
-},{
-"name":"Tangent Lines",
-"translation":"點圓切線"
-},{
-"name":"Tangent Lines (Ex)",
-"translation":"外公切線"
-},{
-"name":"Tangent Lines (ln)",
-"translation":"內公切線"
-},{
-"name":"Line 4Pt",
-"translation":"線點點線"
-},{
-"name":"Circle CNR",
-"translation":"圓中法半"
-},{
-"name":"Circle TanTan",
-"translation":"圓圓切線圓"
-},{
-"name":"InEllipse",
-"translation":"內切橢圓"
-},{
-"name":"Circle 3Pt",
-"translation":"3點圓"
-},{
-"name":"Circle Fit",
-"translation":"圓切合點"
-},{
-"name":"Circle TanTanTan",
-"translation":"圓圓圓切線圓"
-},{
-"name":"Ellipse",
-"translation":"橢圓"
-},{
-"name":"InCircle",
-"translation":"內切圓"
-},{
-"name":"Arc SED",
-"translation":"弧結點方向"
-},{
-"name":"Arc",
-"translation":"圓弧"
-},{
-"name":"Modified Arc",
-"translation":"對照圓弧"
-},{
-"name":"Arc 3Pt",
-"translation":"3點圓弧"
-},{
-"name":"BiArc",
-"translation":"雙弧"
-},{
-"name":"Tangent Arcs",
-"translation":"圓圓切線弧"
-},{
-"name":"Polygon",
-"translation":"多邊形"
-},{
-"name":"Rectangle 3Pt",
-"translation":"3點矩形"
-},{
-"name":"Polygon Edge",
-"translation":"多邊形單邊"
-},{
-"name":"Rectangle 2Pt",
-"translation":"2點矩形"
-},{
-"name":"Bezier Span",
-"translation":"2點貝茲曲線"
-},{
-"name":"Interpolate (t)",
-"translation":"切線內插點曲線"
-},{
-"name":"Nurbs Curve",
-"translation":"非均勻有理B樣曲線"
-},{
-"name":"PolyLine",
-"translation":"聚合線"
-},{
-"name":"Interpolate",
-"translation":"內插點曲線"
-},{
-"name":"Kinky Curve",
-"translation":"混合式連接線"
-},{
-"name":"Tangent Curve",
-"translation":"點切線連接線"
-},{
-"name":"Curve On Surface",
-"translation":"面上連接線"
-},{
-"name":"Iso Curve",
-"translation":"等值線"
-},{
-"name":"Tween Curve",
-"translation":"線間線"
-},{
-"name":"Geodesic",
-"translation":"測地線"
-},{
-"name":"Sub Curve",
-"translation":"子線段"
-},{
-"name":"Blend Curve",
-"translation":"混和曲線"
-},{
-"name":"Blend Curve Pt",
-"translation":"點混合曲線"
-},{
-"name":"Catenary",
-"translation":"懸鏈線"
-},{
-"name":"Connect Curves",
-"translation":"連接曲線"
-},{
-"name":"Explode",
-"translation":"爆炸"
-},{
-"name":"Flip Curve",
-"translation":"線條反向"
-},{
-"name":"Extend Curve",
-"translation":"延伸線條"
-},{
-"name":"Join Curves",
-"translation":"接合線條"
-},{
-"name":"Fillet",
-"translation":"圓角"
-},{
-"name":"Fillet Distance",
-"translation":"圓角距離"
-},{
-"name":"Fillet Edge",
-"translation":"邊緣圓角"
-},{
-"name":"Offset Curve Loose",
-"translation":"線條偏移(簡單)"
-},{
-"name":"Offset Curve",
-"translation":"曲線偏移"
-},{
-"name":"Project",
-"translation":"投影"
-},{
-"name":"Seam",
-"translation":"接縫"
-},{
-"name":"Offset on Srf",
-"translation":"面上偏移"
-},{
-"name":"Pull Curve",
-"translation":"線拉至面"
-},{
-"name":"Curve To Polyline",
-"translation":"轉換為聚合線"
-},{
-"name":"Polyline Collapse",
-"translation":"簡化聚合線"
-},{
-"name":"Reduce",
-"translation":"剔雜點"
-},{
-"name":"Smooth Polyline",
-"translation":"平滑聚合線"
-},{
-"name":"Fit Curve",
-"translation":"曲線切合點"
-},{
-"name":"Rebuild Curve",
-"translation":"重建線條"
-},{
-"name":"Simplify Curve",
-"translation":"簡化線條"
-},{
-"name":"Box Corners",
-"translation":"立方體角"
-},{
-"name":"Deconstruct Box",
-"translation":"拆解立方體"
-},{
-"name":"Box Properties",
-"translation":"立方體屬性"
-},{
-"name":"Evaluate Box",
-"translation":"評立方體"
-},{
-"name":"Brep Edges",
-"translation":"幾何邊"
-},{
-"name":"Brep Wireframe",
-"translation":"幾何邊框"
-},{
-"name":"Dimensions",
-"translation":"UV尺寸"
-},{
-"name":"Surface Points",
-"translation":"面控制點"
-},{
-"name":"Deconstruct Brep",
-"translation":"拆解幾何"
-},{
-"name":"Is Planar",
-"translation":"是平面"
-},{
-"name":"Area",
-"translation":"面積"
-},{
-"name":"Volume",
-"translation":"體積"
-},{
-"name":"Brep Closest Point",
-"translation":"幾何最近點"
-},{
-"name":"Surface Closest Point",
-"translation":"面最近點"
-},{
-"name":"Point In Brep",
-"translation":"點在幾何內"
-},{
-"name":"Point In Trim",
-"translation":"點在顯示面內"
-},{
-"name":"Point In Breps",
-"translation":"點在幾何內"
-},{
-"name":"Shape In Brep",
-"translation":"幾何在幾何內"
-},{
-"name":"Evaluate Surface",
-"translation":"評估面"
-},{
-"name":"Principal Curvature",
-"translation":"主曲率"
-},{
-"name":"Surface Curvature",
-"translation":"表面曲率"
-},{
-"name":"4Point Surface",
-"translation":"面4點"
-},{
-"name":"Surface From Points",
-"translation":"點創面"
-},{
-"name":"Boundary Surfaces",
-"translation":"邊界創平面"
-},{
-"name":"Edge Surface",
-"translation":"邊緣創面"
-},{
-"name":"Loft",
-"translation":"斷面混成"
-},{
-"name":"Network Surface",
-"translation":"網絡線創面"
-},{
-"name":"Sum Surface",
-"translation":"簡單掃掠"
-},{
-"name":"Control Point Loft",
-"translation":"控制點斷面混成"
-},{
-"name":"Fit Loft",
-"translation":"斷面混成切合"
-},{
-"name":"Loft Options",
-"translation":"斷面混成選項"
-},{
-"name":"Ruled Surface",
-"translation":"直紋表面"
-},{
-"name":"Extrude",
-"translation":"擠出"
-},{
-"name":"Extrude Linear",
-"translation":"直線擠出"
-},{
-"name":"Extrude Along",
-"translation":"沿著擠出"
-},{
-"name":"Extrude Point",
-"translation":"擠出至點"
-},{
-"name":"Patch",
-"translation":"補丁"
-},{
-"name":"Fragment Patch",
-"translation":"片段補丁"
-},{
-"name":"Pipe",
-"translation":"圓管"
-},{
-"name":"Sweep1",
-"translation":"掃掠"
-},{
-"name":"Sweep2",
-"translation":"掃掠2"
-},{
-"name":"Pipe Variable",
-"translation":"變形圓管"
-},{
-"name":"Plane Surface",
-"translation":"平面創面"
-},{
-"name":"Plane Through Shape",
-"translation":"投影面積"
-},{
-"name":"Bounding Box",
-"translation":"邊界立方體"
-},{
-"name":"Box 2Pt",
-"translation":"2點立方體"
-},{
-"name":"Box Rectangle",
-"translation":"矩形立方體"
-},{
-"name":"Center Box",
-"translation":"中心立方體"
-},{
-"name":"Domain Box",
-"translation":"區間立方體"
-},{
-"name":"Cone",
-"translation":"錐體"
-},{
-"name":"Cylinder",
-"translation":"圓柱"
-},{
-"name":"Quad Sphere",
-"translation":"球體"
-},{
-"name":"Sphere",
-"translation":"球體"
-},{
-"name":"Sphere 4Pt",
-"translation":"4點球體"
-},{
-"name":"Sphere Fit",
-"translation":"球體切合點"
-},{
-"name":"Divide Surface",
-"translation":"面UV點"
-},{
-"name":"Surface Frames",
-"translation":"面UV平面"
-},{
-"name":"Copy Trim",
-"translation":"複製UV裁切"
-},{
-"name":"Retrim",
-"translation":"重新裁切"
-},{
-"name":"Isotrim",
-"translation":"區間子面"
-},{
-"name":"Untrim",
-"translation":"顯示完整面"
-},{
-"name":"Brep Join",
-"translation":"接合幾何"
-},{
-"name":"Cap Holes Ex",
-"translation":"封口(進階)"
-},{
-"name":"Cap Holes",
-"translation":"封口"
-},{
-"name":"Merge Faces",
-"translation":"結合面"
-},{
-"name":"Flip",
-"translation":"翻面"
-},{
-"name":"Offset Surface Loose",
-"translation":"偏移面(簡單)"
-},{
-"name":"Offset Surface",
-"translation":"偏移面"
-},{
-"name":"Convex Edges",
-"translation":"凹凸邊"
-},{
-"name":"Deconstruct Face",
-"translation":"拆解網格面"
-},{
-"name":"Deconstruct Mesh",
-"translation":"拆解網格"
-},{
-"name":"Face Normals",
-"translation":"網格面法線"
-},{
-"name":"Mesh Edges",
-"translation":"網格邊"
-},{
-"name":"Face Boundaries",
-"translation":"網格面邊界"
-},{
-"name":"Mesh Inclusion",
-"translation":"點在網格內"
-},{
-"name":"Mesh Closest Point",
-"translation":"網格最近點"
-},{
-"name":"Mesh Eval",
-"translation":"評估網格"
-},{
-"name":"Construct Mesh",
-"translation":"創造網格"
-},{
-"name":"Mesh Colours",
-"translation":"網格顏色"
-},{
-"name":"Mesh Quad",
-"translation":"四邊形網格"
-},{
-"name":"Mesh Spray",
-"translation":"網格噴漆"
-},{
-"name":"Mesh Triangle",
-"translation":"三角形網格"
-},{
-"name":"Mesh Box",
-"translation":"網格立方體"
-},{
-"name":"Mesh Plane",
-"translation":"網格平面"
-},{
-"name":"Mesh Sphere",
-"translation":"網格球體"
-},{
-"name":"MeshSphere Ex",
-"translation":"四邊形網格球體"
-},{
-"name":"Convex Hull",
-"translation":"凸包"
-},{
-"name":"Delaunay Mesh",
-"translation":"德勞內三角化"
-},{
-"name":"Delaunay Edges",
-"translation":"德勞內邊緣"
-},{
-"name":"Facet Dome",
-"translation":"刻面圓頂"
-},{
-"name":"Voronoi 3D",
-"translation":"沃羅諾伊3D"
-},{
-"name":"Voronoi Groups",
-"translation":"自定沃羅諾伊"
-},{
-"name":"Voronoi",
-"translation":"沃羅諾伊圖"
-},{
-"name":"Voronoi Cell",
-"translation":"沃羅諾伊細胞"
-},{
-"name":"OcTree",
-"translation":"八元樹"
-},{
-"name":"Proximity 3D",
-"translation":"相近3D"
-},{
-"name":"Proximity 2D",
-"translation":"相近2D"
-},{
-"name":"QuadTree",
-"translation":"四元樹"
-},{
-"name":"MetaBall",
-"translation":"元球"
-},{
-"name":"MetaBall(t) Custom",
-"translation":"自定元球"
-},{
-"name":"MetaBall(t)",
-"translation":"參數元球"
-},{
-"name":"Mesh Brep",
-"translation":"幾何創網格"
-},{
-"name":"Settings (Custom)",
-"translation":"網格自定設定"
-},{
-"name":"Settings (Speed)",
-"translation":"網格快速設定"
-},{
-"name":"Settings (Quality)",
-"translation":"網格優質設定"
-},{
-"name":"Mesh Surface",
-"translation":"面創網格"
-},{
-"name":"Simple Mesh",
-"translation":"簡單網格"
-},{
-"name":"Blur Mesh",
-"translation":"網格混色"
-},{
-"name":"Cull Vertices",
-"translation":"剔除頂點"
-},{
-"name":"Delete Vertices",
-"translation":"刪除頂點"
-},{
-"name":"Mesh Join",
-"translation":"網格接合"
-},{
-"name":"Mesh Split Plane",
-"translation":"平面分割網格"
-},{
-"name":"Cull Faces",
-"translation":"剔除面"
-},{
-"name":"Delete Faces",
-"translation":"刪除面"
-},{
-"name":"Disjoint Mesh",
-"translation":"不相交的網格"
-},{
-"name":"Mesh Shadow",
-"translation":"網格陰影"
-},{
-"name":"Smooth Mesh",
-"translation":"平滑網格"
-},{
-"name":"Align Vertices",
-"translation":"對齊頂點"
-},{
-"name":"Quadrangulate",
-"translation":"簡化為四邊形網格"
-},{
-"name":"Triangulate",
-"translation":"簡化為三角形網格"
-},{
-"name":"Unify Mesh",
-"translation":"統一法線"
-},{
-"name":"Weld Mesh",
-"translation":"簡化網格"
-},{
-"name":"Flip Mesh",
-"translation":"翻轉網格"
-},{
-"name":"Unweld Mesh",
-"translation":"網格摺痕"
-},{
-"name":"Brep | Line",
-"translation":"幾何 | 線"
-},{
-"name":"Line | Line",
-"translation":"線 | 線"
-},{
-"name":"Surface | Line",
-"translation":"面 | 線"
-},{
-"name":"Curve | Line",
-"translation":"曲線 | 線"
-},{
-"name":"Mesh | Ray",
-"translation":"網眼 | 射線"
-},{
-"name":"Brep | Plane",
-"translation":"幾何 | 平面"
-},{
-"name":"Line | Plane",
-"translation":"線 | 平面"
-},{
-"name":"Plane | Plane",
-"translation":"平面| 平面"
-},{
-"name":"Plane Region",
-"translation":"平面交集區"
-},{
-"name":"Curve | Plane",
-"translation":"曲線 | 平面"
-},{
-"name":"Mesh | Plane",
-"translation":"網格 | 平面"
-},{
-"name":"Plane | Plane | Plane",
-"translation":" 平面 | 平面 | 平面"
-},{
-"name":"IsoVist",
-"translation":"視域"
-},{
-"name":"IsoVist Ray",
-"translation":"視域射線"
-},{
-"name":"Curve | Curve",
-"translation":"曲線 | 曲線"
-},{
-"name":"Curve | Self",
-"translation":"曲線自交"
-},{
-"name":"Multiple Curves",
-"translation":"多線交集"
-},{
-"name":"Brep | Brep",
-"translation":"幾何 | 幾何"
-},{
-"name":"Brep | Curve",
-"translation":"幾何 | 曲線"
-},{
-"name":"Surface | Curve",
-"translation":"面 | 曲線"
-},{
-"name":"Surface Split",
-"translation":"面切割"
-},{
-"name":"Mesh | Curve",
-"translation":"網格 | 曲線"
-},{
-"name":"Mesh | Mesh",
-"translation":"網格 | 網格 "
-},{
-"name":"Collision Many|Many",
-"translation":"多對多碰撞"
-},{
-"name":"Collision One|Many",
-"translation":"一對多碰撞"
-},{
-"name":"Split with Brep",
-"translation":"幾何切線"
-},{
-"name":"Split with Breps",
-"translation":"幾何切線段"
-},{
-"name":"Trim with Brep",
-"translation":"幾何刪線"
-},{
-"name":"Trim with Breps",
-"translation":"幾何刪線段"
-},{
-"name":"Trim with Region",
-"translation":"區域刪線"
-},{
-"name":"Trim with Regions",
-"translation":"區域刪線段"
-},{
-"name":"Boundary Volume",
-"translation":"邊界多面體"
-},{
-"name":"Solid Intersection",
-"translation":"布林交集"
-},{
-"name":"Split Brep",
-"translation":"布林分割"
-},{
-"name":"Trim Solid",
-"translation":"布林修剪"
-},{
-"name":"Solid Difference",
-"translation":"布林差集"
-},{
-"name":"Solid Union",
-"translation":"布林聯集"
-},{
-"name":"Split Brep Multiple",
-"translation":"布林分割多"
-},{
-"name":"Region Difference",
-"translation":"區域差集"
-},{
-"name":"Region Union",
-"translation":"區域聯集"
-},{
-"name":"Region Intersection",
-"translation":"區域交集"
-},{
-"name":"Region Splits",
-"translation":"區域分割"
-},{
-"name":"Mesh Difference",
-"translation":"網格布林差集"
-},{
-"name":"Mesh Split",
-"translation":"網格布林分割"
-},{
-"name":"Mesh Intersection",
-"translation":"網格布林交集"
-},{
-"name":"Mesh Union",
-"translation":"網格布林聯集"
-},{
-"name":"Box Slits",
-"translation":"榫接"
-},{
-"name":"Camera Obscura",
-"translation":"暗箱"
-},{
-"name":"Scale",
-"translation":"等比例縮放"
-},{
-"name":"Scale NU",
-"translation":"不等比例縮放"
-},{
-"name":"Shear",
-"translation":"剪力"
-},{
-"name":"Shear Angle",
-"translation":"剪切角"
-},{
-"name":"Box Mapping",
-"translation":"立方體映射"
-},{
-"name":"Orient Direction",
-"translation":"定位方向"
-},{
-"name":"Project Along",
-"translation":"投影方向"
-},{
-"name":"Rectangle Mapping",
-"translation":"矩形映射"
-},{
-"name":"Triangle Mapping",
-"translation":"三角形映射"
-},{
-"name":"Rectangular Array",
-"translation":"長方形陣列"
-},{
-"name":"Box Array",
-"translation":"立方體陣列"
-},{
-"name":"Curve Array",
-"translation":"曲線陣列"
-},{
-"name":"Linear Array",
-"translation":"陣列"
-},{
-"name":"Polar Array",
-"translation":"環形陣列"
-},{
-"name":"Rectanglar Array",
-"translation":"矩形陣列"
-},{
-"name":"Kaleidoscope",
-"translation":"萬花筒"
-},{
-"name":"Mirror",
-"translation":"鏡射"
-},{
-"name":"Move",
-"translation":"移動"
-},{
-"name":"Move Away From",
-"translation":"從...移開"
-},{
-"name":"Move To Plane",
-"translation":"移至平面"
-},{
-"name":"Orient",
-"translation":"定位"
-},{
-"name":"Rotate",
-"translation":"旋轉"
-},{
-"name":"Rotate 3D",
-"translation":"3D旋轉"
-},{
-"name":"Rotate Axis",
-"translation":"定軸旋轉"
-},{
-"name":"Rotate Direction",
-"translation":"旋轉至"
-},{
-"name":"Surface Box",
-"translation":"面上立方體"
-},{
-"name":"Box Morph",
-"translation":"立方體變形"
-},{
-"name":"Bend Deform",
-"translation":"彎曲變形"
-},{
-"name":"Mirror Surface",
-"translation":"面鏡射"
-},{
-"name":"Sporph",
-"translation":"變形至"
-},{
-"name":"Twist",
-"translation":"扭轉"
-},{
-"name":"Flow",
-"translation":"沿著"
-},{
-"name":"Mirror Curve",
-"translation":"線鏡射"
-},{
-"name":"Splop",
-"translation":"包"
-},{
-"name":"Stretch",
-"translation":"伸展"
-},{
-"name":"Taper",
-"translation":"漸縮"
-},{
-"name":"Map to Surface",
-"translation":"貼至"
-},{
-"name":"Point Deform",
-"translation":"控制點變形"
-},{
-"name":"Transform Matrix",
-"translation":"移動矩陣"
-},{
-"name":"Group",
-"translation":"群組"
-},{
-"name":"Ungroup",
-"translation":"分解群組"
-},{
-"name":"Merge Group",
-"translation":"合併群組"
-},{
-"name":"Split Group",
-"translation":"拆分群組"
-},{
-"name":"Colour CMYK",
-"translation":"顏色CMYK"
-},{
-"name":"Colour HSL",
-"translation":"顏色HSL"
-},{
-"name":"Colour HSV",
-"translation":"顏色HSV"
-},{
-"name":"Colour L*ab",
-"translation":"顏色L*ab"
-},{
-"name":"Colour LCH",
-"translation":"顏色LCH"
-},{
-"name":"Colour RGB",
-"translation":"顏色RGB"
-},{
-"name":"Colour RGB (f)",
-"translation":"顏色RGB(f)"
-},{
-"name":"Colour XYZ",
-"translation":"顏色XYZ"
-},{
-"name":"Split AHSL",
-"translation":"拆分AHSL"
-},{
-"name":"Split AHSV",
-"translation":"拆分AHSV"
-},{
-"name":"Split ARGB",
-"translation":"拆分ARGB"
-},{
-"name":"Text Tag",
-"translation":"文字標籤"
-},{
-"name":"Text Tag 3D",
-"translation":"3D文字標籤"
-},{
-"name":"Make2D",
-"translation":"投影圖"
-},{
-"name":"Make2D Parallel View",
-"translation":"平行投影圖"
-},{
-"name":"Make2D Perspective View",
-"translation":"透視投影圖"
-},{
-"name":"Make2D Rhino View",
-"translation":"Rhino投影圖"
-},{
-"name":"Bar Graph",
-"translation":"條狀圖"
-},{
-"name":"Legend",
-"translation":"圖例"
-},{
-"name":"Pie Chart",
-"translation":"餅形圖"
-},{
-"name":"Quick Graph",
-"translation":"快速圖表"
-},{
-"name":"Image Gallery",
-"translation":"圖片庫"
-},{
-"name":"Value Tracker",
-"translation":"數值追踪"
-},{
-"name":"Create Material",
-"translation":"自定材料"
-},{
-"name":"Custom Preview",
-"translation":"上色顯示"
-},{
-"name":"Cloud Display",
-"translation":"點雲顯示"
-},{
-"name":"Dot Display",
-"translation":"點顯示"
-},{
-"name":"Symbol (Advanced)",
-"translation":"符號(進階)"
-},{
-"name":"Symbol (Simple)",
-"translation":"符號(簡單)"
-},{
-"name":"Symbol Display",
-"translation":"符號顯示"
-},{
-"name":"Point List",
-"translation":"點列表"
-},{
-"name":"Point Order",
-"translation":"點路徑"
-},{
-"name":"Vector Display",
-"translation":"向量顯示"
-},{
-"name":"Vector Display Ex",
-"translation":"向量顯示(進階)"
-},{
-"name":"*Translator*",
-"translation":"林裕傑 (Victor Lin)"
-}]
+[
+    {
+        "name": "Point",
+        "translation": "點"
+    },
+    {
+        "name": "Vector",
+        "translation": "向量"
+    },
+    {
+        "name": "Circle",
+        "translation": "圓容器",
+        "category": "Params"
+    },
+    {
+        "name": "Circle",
+        "translation": "創圓"
+    },
+    {
+        "name": "Curve",
+        "translation": "線條"
+    },
+    {
+        "name": "Plane",
+        "translation": "平面"
+    },
+    {
+        "name": "Circular Arc",
+        "translation": "圓弧"
+    },
+    {
+        "name": "Line",
+        "translation": "直線"
+    },
+    {
+        "name": "Rectangle",
+        "translation": "矩形"
+    },
+    {
+        "name": "Box",
+        "translation": "立方體"
+    },
+    {
+        "name": "Mesh",
+        "translation": "網格"
+    },
+    {
+        "name": "Surface",
+        "translation": "面"
+    },
+    {
+        "name": "Brep",
+        "translation": "邊界表示幾何"
+    },
+    {
+        "name": "Mesh Face",
+        "translation": "網格面"
+    },
+    {
+        "name": "Twisted Box",
+        "translation": "扭曲立方體"
+    },
+    {
+        "name": "Field",
+        "translation": "向量場"
+    },
+    {
+        "name": "Geometry Cache",
+        "translation": "幾何快取"
+    },
+    {
+        "name": "Group",
+        "translation": "群組"
+    },
+    {
+        "name": "Geometry",
+        "translation": "幾何"
+    },
+    {
+        "name": "Geometry Pipeline",
+        "translation": "幾何連結"
+    },
+    {
+        "name": "Transform",
+        "translation": "移動"
+    },
+    {
+        "name": "Boolean",
+        "translation": "布林"
+    },
+    {
+        "name": "Number",
+        "translation": "數字"
+    },
+    {
+        "name": "Integer",
+        "translation": "整數"
+    },
+    {
+        "name": "Text",
+        "translation": "文字"
+    },
+    {
+        "name": "Colour",
+        "translation": "顏色"
+    },
+    {
+        "name": "Culture",
+        "translation": "文化特性"
+    },
+    {
+        "name": "Domain2",
+        "translation": "區間2"
+    },
+    {
+        "name": "Matrix",
+        "translation": "矩陣"
+    },
+    {
+        "name": "Complex",
+        "translation": "複數"
+    },
+    {
+        "name": "Domain",
+        "translation": "區間"
+    },
+    {
+        "name": "Guid",
+        "translation": "識別碼"
+    },
+    {
+        "name": "Time",
+        "translation": "時間"
+    },
+    {
+        "name": "Data",
+        "translation": "資訊"
+    },
+    {
+        "name": "File Path",
+        "translation": "文件路徑"
+    },
+    {
+        "name": "Data Path",
+        "translation": "資料層路徑"
+    },
+    {
+        "name": "Shader",
+        "translation": "著色器"
+    },
+    {
+        "name": "Control Knob",
+        "translation": "數值旋鈕"
+    },
+    {
+        "name": "Value List",
+        "translation": "清單"
+    },
+    {
+        "name": "Calendar",
+        "translation": "日曆"
+    },
+    {
+        "name": "Colour Picker",
+        "translation": "調色"
+    },
+    {
+        "name": "Colour Wheel",
+        "translation": "色環"
+    },
+    {
+        "name": "Graph Mapper",
+        "translation": "圖表映射"
+    },
+    {
+        "name": "Clock",
+        "translation": "時鐘"
+    },
+    {
+        "name": "Colour Swatch",
+        "translation": "色板"
+    },
+    {
+        "name": "Gradient",
+        "translation": "漸層"
+    },
+    {
+        "name": "Image Sampler",
+        "translation": "影像取樣"
+    },
+    {
+        "name": "Import Coordinates",
+        "translation": "匯入坐標"
+    },
+    {
+        "name": "Import PDB",
+        "translation": "匯入PDB"
+    },
+    {
+        "name": "Object Details",
+        "translation": "物件細節"
+    },
+    {
+        "name": "Import 3DM",
+        "translation": "匯入3DM"
+    },
+    {
+        "name": "Import Image",
+        "translation": "匯入圖片"
+    },
+    {
+        "name": "Import SHP",
+        "translation": "匯入SHP"
+    },
+    {
+        "name": "Read File",
+        "translation": "讀取檔案"
+    },
+    {
+        "name": "Cherry Picker",
+        "translation": "完美單選"
+    },
+    {
+        "name": "Param Viewer",
+        "translation": "顯示資料結構"
+    },
+    {
+        "name": "Jump",
+        "translation": "跳至"
+    },
+    {
+        "name": "Data Dam",
+        "translation": "數據大壩"
+    },
+    {
+        "name": "Relay",
+        "translation": "節點"
+    },
+    {
+        "name": "Timer",
+        "translation": "計時器"
+    },
+    {
+        "name": "Trigger",
+        "translation": "計時器"
+    },
+    {
+        "name": "Data Recorder",
+        "translation": "黑盒子"
+    },
+    {
+        "name": "Suirify",
+        "translation": "資料結構最簡化"
+    },
+    {
+        "name": "Cluster Input",
+        "translation": "打包輸入"
+    },
+    {
+        "name": "Data Input",
+        "translation": "資訊輸入"
+    },
+    {
+        "name": "Cluster Output",
+        "translation": "打包輸出"
+    },
+    {
+        "name": "Data Output",
+        "translation": "資訊輸出"
+    },
+    {
+        "name": "Fitness Landscape",
+        "translation": "適應度景觀"
+    },
+    {
+        "name": "Gene Pool",
+        "translation": "基因庫"
+    },
+    {
+        "name": "Galapagos",
+        "translation": "反覆試驗"
+    },
+    {
+        "name": "Construct Domain",
+        "translation": "創造區間"
+    },
+    {
+        "name": "Deconstruct Domain",
+        "translation": "區間界限"
+    },
+    {
+        "name": "Bounds",
+        "translation": "界限"
+    },
+    {
+        "name": "Consecutive Domains",
+        "translation": "連續區間"
+    },
+    {
+        "name": "Divide Domain",
+        "translation": "區間分割"
+    },
+    {
+        "name": "Find Domain",
+        "translation": "區間查詢"
+    },
+    {
+        "name": "Includes",
+        "translation": "包含"
+    },
+    {
+        "name": "Remap Numbers",
+        "translation": "映射數字"
+    },
+    {
+        "name": "Construct Domain2",
+        "translation": "創造區間²"
+    },
+    {
+        "name": "Deconstruct Domain2",
+        "translation": "區間²界限"
+    },
+    {
+        "name": "Bounds 2D",
+        "translation": "界限2D"
+    },
+    {
+        "name": "Divide Domain2",
+        "translation": "分割區間²"
+    },
+    {
+        "name": "Construct Matrix",
+        "translation": "建立矩陣"
+    },
+    {
+        "name": "Deconstruct Matrix",
+        "translation": "拆解矩陣"
+    },
+    {
+        "name": "Display Matrix",
+        "translation": "顯示矩陣"
+    },
+    {
+        "name": "Invert Matrix",
+        "translation": "反矩陣"
+    },
+    {
+        "name": "Transpose Matrix",
+        "translation": "轉置矩陣"
+    },
+    {
+        "name": "Swap Columns",
+        "translation": "交換列"
+    },
+    {
+        "name": "Swap Rows",
+        "translation": "交換行"
+    },
+    {
+        "name": "Addition",
+        "translation": "加法"
+    },
+    {
+        "name": "Multiplication",
+        "translation": "乘法"
+    },
+    {
+        "name": "Power",
+        "translation": "次方"
+    },
+    {
+        "name": "Division",
+        "translation": "除法"
+    },
+    {
+        "name": "Negative",
+        "translation": "相反數"
+    },
+    {
+        "name": "Subtraction",
+        "translation": "減法"
+    },
+    {
+        "name": "Absolute",
+        "translation": "絕對值"
+    },
+    {
+        "name": "Factorial",
+        "translation": "階乘"
+    },
+    {
+        "name": "Interger Division",
+        "translation": "整除"
+    },
+    {
+        "name": "Modulus",
+        "translation": "模除"
+    },
+    {
+        "name": "Mass Addition",
+        "translation": "累加"
+    },
+    {
+        "name": "Relative Differences",
+        "translation": "相對差異"
+    },
+    {
+        "name": "Mass Multiplication",
+        "translation": "累乘"
+    },
+    {
+        "name": "Equality",
+        "translation": "相等"
+    },
+    {
+        "name": "Similarity",
+        "translation": "相似"
+    },
+    {
+        "name": "Larger Than",
+        "translation": "大於"
+    },
+    {
+        "name": "Smaller Than",
+        "translation": "小於"
+    },
+    {
+        "name": "Gate And",
+        "translation": "及閘"
+    },
+    {
+        "name": "Gate Or",
+        "translation": "或閘"
+    },
+    {
+        "name": "Gate Not",
+        "translation": "反閘"
+    },
+    {
+        "name": "Gate Xor",
+        "translation": "互斥或閘"
+    },
+    {
+        "name": "Gate Majority",
+        "translation": "多數閘"
+    },
+    {
+        "name": "Gate Nor",
+        "translation": "反或閘"
+    },
+    {
+        "name": "Gate Nand",
+        "translation": "反及閘"
+    },
+    {
+        "name": "Gate Xnor",
+        "translation": "互斥反或閘"
+    },
+    {
+        "name": "Cube",
+        "translation": "立方"
+    },
+    {
+        "name": "Cube Root",
+        "translation": "立方根"
+    },
+    {
+        "name": "Square",
+        "translation": "平方"
+    },
+    {
+        "name": "Square Root",
+        "translation": "平方根"
+    },
+    {
+        "name": "One Over X",
+        "translation": "X分之一"
+    },
+    {
+        "name": "Power of 10",
+        "translation": "10次方"
+    },
+    {
+        "name": "Power of 2",
+        "translation": "2次方"
+    },
+    {
+        "name": "Power of E",
+        "translation": "E次方"
+    },
+    {
+        "name": "Logarithm",
+        "translation": "對數"
+    },
+    {
+        "name": "Natural Logarithm",
+        "translation": "自然對數"
+    },
+    {
+        "name": "Evaluate",
+        "translation": "公式計算"
+    },
+    {
+        "name": "Expression",
+        "translation": "公式"
+    },
+    {
+        "name": "C# Script",
+        "translation": "C#程式"
+    },
+    {
+        "name": "GhPython Script",
+        "translation": "GhPython程式"
+    },
+    {
+        "name": "VB Script",
+        "translation": "VB程式"
+    },
+    {
+        "name": "Construct Date",
+        "translation": "日期"
+    },
+    {
+        "name": "Construct Exotic Date",
+        "translation": "曆法日期"
+    },
+    {
+        "name": "Construct Time",
+        "translation": "時間"
+    },
+    {
+        "name": "Deconstruct Date",
+        "translation": "拆解日期"
+    },
+    {
+        "name": "Combine Date & Time",
+        "translation": "合併日期時間"
+    },
+    {
+        "name": "Date Range",
+        "translation": "時段"
+    },
+    {
+        "name": "Tangent",
+        "translation": "切線"
+    },
+    {
+        "name": "Degrees",
+        "translation": "度"
+    },
+    {
+        "name": "Radians",
+        "translation": "弧度"
+    },
+    {
+        "name": "Golden Ratio",
+        "translation": "黃金比例"
+    },
+    {
+        "name": "Extremes",
+        "translation": "極端"
+    },
+    {
+        "name": "Minimum",
+        "translation": "最小值"
+    },
+    {
+        "name": "Maximum",
+        "translation": "最大值"
+    },
+    {
+        "name": "Round",
+        "translation": "四捨五入"
+    },
+    {
+        "name": "Average",
+        "translation": "平均"
+    },
+    {
+        "name": "Truncate",
+        "translation": "截尾"
+    },
+    {
+        "name": "Weighted Average",
+        "translation": "加權平均"
+    },
+    {
+        "name": "Insert Items",
+        "translation": "插入清單"
+    },
+    {
+        "name": "List Item",
+        "translation": "索引挑選"
+    },
+    {
+        "name": "Partition List",
+        "translation": "分割清單"
+    },
+    {
+        "name": "Reverse List",
+        "translation": "反轉清單"
+    },
+    {
+        "name": "Sort List",
+        "translation": "排序清單"
+    },
+    {
+        "name": "Sub List",
+        "translation": "子清單"
+    },
+    {
+        "name": "Item Index",
+        "translation": "項目索引"
+    },
+    {
+        "name": "List Length",
+        "translation": "清單長度"
+    },
+    {
+        "name": "Replace Items",
+        "translation": "更換項目"
+    },
+    {
+        "name": "Shift List",
+        "translation": "清單平移"
+    },
+    {
+        "name": "Split List",
+        "translation": "切割清單"
+    },
+    {
+        "name": "Dispatch",
+        "translation": "分配"
+    },
+    {
+        "name": "Pick'n'Choose",
+        "translation": "挑選"
+    },
+    {
+        "name": "Weave",
+        "translation": "編織"
+    },
+    {
+        "name": "Null Item",
+        "translation": "無效檢驗"
+    },
+    {
+        "name": "Replace Nulls",
+        "translation": "更換無效"
+    },
+    {
+        "name": "Combine Data",
+        "translation": "合併資料"
+    },
+    {
+        "name": "Sift Pattern",
+        "translation": "資料分流"
+    },
+    {
+        "name": "Cross Reference",
+        "translation": "交叉參考"
+    },
+    {
+        "name": "Shortest List",
+        "translation": "最短清單"
+    },
+    {
+        "name": "Longest List",
+        "translation": "最長清單"
+    },
+    {
+        "name": "Cull Index",
+        "translation": "剔除"
+    },
+    {
+        "name": "Cull Nth",
+        "translation": "剔除第N個"
+    },
+    {
+        "name": "Cull Pattern",
+        "translation": "剔除樣式"
+    },
+    {
+        "name": "Random Reduce",
+        "translation": "隨機減少"
+    },
+    {
+        "name": "Char Sequence",
+        "translation": "字符序列"
+    },
+    {
+        "name": "Duplicate Data",
+        "translation": "資料複製"
+    },
+    {
+        "name": "Range",
+        "translation": "範圍"
+    },
+    {
+        "name": "Repeat Data",
+        "translation": "重複資料"
+    },
+    {
+        "name": "Series",
+        "translation": "數字系列"
+    },
+    {
+        "name": "Stack Data",
+        "translation": "資料堆疊"
+    },
+    {
+        "name": "Jitter",
+        "translation": "打散"
+    },
+    {
+        "name": "Random",
+        "translation": "隨機"
+    },
+    {
+        "name": "Create Set",
+        "translation": "創造字典"
+    },
+    {
+        "name": "Set Difference",
+        "translation": "字典去除"
+    },
+    {
+        "name": "Set Difference(S)",
+        "translation": "字典去除差異"
+    },
+    {
+        "name": "Set Intersection",
+        "translation": "字典相交"
+    },
+    {
+        "name": "Set Majority",
+        "translation": "字典多數"
+    },
+    {
+        "name": "Set Union",
+        "translation": "字典相加"
+    },
+    {
+        "name": "Carthesian Product",
+        "translation": "配對"
+    },
+    {
+        "name": "Member Index",
+        "translation": "單字索引"
+    },
+    {
+        "name": "Replace Members",
+        "translation": "更換單字"
+    },
+    {
+        "name": "SubSet",
+        "translation": "子集"
+    },
+    {
+        "name": "Delete Consecutive",
+        "translation": "刪除連續"
+    },
+    {
+        "name": "Find Similar member",
+        "translation": "尋找相似單字"
+    },
+    {
+        "name": "Key/Value Search",
+        "translation": "關鍵字值搜索"
+    },
+    {
+        "name": "Characters",
+        "translation": "字元"
+    },
+    {
+        "name": "Concatenate",
+        "translation": "字串合併"
+    },
+    {
+        "name": "Text Join",
+        "translation": "字串連接"
+    },
+    {
+        "name": "Text Length",
+        "translation": "字串長度"
+    },
+    {
+        "name": "Text Split",
+        "translation": "切割字串"
+    },
+    {
+        "name": "Format",
+        "translation": "格式"
+    },
+    {
+        "name": "Text Case",
+        "translation": "大小寫"
+    },
+    {
+        "name": "Text Fragment",
+        "translation": "字串片段"
+    },
+    {
+        "name": "Text Trim",
+        "translation": "文字修飾"
+    },
+    {
+        "name": "Match Text",
+        "translation": "正規表達式"
+    },
+    {
+        "name": "Replace Text",
+        "translation": "更換字串"
+    },
+    {
+        "name": "Sort Text",
+        "translation": "字串排序"
+    },
+    {
+        "name": "Text Distance",
+        "translation": "字串距離"
+    },
+    {
+        "name": "Clean Tree",
+        "translation": "清理資料結構"
+    },
+    {
+        "name": "Graft Tree",
+        "translation": "增層"
+    },
+    {
+        "name": "Simplify Tree",
+        "translation": "資料結構簡化"
+    },
+    {
+        "name": "Trim Tree",
+        "translation": "回推資料結構層"
+    },
+    {
+        "name": "Flatten Tree",
+        "translation": "壓平資料結構"
+    },
+    {
+        "name": "Prune Tree",
+        "translation": "修剪資料結構"
+    },
+    {
+        "name": "Tree Statistics",
+        "translation": "資料結構資訊"
+    },
+    {
+        "name": "Unflatten Tree",
+        "translation": "重創資料結構"
+    },
+    {
+        "name": "Entwine",
+        "translation": "壓平編層"
+    },
+    {
+        "name": "Flip Matrix",
+        "translation": "層次轉置"
+    },
+    {
+        "name": "Explode Tree",
+        "translation": "層次爆炸"
+    },
+    {
+        "name": "Merge",
+        "translation": "合併"
+    },
+    {
+        "name": "Match Tree",
+        "translation": "層次相配"
+    },
+    {
+        "name": "Shift Paths",
+        "translation": "剔除資料結構層"
+    },
+    {
+        "name": "Path Mapper",
+        "translation": "編層"
+    },
+    {
+        "name": "Split Tree",
+        "translation": "資料結構層篩選"
+    },
+    {
+        "name": "Stream Filter",
+        "translation": "選取資料流"
+    },
+    {
+        "name": "Stream Gate",
+        "translation": "分流閘"
+    },
+    {
+        "name": "Relative Item",
+        "translation": "相對選取"
+    },
+    {
+        "name": "Tree Branch",
+        "translation": "資料結構層選取"
+    },
+    {
+        "name": "Relative Items",
+        "translation": "相對流選取"
+    },
+    {
+        "name": "Tree Item",
+        "translation": "挑選"
+    },
+    {
+        "name": "Construct Path",
+        "translation": "創層次字串"
+    },
+    {
+        "name": "Deconstruct Path",
+        "translation": "拆解層次字串"
+    },
+    {
+        "name": "Replace Paths",
+        "translation": "更換層次標號"
+    },
+    {
+        "name": "Hexagonal",
+        "translation": "六角型陣列"
+    },
+    {
+        "name": "Radial",
+        "translation": "放射型陣列"
+    },
+    {
+        "name": "Rectangular",
+        "translation": "矩形陣列"
+    },
+    {
+        "name": "Square",
+        "translation": "正方形陣列"
+    },
+    {
+        "name": "Triangular",
+        "translation": "三角形陣列"
+    },
+    {
+        "name": "Populate 2D",
+        "translation": "隨機創點2D"
+    },
+    {
+        "name": "Populate 3D",
+        "translation": "隨機創點3D"
+    },
+    {
+        "name": "Populate Geometry",
+        "translation": "形內隨機創點"
+    },
+    {
+        "name": "Deconstruct Plane",
+        "translation": "拆解平面"
+    },
+    {
+        "name": "XZ Plane",
+        "translation": "XZ平面"
+    },
+    {
+        "name": "XY Plane",
+        "translation": "XY平面"
+    },
+    {
+        "name": "YZ Plane",
+        "translation": "YZ平面"
+    },
+    {
+        "name": "Construct Plane",
+        "translation": "創造平面"
+    },
+    {
+        "name": "Line + Pt",
+        "translation": "線點創平面"
+    },
+    {
+        "name": "Plane Fit",
+        "translation": "平面切合點"
+    },
+    {
+        "name": "Plane Offset",
+        "translation": "平面偏移"
+    },
+    {
+        "name": "Line + Line",
+        "translation": "線線創平面"
+    },
+    {
+        "name": "Plane 3Pt",
+        "translation": "3點創平面"
+    },
+    {
+        "name": "Plane Normal",
+        "translation": "法線創平面"
+    },
+    {
+        "name": "Plane Origin",
+        "translation": "平面移原點"
+    },
+    {
+        "name": "Adjust Plane",
+        "translation": "對齊平面法線"
+    },
+    {
+        "name": "Align Planes",
+        "translation": "平面對齊平面"
+    },
+    {
+        "name": "Plane Closest Point",
+        "translation": "平面最點"
+    },
+    {
+        "name": "Rotate Plane",
+        "translation": "旋轉平面"
+    },
+    {
+        "name": "Align Plane",
+        "translation": "對齊平面"
+    },
+    {
+        "name": "Flip Plane",
+        "translation": "翻轉平面"
+    },
+    {
+        "name": "Plane Coordinates",
+        "translation": "新座標系統"
+    },
+    {
+        "name": "Construct Point",
+        "translation": "創點"
+    },
+    {
+        "name": "Numbers to Points",
+        "translation": "座標創點"
+    },
+    {
+        "name": "Deconstruct",
+        "translation": "拆解點"
+    },
+    {
+        "name": "Points to Numbers",
+        "translation": "點座標"
+    },
+    {
+        "name": "Point Cylindrical",
+        "translation": "圓柱座標系點"
+    },
+    {
+        "name": "Point Polar",
+        "translation": "極座標系點"
+    },
+    {
+        "name": "Distance",
+        "translation": "距離"
+    },
+    {
+        "name": "Point Oriented",
+        "translation": "平面座標點"
+    },
+    {
+        "name": "To Polar",
+        "translation": "極座標系"
+    },
+    {
+        "name": "Closest Point",
+        "translation": "最近點"
+    },
+    {
+        "name": "Cull Duplicates",
+        "translation": "剔除重複點"
+    },
+    {
+        "name": "Project Point",
+        "translation": "投影點"
+    },
+    {
+        "name": "Sort Along Curve",
+        "translation": "沿曲線排序"
+    },
+    {
+        "name": "Closest Points",
+        "translation": "最近點"
+    },
+    {
+        "name": "Point Groups",
+        "translation": "點群組"
+    },
+    {
+        "name": "Pull Point",
+        "translation": "拉點"
+    },
+    {
+        "name": "Sort Points",
+        "translation": "排序點"
+    },
+    {
+        "name": "Deconstruct Vector",
+        "translation": "拆解向量"
+    },
+    {
+        "name": "Vector XYZ",
+        "translation": "向量XYZ"
+    },
+    {
+        "name": "Unit Vector",
+        "translation": "單位向量"
+    },
+    {
+        "name": "Unit X",
+        "translation": "X向量"
+    },
+    {
+        "name": "Unit Y",
+        "translation": "Y向量"
+    },
+    {
+        "name": "Unit Z",
+        "translation": "Z向量"
+    },
+    {
+        "name": "Amplitude",
+        "translation": "向量幅度"
+    },
+    {
+        "name": "Angle",
+        "translation": "角度"
+    },
+    {
+        "name": "Cross Product",
+        "translation": "向量積"
+    },
+    {
+        "name": "Dot Product",
+        "translation": "內積"
+    },
+    {
+        "name": "Reverse",
+        "translation": "逆向向量"
+    },
+    {
+        "name": "Vector 2Pt",
+        "translation": "2點向量"
+    },
+    {
+        "name": "Vector Length",
+        "translation": "向量長度"
+    },
+    {
+        "name": "Control Points",
+        "translation": "控制點"
+    },
+    {
+        "name": "Curve Middle",
+        "translation": "線中點"
+    },
+    {
+        "name": "Deconstruct Rectangle",
+        "translation": "拆解矩形"
+    },
+    {
+        "name": "Polygon Center",
+        "translation": "多邊形中心"
+    },
+    {
+        "name": "Control Polygon",
+        "translation": "多邊形控制點"
+    },
+    {
+        "name": "Deconstruct Arc",
+        "translation": "拆解弧"
+    },
+    {
+        "name": "End Points",
+        "translation": "終點"
+    },
+    {
+        "name": "Closed",
+        "translation": "是封閉"
+    },
+    {
+        "name": "Deconstruct Rectangle",
+        "translation": "拆解長方形"
+    },
+    {
+        "name": "Curve Closest Point",
+        "translation": "線最近點"
+    },
+    {
+        "name": "Curve Proximity",
+        "translation": "線最近處"
+    },
+    {
+        "name": "Discontinuity",
+        "translation": "不連續性處"
+    },
+    {
+        "name": "Planar",
+        "translation": "是平面"
+    },
+    {
+        "name": "Curvature Graph",
+        "translation": "曲率梳"
+    },
+    {
+        "name": "Curve Nearest Object",
+        "translation": "線最近物"
+    },
+    {
+        "name": "Curve Side",
+        "translation": "線左右"
+    },
+    {
+        "name": "Curvature",
+        "translation": "曲率"
+    },
+    {
+        "name": "Derivatives",
+        "translation": "導數"
+    },
+    {
+        "name": "Horizontal Frame",
+        "translation": "水平平面"
+    },
+    {
+        "name": "Horizontal Frames",
+        "translation": "水平平面"
+    },
+    {
+        "name": "Point On Curve",
+        "translation": "線上點"
+    },
+    {
+        "name": "Curve Frame",
+        "translation": "線條平面"
+    },
+    {
+        "name": "Curve Frames",
+        "translation": "線條平面"
+    },
+    {
+        "name": "Evaluate Curve",
+        "translation": "評估線"
+    },
+    {
+        "name": "Perp Frame",
+        "translation": "垂直平面"
+    },
+    {
+        "name": "Perp Frames",
+        "translation": "垂直平面"
+    },
+    {
+        "name": "Torsion",
+        "translation": "扭轉"
+    },
+    {
+        "name": "Curve Domain",
+        "translation": "映射線條區間"
+    },
+    {
+        "name": "Length",
+        "translation": "長度"
+    },
+    {
+        "name": "Length Parameter",
+        "translation": "參數長度"
+    },
+    {
+        "name": "Evaluate Length",
+        "translation": "評估長度"
+    },
+    {
+        "name": "Length Domain",
+        "translation": "區間長度"
+    },
+    {
+        "name": "Segment Lengths",
+        "translation": "線段最長短"
+    },
+    {
+        "name": "Point In Curve",
+        "translation": "線內點"
+    },
+    {
+        "name": "Point in Curves",
+        "translation": "線內點"
+    },
+    {
+        "name": "Contour",
+        "translation": "等高線"
+    },
+    {
+        "name": "Contour (ex)",
+        "translation": "等高線(進階)"
+    },
+    {
+        "name": "Dash Pattern",
+        "translation": "虛線"
+    },
+    {
+        "name": "Divide Curve",
+        "translation": "等長分割"
+    },
+    {
+        "name": "Divide Distance",
+        "translation": "等距分割"
+    },
+    {
+        "name": "Divide Length",
+        "translation": "長度分割"
+    },
+    {
+        "name": "Shatter",
+        "translation": "打碎"
+    },
+    {
+        "name": "Fit Line",
+        "translation": "線切合點"
+    },
+    {
+        "name": "Line 2Plane",
+        "translation": "平面連接線"
+    },
+    {
+        "name": "Line SDL",
+        "translation": "線始向長"
+    },
+    {
+        "name": "Tangent Lines",
+        "translation": "點圓切線"
+    },
+    {
+        "name": "Tangent Lines (Ex)",
+        "translation": "外公切線"
+    },
+    {
+        "name": "Tangent Lines (ln)",
+        "translation": "內公切線"
+    },
+    {
+        "name": "Line 4Pt",
+        "translation": "線點點線"
+    },
+    {
+        "name": "Circle CNR",
+        "translation": "圓中法半"
+    },
+    {
+        "name": "Circle TanTan",
+        "translation": "圓圓切線圓"
+    },
+    {
+        "name": "InEllipse",
+        "translation": "內切橢圓"
+    },
+    {
+        "name": "Circle 3Pt",
+        "translation": "3點圓"
+    },
+    {
+        "name": "Circle Fit",
+        "translation": "圓切合點"
+    },
+    {
+        "name": "Circle TanTanTan",
+        "translation": "圓圓圓切線圓"
+    },
+    {
+        "name": "Ellipse",
+        "translation": "橢圓"
+    },
+    {
+        "name": "InCircle",
+        "translation": "內切圓"
+    },
+    {
+        "name": "Arc SED",
+        "translation": "弧結點方向"
+    },
+    {
+        "name": "Arc",
+        "translation": "圓弧"
+    },
+    {
+        "name": "Modified Arc",
+        "translation": "對照圓弧"
+    },
+    {
+        "name": "Arc 3Pt",
+        "translation": "3點圓弧"
+    },
+    {
+        "name": "BiArc",
+        "translation": "雙弧"
+    },
+    {
+        "name": "Tangent Arcs",
+        "translation": "圓圓切線弧"
+    },
+    {
+        "name": "Polygon",
+        "translation": "多邊形"
+    },
+    {
+        "name": "Rectangle 3Pt",
+        "translation": "3點矩形"
+    },
+    {
+        "name": "Polygon Edge",
+        "translation": "多邊形單邊"
+    },
+    {
+        "name": "Rectangle 2Pt",
+        "translation": "2點矩形"
+    },
+    {
+        "name": "Bezier Span",
+        "translation": "2點貝茲曲線"
+    },
+    {
+        "name": "Interpolate (t)",
+        "translation": "切線內插點曲線"
+    },
+    {
+        "name": "Nurbs Curve",
+        "translation": "非均勻有理B樣曲線"
+    },
+    {
+        "name": "PolyLine",
+        "translation": "聚合線"
+    },
+    {
+        "name": "Interpolate",
+        "translation": "內插點曲線"
+    },
+    {
+        "name": "Kinky Curve",
+        "translation": "混合式連接線"
+    },
+    {
+        "name": "Tangent Curve",
+        "translation": "點切線連接線"
+    },
+    {
+        "name": "Curve On Surface",
+        "translation": "面上連接線"
+    },
+    {
+        "name": "Iso Curve",
+        "translation": "等值線"
+    },
+    {
+        "name": "Tween Curve",
+        "translation": "線間線"
+    },
+    {
+        "name": "Geodesic",
+        "translation": "測地線"
+    },
+    {
+        "name": "Sub Curve",
+        "translation": "子線段"
+    },
+    {
+        "name": "Blend Curve",
+        "translation": "混和曲線"
+    },
+    {
+        "name": "Blend Curve Pt",
+        "translation": "點混合曲線"
+    },
+    {
+        "name": "Catenary",
+        "translation": "懸鏈線"
+    },
+    {
+        "name": "Connect Curves",
+        "translation": "連接曲線"
+    },
+    {
+        "name": "Explode",
+        "translation": "爆炸"
+    },
+    {
+        "name": "Flip Curve",
+        "translation": "線條反向"
+    },
+    {
+        "name": "Extend Curve",
+        "translation": "延伸線條"
+    },
+    {
+        "name": "Join Curves",
+        "translation": "接合線條"
+    },
+    {
+        "name": "Fillet",
+        "translation": "圓角"
+    },
+    {
+        "name": "Fillet Distance",
+        "translation": "圓角距離"
+    },
+    {
+        "name": "Fillet Edge",
+        "translation": "邊緣圓角"
+    },
+    {
+        "name": "Offset Curve Loose",
+        "translation": "線條偏移(簡單)"
+    },
+    {
+        "name": "Offset Curve",
+        "translation": "曲線偏移"
+    },
+    {
+        "name": "Project",
+        "translation": "投影"
+    },
+    {
+        "name": "Seam",
+        "translation": "接縫"
+    },
+    {
+        "name": "Offset on Srf",
+        "translation": "面上偏移"
+    },
+    {
+        "name": "Pull Curve",
+        "translation": "線拉至面"
+    },
+    {
+        "name": "Curve To Polyline",
+        "translation": "轉換為聚合線"
+    },
+    {
+        "name": "Polyline Collapse",
+        "translation": "簡化聚合線"
+    },
+    {
+        "name": "Reduce",
+        "translation": "剔雜點"
+    },
+    {
+        "name": "Smooth Polyline",
+        "translation": "平滑聚合線"
+    },
+    {
+        "name": "Fit Curve",
+        "translation": "曲線切合點"
+    },
+    {
+        "name": "Rebuild Curve",
+        "translation": "重建線條"
+    },
+    {
+        "name": "Simplify Curve",
+        "translation": "簡化線條"
+    },
+    {
+        "name": "Box Corners",
+        "translation": "立方體角"
+    },
+    {
+        "name": "Deconstruct Box",
+        "translation": "拆解立方體"
+    },
+    {
+        "name": "Box Properties",
+        "translation": "立方體屬性"
+    },
+    {
+        "name": "Evaluate Box",
+        "translation": "評立方體"
+    },
+    {
+        "name": "Brep Edges",
+        "translation": "幾何邊"
+    },
+    {
+        "name": "Brep Wireframe",
+        "translation": "幾何邊框"
+    },
+    {
+        "name": "Dimensions",
+        "translation": "UV尺寸"
+    },
+    {
+        "name": "Surface Points",
+        "translation": "面控制點"
+    },
+    {
+        "name": "Deconstruct Brep",
+        "translation": "拆解幾何"
+    },
+    {
+        "name": "Is Planar",
+        "translation": "是平面"
+    },
+    {
+        "name": "Area",
+        "translation": "面積"
+    },
+    {
+        "name": "Volume",
+        "translation": "體積"
+    },
+    {
+        "name": "Brep Closest Point",
+        "translation": "幾何最近點"
+    },
+    {
+        "name": "Surface Closest Point",
+        "translation": "面最近點"
+    },
+    {
+        "name": "Point In Brep",
+        "translation": "點在幾何內"
+    },
+    {
+        "name": "Point In Trim",
+        "translation": "點在顯示面內"
+    },
+    {
+        "name": "Point In Breps",
+        "translation": "點在幾何內"
+    },
+    {
+        "name": "Shape In Brep",
+        "translation": "幾何在幾何內"
+    },
+    {
+        "name": "Evaluate Surface",
+        "translation": "評估面"
+    },
+    {
+        "name": "Principal Curvature",
+        "translation": "主曲率"
+    },
+    {
+        "name": "Surface Curvature",
+        "translation": "表面曲率"
+    },
+    {
+        "name": "4Point Surface",
+        "translation": "面4點"
+    },
+    {
+        "name": "Surface From Points",
+        "translation": "點創面"
+    },
+    {
+        "name": "Boundary Surfaces",
+        "translation": "邊界創平面"
+    },
+    {
+        "name": "Edge Surface",
+        "translation": "邊緣創面"
+    },
+    {
+        "name": "Loft",
+        "translation": "斷面混成"
+    },
+    {
+        "name": "Network Surface",
+        "translation": "網絡線創面"
+    },
+    {
+        "name": "Sum Surface",
+        "translation": "簡單掃掠"
+    },
+    {
+        "name": "Control Point Loft",
+        "translation": "控制點斷面混成"
+    },
+    {
+        "name": "Fit Loft",
+        "translation": "斷面混成切合"
+    },
+    {
+        "name": "Loft Options",
+        "translation": "斷面混成選項"
+    },
+    {
+        "name": "Ruled Surface",
+        "translation": "直紋表面"
+    },
+    {
+        "name": "Extrude",
+        "translation": "擠出"
+    },
+    {
+        "name": "Extrude Linear",
+        "translation": "直線擠出"
+    },
+    {
+        "name": "Extrude Along",
+        "translation": "沿著擠出"
+    },
+    {
+        "name": "Extrude Point",
+        "translation": "擠出至點"
+    },
+    {
+        "name": "Patch",
+        "translation": "補丁"
+    },
+    {
+        "name": "Fragment Patch",
+        "translation": "片段補丁"
+    },
+    {
+        "name": "Pipe",
+        "translation": "圓管"
+    },
+    {
+        "name": "Sweep1",
+        "translation": "掃掠"
+    },
+    {
+        "name": "Sweep2",
+        "translation": "掃掠2"
+    },
+    {
+        "name": "Pipe Variable",
+        "translation": "變形圓管"
+    },
+    {
+        "name": "Plane Surface",
+        "translation": "平面創面"
+    },
+    {
+        "name": "Plane Through Shape",
+        "translation": "投影面積"
+    },
+    {
+        "name": "Bounding Box",
+        "translation": "邊界立方體"
+    },
+    {
+        "name": "Box 2Pt",
+        "translation": "2點立方體"
+    },
+    {
+        "name": "Box Rectangle",
+        "translation": "矩形立方體"
+    },
+    {
+        "name": "Center Box",
+        "translation": "中心立方體"
+    },
+    {
+        "name": "Domain Box",
+        "translation": "區間立方體"
+    },
+    {
+        "name": "Cone",
+        "translation": "錐體"
+    },
+    {
+        "name": "Cylinder",
+        "translation": "圓柱"
+    },
+    {
+        "name": "Quad Sphere",
+        "translation": "球體"
+    },
+    {
+        "name": "Sphere",
+        "translation": "球體"
+    },
+    {
+        "name": "Sphere 4Pt",
+        "translation": "4點球體"
+    },
+    {
+        "name": "Sphere Fit",
+        "translation": "球體切合點"
+    },
+    {
+        "name": "Divide Surface",
+        "translation": "面UV點"
+    },
+    {
+        "name": "Surface Frames",
+        "translation": "面UV平面"
+    },
+    {
+        "name": "Copy Trim",
+        "translation": "複製UV裁切"
+    },
+    {
+        "name": "Retrim",
+        "translation": "重新裁切"
+    },
+    {
+        "name": "Isotrim",
+        "translation": "區間子面"
+    },
+    {
+        "name": "Untrim",
+        "translation": "顯示完整面"
+    },
+    {
+        "name": "Brep Join",
+        "translation": "接合幾何"
+    },
+    {
+        "name": "Cap Holes Ex",
+        "translation": "封口(進階)"
+    },
+    {
+        "name": "Cap Holes",
+        "translation": "封口"
+    },
+    {
+        "name": "Merge Faces",
+        "translation": "結合面"
+    },
+    {
+        "name": "Flip",
+        "translation": "翻面"
+    },
+    {
+        "name": "Offset Surface Loose",
+        "translation": "偏移面(簡單)"
+    },
+    {
+        "name": "Offset Surface",
+        "translation": "偏移面"
+    },
+    {
+        "name": "Convex Edges",
+        "translation": "凹凸邊"
+    },
+    {
+        "name": "Deconstruct Face",
+        "translation": "拆解網格面"
+    },
+    {
+        "name": "Deconstruct Mesh",
+        "translation": "拆解網格"
+    },
+    {
+        "name": "Face Normals",
+        "translation": "網格面法線"
+    },
+    {
+        "name": "Mesh Edges",
+        "translation": "網格邊"
+    },
+    {
+        "name": "Face Boundaries",
+        "translation": "網格面邊界"
+    },
+    {
+        "name": "Mesh Inclusion",
+        "translation": "點在網格內"
+    },
+    {
+        "name": "Mesh Closest Point",
+        "translation": "網格最近點"
+    },
+    {
+        "name": "Mesh Eval",
+        "translation": "評估網格"
+    },
+    {
+        "name": "Construct Mesh",
+        "translation": "創造網格"
+    },
+    {
+        "name": "Mesh Colours",
+        "translation": "網格顏色"
+    },
+    {
+        "name": "Mesh Quad",
+        "translation": "四邊形網格"
+    },
+    {
+        "name": "Mesh Spray",
+        "translation": "網格噴漆"
+    },
+    {
+        "name": "Mesh Triangle",
+        "translation": "三角形網格"
+    },
+    {
+        "name": "Mesh Box",
+        "translation": "網格立方體"
+    },
+    {
+        "name": "Mesh Plane",
+        "translation": "網格平面"
+    },
+    {
+        "name": "Mesh Sphere",
+        "translation": "網格球體"
+    },
+    {
+        "name": "MeshSphere Ex",
+        "translation": "四邊形網格球體"
+    },
+    {
+        "name": "Convex Hull",
+        "translation": "凸包"
+    },
+    {
+        "name": "Delaunay Mesh",
+        "translation": "德勞內三角化"
+    },
+    {
+        "name": "Delaunay Edges",
+        "translation": "德勞內邊緣"
+    },
+    {
+        "name": "Facet Dome",
+        "translation": "刻面圓頂"
+    },
+    {
+        "name": "Voronoi 3D",
+        "translation": "沃羅諾伊3D"
+    },
+    {
+        "name": "Voronoi Groups",
+        "translation": "自定沃羅諾伊"
+    },
+    {
+        "name": "Voronoi",
+        "translation": "沃羅諾伊圖"
+    },
+    {
+        "name": "Voronoi Cell",
+        "translation": "沃羅諾伊細胞"
+    },
+    {
+        "name": "OcTree",
+        "translation": "八元樹"
+    },
+    {
+        "name": "Proximity 3D",
+        "translation": "相近3D"
+    },
+    {
+        "name": "Proximity 2D",
+        "translation": "相近2D"
+    },
+    {
+        "name": "QuadTree",
+        "translation": "四元樹"
+    },
+    {
+        "name": "MetaBall",
+        "translation": "元球"
+    },
+    {
+        "name": "MetaBall(t) Custom",
+        "translation": "自定元球"
+    },
+    {
+        "name": "MetaBall(t)",
+        "translation": "參數元球"
+    },
+    {
+        "name": "Mesh Brep",
+        "translation": "幾何創網格"
+    },
+    {
+        "name": "Settings (Custom)",
+        "translation": "網格自定設定"
+    },
+    {
+        "name": "Settings (Speed)",
+        "translation": "網格快速設定"
+    },
+    {
+        "name": "Settings (Quality)",
+        "translation": "網格優質設定"
+    },
+    {
+        "name": "Mesh Surface",
+        "translation": "面創網格"
+    },
+    {
+        "name": "Simple Mesh",
+        "translation": "簡單網格"
+    },
+    {
+        "name": "Blur Mesh",
+        "translation": "網格混色"
+    },
+    {
+        "name": "Cull Vertices",
+        "translation": "剔除頂點"
+    },
+    {
+        "name": "Delete Vertices",
+        "translation": "刪除頂點"
+    },
+    {
+        "name": "Mesh Join",
+        "translation": "網格接合"
+    },
+    {
+        "name": "Mesh Split Plane",
+        "translation": "平面分割網格"
+    },
+    {
+        "name": "Cull Faces",
+        "translation": "剔除面"
+    },
+    {
+        "name": "Delete Faces",
+        "translation": "刪除面"
+    },
+    {
+        "name": "Disjoint Mesh",
+        "translation": "不相交的網格"
+    },
+    {
+        "name": "Mesh Shadow",
+        "translation": "網格陰影"
+    },
+    {
+        "name": "Smooth Mesh",
+        "translation": "平滑網格"
+    },
+    {
+        "name": "Align Vertices",
+        "translation": "對齊頂點"
+    },
+    {
+        "name": "Quadrangulate",
+        "translation": "簡化為四邊形網格"
+    },
+    {
+        "name": "Triangulate",
+        "translation": "簡化為三角形網格"
+    },
+    {
+        "name": "Unify Mesh",
+        "translation": "統一法線"
+    },
+    {
+        "name": "Weld Mesh",
+        "translation": "簡化網格"
+    },
+    {
+        "name": "Flip Mesh",
+        "translation": "翻轉網格"
+    },
+    {
+        "name": "Unweld Mesh",
+        "translation": "網格摺痕"
+    },
+    {
+        "name": "Brep | Line",
+        "translation": "幾何 | 線"
+    },
+    {
+        "name": "Line | Line",
+        "translation": "線 | 線"
+    },
+    {
+        "name": "Surface | Line",
+        "translation": "面 | 線"
+    },
+    {
+        "name": "Curve | Line",
+        "translation": "曲線 | 線"
+    },
+    {
+        "name": "Mesh | Ray",
+        "translation": "網眼 | 射線"
+    },
+    {
+        "name": "Brep | Plane",
+        "translation": "幾何 | 平面"
+    },
+    {
+        "name": "Line | Plane",
+        "translation": "線 | 平面"
+    },
+    {
+        "name": "Plane | Plane",
+        "translation": "平面| 平面"
+    },
+    {
+        "name": "Plane Region",
+        "translation": "平面交集區"
+    },
+    {
+        "name": "Curve | Plane",
+        "translation": "曲線 | 平面"
+    },
+    {
+        "name": "Mesh | Plane",
+        "translation": "網格 | 平面"
+    },
+    {
+        "name": "Plane | Plane | Plane",
+        "translation": " 平面 | 平面 | 平面"
+    },
+    {
+        "name": "IsoVist",
+        "translation": "視域"
+    },
+    {
+        "name": "IsoVist Ray",
+        "translation": "視域射線"
+    },
+    {
+        "name": "Curve | Curve",
+        "translation": "曲線 | 曲線"
+    },
+    {
+        "name": "Curve | Self",
+        "translation": "曲線自交"
+    },
+    {
+        "name": "Multiple Curves",
+        "translation": "多線交集"
+    },
+    {
+        "name": "Brep | Brep",
+        "translation": "幾何 | 幾何"
+    },
+    {
+        "name": "Brep | Curve",
+        "translation": "幾何 | 曲線"
+    },
+    {
+        "name": "Surface | Curve",
+        "translation": "面 | 曲線"
+    },
+    {
+        "name": "Surface Split",
+        "translation": "面切割"
+    },
+    {
+        "name": "Mesh | Curve",
+        "translation": "網格 | 曲線"
+    },
+    {
+        "name": "Mesh | Mesh",
+        "translation": "網格 | 網格 "
+    },
+    {
+        "name": "Collision Many|Many",
+        "translation": "多對多碰撞"
+    },
+    {
+        "name": "Collision One|Many",
+        "translation": "一對多碰撞"
+    },
+    {
+        "name": "Split with Brep",
+        "translation": "幾何切線"
+    },
+    {
+        "name": "Split with Breps",
+        "translation": "幾何切線段"
+    },
+    {
+        "name": "Trim with Brep",
+        "translation": "幾何刪線"
+    },
+    {
+        "name": "Trim with Breps",
+        "translation": "幾何刪線段"
+    },
+    {
+        "name": "Trim with Region",
+        "translation": "區域刪線"
+    },
+    {
+        "name": "Trim with Regions",
+        "translation": "區域刪線段"
+    },
+    {
+        "name": "Boundary Volume",
+        "translation": "邊界多面體"
+    },
+    {
+        "name": "Solid Intersection",
+        "translation": "布林交集"
+    },
+    {
+        "name": "Split Brep",
+        "translation": "布林分割"
+    },
+    {
+        "name": "Trim Solid",
+        "translation": "布林修剪"
+    },
+    {
+        "name": "Solid Difference",
+        "translation": "布林差集"
+    },
+    {
+        "name": "Solid Union",
+        "translation": "布林聯集"
+    },
+    {
+        "name": "Split Brep Multiple",
+        "translation": "布林分割多"
+    },
+    {
+        "name": "Region Difference",
+        "translation": "區域差集"
+    },
+    {
+        "name": "Region Union",
+        "translation": "區域聯集"
+    },
+    {
+        "name": "Region Intersection",
+        "translation": "區域交集"
+    },
+    {
+        "name": "Region Splits",
+        "translation": "區域分割"
+    },
+    {
+        "name": "Mesh Difference",
+        "translation": "網格布林差集"
+    },
+    {
+        "name": "Mesh Split",
+        "translation": "網格布林分割"
+    },
+    {
+        "name": "Mesh Intersection",
+        "translation": "網格布林交集"
+    },
+    {
+        "name": "Mesh Union",
+        "translation": "網格布林聯集"
+    },
+    {
+        "name": "Box Slits",
+        "translation": "榫接"
+    },
+    {
+        "name": "Camera Obscura",
+        "translation": "暗箱"
+    },
+    {
+        "name": "Scale",
+        "translation": "等比例縮放"
+    },
+    {
+        "name": "Scale NU",
+        "translation": "不等比例縮放"
+    },
+    {
+        "name": "Shear",
+        "translation": "剪力"
+    },
+    {
+        "name": "Shear Angle",
+        "translation": "剪切角"
+    },
+    {
+        "name": "Box Mapping",
+        "translation": "立方體映射"
+    },
+    {
+        "name": "Orient Direction",
+        "translation": "定位方向"
+    },
+    {
+        "name": "Project Along",
+        "translation": "投影方向"
+    },
+    {
+        "name": "Rectangle Mapping",
+        "translation": "矩形映射"
+    },
+    {
+        "name": "Triangle Mapping",
+        "translation": "三角形映射"
+    },
+    {
+        "name": "Rectangular Array",
+        "translation": "長方形陣列"
+    },
+    {
+        "name": "Box Array",
+        "translation": "立方體陣列"
+    },
+    {
+        "name": "Curve Array",
+        "translation": "曲線陣列"
+    },
+    {
+        "name": "Linear Array",
+        "translation": "陣列"
+    },
+    {
+        "name": "Polar Array",
+        "translation": "環形陣列"
+    },
+    {
+        "name": "Rectanglar Array",
+        "translation": "矩形陣列"
+    },
+    {
+        "name": "Kaleidoscope",
+        "translation": "萬花筒"
+    },
+    {
+        "name": "Mirror",
+        "translation": "鏡射"
+    },
+    {
+        "name": "Move",
+        "translation": "移動"
+    },
+    {
+        "name": "Move Away From",
+        "translation": "從...移開"
+    },
+    {
+        "name": "Move To Plane",
+        "translation": "移至平面"
+    },
+    {
+        "name": "Orient",
+        "translation": "定位"
+    },
+    {
+        "name": "Rotate",
+        "translation": "旋轉"
+    },
+    {
+        "name": "Rotate 3D",
+        "translation": "3D旋轉"
+    },
+    {
+        "name": "Rotate Axis",
+        "translation": "定軸旋轉"
+    },
+    {
+        "name": "Rotate Direction",
+        "translation": "旋轉至"
+    },
+    {
+        "name": "Surface Box",
+        "translation": "面上立方體"
+    },
+    {
+        "name": "Box Morph",
+        "translation": "立方體變形"
+    },
+    {
+        "name": "Bend Deform",
+        "translation": "彎曲變形"
+    },
+    {
+        "name": "Mirror Surface",
+        "translation": "面鏡射"
+    },
+    {
+        "name": "Sporph",
+        "translation": "變形至"
+    },
+    {
+        "name": "Twist",
+        "translation": "扭轉"
+    },
+    {
+        "name": "Flow",
+        "translation": "沿著"
+    },
+    {
+        "name": "Mirror Curve",
+        "translation": "線鏡射"
+    },
+    {
+        "name": "Splop",
+        "translation": "包"
+    },
+    {
+        "name": "Stretch",
+        "translation": "伸展"
+    },
+    {
+        "name": "Taper",
+        "translation": "漸縮"
+    },
+    {
+        "name": "Map to Surface",
+        "translation": "貼至"
+    },
+    {
+        "name": "Point Deform",
+        "translation": "控制點變形"
+    },
+    {
+        "name": "Transform Matrix",
+        "translation": "移動矩陣"
+    },
+    {
+        "name": "Group",
+        "translation": "群組"
+    },
+    {
+        "name": "Ungroup",
+        "translation": "分解群組"
+    },
+    {
+        "name": "Merge Group",
+        "translation": "合併群組"
+    },
+    {
+        "name": "Split Group",
+        "translation": "拆分群組"
+    },
+    {
+        "name": "Colour CMYK",
+        "translation": "顏色CMYK"
+    },
+    {
+        "name": "Colour HSL",
+        "translation": "顏色HSL"
+    },
+    {
+        "name": "Colour HSV",
+        "translation": "顏色HSV"
+    },
+    {
+        "name": "Colour L*ab",
+        "translation": "顏色L*ab"
+    },
+    {
+        "name": "Colour LCH",
+        "translation": "顏色LCH"
+    },
+    {
+        "name": "Colour RGB",
+        "translation": "顏色RGB"
+    },
+    {
+        "name": "Colour RGB (f)",
+        "translation": "顏色RGB(f)"
+    },
+    {
+        "name": "Colour XYZ",
+        "translation": "顏色XYZ"
+    },
+    {
+        "name": "Split AHSL",
+        "translation": "拆分AHSL"
+    },
+    {
+        "name": "Split AHSV",
+        "translation": "拆分AHSV"
+    },
+    {
+        "name": "Split ARGB",
+        "translation": "拆分ARGB"
+    },
+    {
+        "name": "Text Tag",
+        "translation": "文字標籤"
+    },
+    {
+        "name": "Text Tag 3D",
+        "translation": "3D文字標籤"
+    },
+    {
+        "name": "Make2D",
+        "translation": "投影圖"
+    },
+    {
+        "name": "Make2D Parallel View",
+        "translation": "平行投影圖"
+    },
+    {
+        "name": "Make2D Perspective View",
+        "translation": "透視投影圖"
+    },
+    {
+        "name": "Make2D Rhino View",
+        "translation": "Rhino投影圖"
+    },
+    {
+        "name": "Bar Graph",
+        "translation": "條狀圖"
+    },
+    {
+        "name": "Legend",
+        "translation": "圖例"
+    },
+    {
+        "name": "Pie Chart",
+        "translation": "餅形圖"
+    },
+    {
+        "name": "Quick Graph",
+        "translation": "快速圖表"
+    },
+    {
+        "name": "Image Gallery",
+        "translation": "圖片庫"
+    },
+    {
+        "name": "Value Tracker",
+        "translation": "數值追踪"
+    },
+    {
+        "name": "Create Material",
+        "translation": "自定材料"
+    },
+    {
+        "name": "Custom Preview",
+        "translation": "上色顯示"
+    },
+    {
+        "name": "Cloud Display",
+        "translation": "點雲顯示"
+    },
+    {
+        "name": "Dot Display",
+        "translation": "點顯示"
+    },
+    {
+        "name": "Symbol (Advanced)",
+        "translation": "符號(進階)"
+    },
+    {
+        "name": "Symbol (Simple)",
+        "translation": "符號(簡單)"
+    },
+    {
+        "name": "Symbol Display",
+        "translation": "符號顯示"
+    },
+    {
+        "name": "Point List",
+        "translation": "點列表"
+    },
+    {
+        "name": "Point Order",
+        "translation": "點路徑"
+    },
+    {
+        "name": "Vector Display",
+        "translation": "向量顯示"
+    },
+    {
+        "name": "Vector Display Ex",
+        "translation": "向量顯示(進階)"
+    },
+    {
+        "name": "*Translator*",
+        "translation": "林裕傑 (Victor Lin)"
+    }
+]

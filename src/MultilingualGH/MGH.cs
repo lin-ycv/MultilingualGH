@@ -1,5 +1,4 @@
-﻿using System;
-using Grasshopper.GUI.Canvas;
+﻿using Grasshopper.GUI.Canvas;
 using Grasshopper.Kernel;
 
 namespace MultilingualGH
