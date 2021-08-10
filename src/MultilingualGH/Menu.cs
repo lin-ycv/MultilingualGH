@@ -5,6 +5,8 @@ using Grasshopper.Kernel.Expressions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace MultilingualGH
@@ -41,6 +43,11 @@ namespace MultilingualGH
 
         public override GH_LoadingInstruction PriorityLoad()
         {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX) && typeof(Rhino.Geometry.Curve).Assembly.GetName().Version.Major == 6)
+            {//issue with RH6 on MacOS
+                MessageBox.Show($"You do not meet the minimum requirements for v{MultilingualGHInfo.Ver}\r\n\r\nPLEASE USE:\r\n v1.3.5", "MultilingualGH", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return GH_LoadingInstruction.Proceed;
+            }
             Grasshopper.Instances.CanvasCreated += Setup;
             return GH_LoadingInstruction.Proceed;
         }
