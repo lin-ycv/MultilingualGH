@@ -256,7 +256,7 @@ namespace MultilingualGH
                     help.Click += (s, e) =>
                     {
                         MessageBox.Show($"To add translation languages, copy translations files to\r\n{Translation.folder}\r\nand press Reload", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        string target = "https://github.com/v-xup6/MultilingualGH/wiki";
+                        string target = "https://github.com/lin-ycv/MultilingualGH/wiki";
                         try
                         {
                             Process.Start(target);
