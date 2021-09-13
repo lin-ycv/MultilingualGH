@@ -34,6 +34,7 @@ namespace MultilingualGH
         static private readonly JsonSerializerOptions options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         static private readonly GH_ComponentServer CompServer = Grasshopper.Instances.ComponentServer;
         static internal GH_Canvas Canvas = Grasshopper.Instances.ActiveCanvas;
+        static internal string missing = "Grasshopper.Kernel.Components.GH_PlaceholderComponent";
 
         static internal void GetFiles()
         {
@@ -215,6 +216,7 @@ namespace MultilingualGH
             });
             foreach (var comp in newlyAdded.Keys)
             {
+                if (comp.ToString() == missing) continue;
                 GH_Group annotation = new GH_Group
                 {
                     Description = exclusionDefault[0],
@@ -240,6 +242,7 @@ namespace MultilingualGH
                 StringFormat alignment = new StringFormat() { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Far };
                 foreach (var comp in sender.Document.Objects)
                 {
+                    if (comp.ToString() == missing) continue;
                     RectangleF bnd = comp.Attributes.Bounds;
                     if (!sender.Viewport.IsVisible(ref bnd, 20) ||
                         IsExclusion(comp, exclusions) ||
@@ -288,11 +291,11 @@ namespace MultilingualGH
         static string Alias(IGH_DocumentObject comp)
         {
             string subfix = MGH.DisplayName == MGH.DisplayType.full ||
-                (MGH.DisplayName == MGH.DisplayType.customFull && comp.NickName == CompServer.EmitObjectProxy(comp.ComponentGuid).Desc.NickName)
-                ? comp.Name
-                : MGH.DisplayName == MGH.DisplayType.nickname
-                    ? CompServer.EmitObjectProxy(comp.ComponentGuid).Desc.NickName
-                    : comp.NickName;
+                    (MGH.DisplayName == MGH.DisplayType.customFull && comp.NickName == CompServer.EmitObjectProxy(comp.ComponentGuid).Desc.NickName)
+                    ? comp.Name
+                    : MGH.DisplayName == MGH.DisplayType.nickname
+                        ? CompServer.EmitObjectProxy(comp.ComponentGuid).Desc.NickName
+                        : comp.NickName;
             if (MGH.LangAnno == Menu.EN) goto End;
             if (translations.TryGetValue(comp.Name + comp.Category, out string translated) || translations.TryGetValue(comp.Name, out translated))
                 return translated + (MGH.ShowEng ? Environment.NewLine + subfix : "");

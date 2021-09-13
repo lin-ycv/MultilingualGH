@@ -9,7 +9,6 @@ namespace MultilingualGH
     {
         internal static readonly Dictionary<string, string> defaults = new Dictionary<string, string>() {
             { nameof(Version), "Version " } ,
-            { nameof(TipEnable), "Click to Enable/Disable" } ,
             { nameof(LanguageUI), "UI Language" } ,
             { nameof(Methods), "Display Method" } ,
             { nameof(MBubble), "Bubble Annotation" } ,
@@ -32,7 +31,6 @@ namespace MultilingualGH
         static internal Dictionary<string, string> uiTran = new Dictionary<string, string>();
 
         static public string Version { get; set; } = defaults[nameof(Version)];
-        static public string TipEnable { get; set; } = defaults[nameof(TipEnable)];
         static public string LanguageUI { get; set; } = defaults[nameof(LanguageUI)];
         static public string Methods { get; set; } = defaults[nameof(Methods)];
         static public string MBubble { get; set; } = defaults[nameof(MBubble)];
@@ -68,7 +66,6 @@ namespace MultilingualGH
                     Menu.displayName.DropDownItems[property.Name].Text = property.GetValue(null).ToString();
                 else if (Menu.method.DropDownItems.ContainsKey(property.Name))
                     Menu.method.DropDownItems[property.Name].Text = property.GetValue(null).ToString();
-                Menu.MGHMenu.DropDownItems[nameof(Version)].ToolTipText = TipEnable;
             }
             if (!valid && sender.ToString() != Menu.EN)
             {
