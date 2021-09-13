@@ -16,7 +16,7 @@ namespace MultilingualGH
 #pragma warning disable IDE0044
         static internal string EN = "English";
         static internal ToolStripMenuItem MGHMenu = new ToolStripMenuItem { Name = "MultilingualGH", Text = "MultilingualGH", Image = Properties.Resources.MultilingualGH, Checked = MGH.Enabled };
-        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = nameof(UI.Version), Text = UI.Version + MultilingualGHInfo.Ver, Enabled=false};
+        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = nameof(UI.Version), Text = UI.Version + MultilingualGHInfo.Ver, Enabled = false };
         static internal ToolStripMenuItem languageUI = new ToolStripMenuItem { Name = nameof(UI.LanguageUI), Text = UI.LanguageUI };
         static internal ToolStripMenuItem langUIEng = new ToolStripMenuItem { Name = EN, Text = EN, Checked = MGH.LangUI == EN };
         static internal ToolStripMenuItem method = new ToolStripMenuItem { Name = nameof(UI.Methods), Text = UI.Methods };
@@ -43,11 +43,6 @@ namespace MultilingualGH
 
         public override GH_LoadingInstruction PriorityLoad()
         {
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX) && typeof(Rhino.Geometry.Curve).Assembly.GetName().Version.Major == 6)
-            {//issue with RH6 on MacOS
-                MessageBox.Show($"You do not meet the minimum requirements for v{MultilingualGHInfo.Ver}\r\n\r\nPLEASE USE:\r\n v1.3.5", "MultilingualGH", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return GH_LoadingInstruction.Proceed;
-            }
             Grasshopper.Instances.CanvasCreated += Setup;
             return GH_LoadingInstruction.Proceed;
         }
@@ -117,7 +112,7 @@ namespace MultilingualGH
                 language
             }).ToArray());
 
-            /*Version*/MGHMenu.Click += (s, e) =>
+            MGHMenu.Click += (s, e) =>
             {
                 MGH.Enabled = !MGH.Enabled;
                 ((ToolStripMenuItem)s).Checked = MGH.Enabled;
