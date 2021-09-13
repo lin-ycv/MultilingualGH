@@ -15,8 +15,8 @@ namespace MultilingualGH
     {
 #pragma warning disable IDE0044
         static internal string EN = "English";
-        static internal ToolStripMenuItem MGHMenu = new ToolStripMenuItem();
-        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = nameof(UI.Version), Text = UI.Version + MultilingualGHInfo.Ver, ToolTipText = UI.TipEnable, Checked = MGH.Enabled };
+        static internal ToolStripMenuItem MGHMenu = new ToolStripMenuItem { Name = "MultilingualGH", Text = "MultilingualGH", Image = Properties.Resources.MultilingualGH, Checked = MGH.Enabled };
+        static internal ToolStripMenuItem Version = new ToolStripMenuItem { Name = nameof(UI.Version), Text = UI.Version + MultilingualGHInfo.Ver, Enabled=false};
         static internal ToolStripMenuItem languageUI = new ToolStripMenuItem { Name = nameof(UI.LanguageUI), Text = UI.LanguageUI };
         static internal ToolStripMenuItem langUIEng = new ToolStripMenuItem { Name = EN, Text = EN, Checked = MGH.LangUI == EN };
         static internal ToolStripMenuItem method = new ToolStripMenuItem { Name = nameof(UI.Methods), Text = UI.Methods };
@@ -90,10 +90,9 @@ namespace MultilingualGH
         {
             SetupMenu();
             docEditor.MainMenuStrip.SuspendLayout();
-            docEditor.MainMenuStrip.Items.Add(MGHMenu);
-            docEditor.MainMenuStrip.ShowItemToolTips = true;
-            docEditor.MainMenuStrip.ResumeLayout(false);
-            docEditor.MainMenuStrip.PerformLayout();
+            ((ToolStripMenuItem)docEditor.MainMenuStrip.Items["mnuDisplay"]).DropDownItems.Insert(3, MGHMenu);
+            docEditor.MainMenuStrip.ResumeLayout(true);
+            //docEditor.MainMenuStrip.PerformLayout();
         }
         static void SetupMenu()
         {
@@ -101,6 +100,7 @@ namespace MultilingualGH
 
             MGHMenu.DropDownItems.AddRange((new List<ToolStripItem> {
                 Version,
+                new ToolStripSeparator(),
                 languageUI,
                 method,
                 textSize,
@@ -117,7 +117,7 @@ namespace MultilingualGH
                 language
             }).ToArray());
 
-            Version.Click += (s, e) =>
+            /*Version*/MGHMenu.Click += (s, e) =>
             {
                 MGH.Enabled = !MGH.Enabled;
                 ((ToolStripMenuItem)s).Checked = MGH.Enabled;
@@ -270,9 +270,6 @@ namespace MultilingualGH
             }
             else
                 Extra2Menu();
-
-            MGHMenu.Name = "MultilingualGH";
-            MGHMenu.Text = "MultilingualGH";
         }
         static internal void RemoveInvalid(object sender, ToolStripMenuItem menu)
         {
